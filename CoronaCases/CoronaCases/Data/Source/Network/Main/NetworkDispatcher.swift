@@ -21,7 +21,11 @@ class NetworkDispatcher: NetworkDispatcherContract {
     static let shared: NetworkDispatcherContract = NetworkDispatcher()
     
     private lazy var sessionManager: SessionManager = {
-        return SessionManager()
+        var headers = Alamofire.SessionManager.defaultHTTPHeaders
+        let configuration = URLSessionConfiguration.default
+        configuration.httpAdditionalHeaders = headers
+
+        return SessionManager(configuration: configuration)
     }()
     
     func performRequest(_ request: NetworkRequest,
@@ -31,7 +35,7 @@ class NetworkDispatcher: NetworkDispatcherContract {
             let urlRequest = try request.toRequest()
             dataRequest = sessionManager
                 .request(urlRequest)
-                .validate(statusCode: 200..<300)
+                .validate(statusCode: 200..<304)
                 .response { response in
                     let responseInfo = Response.ResponseInfo(
                         httpResponse: response.response,

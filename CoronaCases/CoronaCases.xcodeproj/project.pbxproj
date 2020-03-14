@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		257DF580241D83DD00B5EB06 /* LocationPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DF57F241D83DD00B5EB06 /* LocationPermissionView.swift */; };
+		257DF584241D8AC000B5EB06 /* ViewCodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DF583241D8AC000B5EB06 /* ViewCodeProtocol.swift */; };
+		257DF587241D8C0100B5EB06 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DF586241D8C0100B5EB06 /* UIView+Extensions.swift */; };
 		53D77C111C83A4478C50FB14 /* Pods_CoronaCasesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5F8C5B2E86657DD251BAC67 /* Pods_CoronaCasesTests.framework */; };
 		6332113E241D7D7F00DE444F /* LocationPermissionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332113D241D7D7F00DE444F /* LocationPermissionCoordinator.swift */; };
 		63321141241D7E4800DE444F /* LocationPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63321140241D7E4800DE444F /* LocationPermissionViewController.swift */; };
@@ -20,8 +23,6 @@
 		638A15E4241D74F300896601 /* PushedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A15E3241D74F300896601 /* PushedCoordinator.swift */; };
 		638A15E6241D750900896601 /* ShowedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A15E5241D750900896601 /* ShowedCoordinator.swift */; };
 		787BD057E808AB08444251A5 /* Pods_CoronaCases.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA24C7B11B49D73D22EAA270 /* Pods_CoronaCases.framework */; };
-		B41A7573241D7DD100C2AB24 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41A7572241D7DD100C2AB24 /* World.swift */; };
-		B41A7575241D815F00C2AB24 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41A7574241D815F00C2AB24 /* Country.swift */; };
 		B41FB7ED241D82FB006D1259 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41FB7EA241D82FB006D1259 /* Country.swift */; };
 		B41FB7EE241D82FB006D1259 /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41FB7EB241D82FB006D1259 /* Update.swift */; };
 		B41FB7EF241D82FB006D1259 /* Total.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41FB7EC241D82FB006D1259 /* Total.swift */; };
@@ -41,6 +42,9 @@
 /* Begin PBXFileReference section */
 		1A97A49AD08FE1E74CF2930B /* Pods-CoronaCasesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaCasesTests.release.xcconfig"; path = "Target Support Files/Pods-CoronaCasesTests/Pods-CoronaCasesTests.release.xcconfig"; sourceTree = "<group>"; };
 		24CF4106346E6FCC6FCC429C /* Pods-CoronaCasesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaCasesTests.debug.xcconfig"; path = "Target Support Files/Pods-CoronaCasesTests/Pods-CoronaCasesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		257DF57F241D83DD00B5EB06 /* LocationPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionView.swift; sourceTree = "<group>"; };
+		257DF583241D8AC000B5EB06 /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeProtocol.swift; sourceTree = "<group>"; };
+		257DF586241D8C0100B5EB06 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		2F9558C39D5CC73B74C8C565 /* Pods-CoronaCases.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaCases.release.xcconfig"; path = "Target Support Files/Pods-CoronaCases/Pods-CoronaCases.release.xcconfig"; sourceTree = "<group>"; };
 		6332113D241D7D7F00DE444F /* LocationPermissionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionCoordinator.swift; sourceTree = "<group>"; };
 		63321140241D7E4800DE444F /* LocationPermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionViewController.swift; sourceTree = "<group>"; };
@@ -58,8 +62,6 @@
 		638A15E3241D74F300896601 /* PushedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushedCoordinator.swift; sourceTree = "<group>"; };
 		638A15E5241D750900896601 /* ShowedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowedCoordinator.swift; sourceTree = "<group>"; };
 		A7D09BBDEA05939DEAF4BE2E /* Pods-CoronaCases.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaCases.debug.xcconfig"; path = "Target Support Files/Pods-CoronaCases/Pods-CoronaCases.debug.xcconfig"; sourceTree = "<group>"; };
-		B41A7572241D7DD100C2AB24 /* World.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
-		B41A7574241D815F00C2AB24 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		B41FB7EA241D82FB006D1259 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Country.swift; path = CoronaCases/Country.swift; sourceTree = SOURCE_ROOT; };
 		B41FB7EB241D82FB006D1259 /* Update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Update.swift; path = CoronaCases/Update.swift; sourceTree = SOURCE_ROOT; };
 		B41FB7EC241D82FB006D1259 /* Total.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Total.swift; path = CoronaCases/Total.swift; sourceTree = SOURCE_ROOT; };
@@ -88,9 +90,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		257DF581241D8A2A00B5EB06 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				257DF57F241D83DD00B5EB06 /* LocationPermissionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		257DF582241D8AAD00B5EB06 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				257DF583241D8AC000B5EB06 /* ViewCodeProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		257DF585241D8BE600B5EB06 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				257DF586241D8C0100B5EB06 /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		6332113F241D7DB600DE444F /* LocationPermission */ = {
 			isa = PBXGroup;
 			children = (
+				257DF581241D8A2A00B5EB06 /* View */,
 				63321140241D7E4800DE444F /* LocationPermissionViewController.swift */,
 			);
 			path = LocationPermission;
@@ -125,7 +152,6 @@
 				638A15B4241D5A9400896601 /* Products */,
 				6F72F3595D50AE210578EE79 /* Pods */,
 				D73803CE2513B71A6025825E /* Frameworks */,
-				B41FB7E9241D82E1006D1259 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,6 +188,8 @@
 		638A15D8241D688200896601 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				257DF585241D8BE600B5EB06 /* Extensions */,
+				257DF582241D8AAD00B5EB06 /* Protocols */,
 				638A15DA241D68E500896601 /* Coordinator */,
 				63321142241D7FCF00DE444F /* Resources */,
 			);
@@ -205,15 +233,6 @@
 				1A97A49AD08FE1E74CF2930B /* Pods-CoronaCasesTests.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		B41FB7E9241D82E1006D1259 /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				B41A7572241D7DD100C2AB24 /* World.swift */,
-				B41A7574241D815F00C2AB24 /* Country.swift */,
-			);
-			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		D73803CE2513B71A6025825E /* Frameworks */ = {
@@ -392,18 +411,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				257DF580241D83DD00B5EB06 /* LocationPermissionView.swift in Sources */,
 				638A15DC241D69FA00896601 /* Coordinator.swift in Sources */,
 				638A15E4241D74F300896601 /* PushedCoordinator.swift in Sources */,
 				63321141241D7E4800DE444F /* LocationPermissionViewController.swift in Sources */,
 				638A15DE241D6A0700896601 /* AppCoordinator.swift in Sources */,
 				B41FB7EF241D82FB006D1259 /* Total.swift in Sources */,
 				6332113E241D7D7F00DE444F /* LocationPermissionCoordinator.swift in Sources */,
+				257DF587241D8C0100B5EB06 /* UIView+Extensions.swift in Sources */,
+				257DF584241D8AC000B5EB06 /* ViewCodeProtocol.swift in Sources */,
 				638A15B7241D5A9400896601 /* AppDelegate.swift in Sources */,
 				B41FB7EE241D82FB006D1259 /* Update.swift in Sources */,
-				B41A7573241D7DD100C2AB24 /* World.swift in Sources */,
 				B41FB7F1241D856F006D1259 /* States.swift in Sources */,
 				B41FB7ED241D82FB006D1259 /* Country.swift in Sources */,
-				B41A7575241D815F00C2AB24 /* Country.swift in Sources */,
 				638A15B9241D5A9400896601 /* SceneDelegate.swift in Sources */,
 				638A15E6241D750900896601 /* ShowedCoordinator.swift in Sources */,
 			);

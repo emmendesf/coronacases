@@ -1,5 +1,5 @@
 //
-//  World.swift
+//  States.swift
 //  CoronaCases
 //
 //  Created by Carlos Henrique Martins Cayres on 14/03/20.
@@ -8,11 +8,10 @@
 
 import Foundation
 
-class World: Codable {
+class Estates: Codable {
     
-    let date: String?
-    let time: String?
-    let values: [Country]?
-    let total: Total?
+    let uid : String?
+    let suspect: Int?
+    let name: String?
+    let refuses: Int?
 }
-

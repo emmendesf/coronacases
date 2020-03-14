@@ -7,11 +7,26 @@ target 'CoronaCases' do
   use_frameworks!
 
   # Pods for CoronaCases
-  pod 'Alamofire'
+  pod 'Alamofire', '~> 4.7.2'
 
   target 'CoronaCasesTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+      if ['Alamofire'].include? target.name
+          target.build_configurations.each do |config|
+              config.build_settings['SWIFT_VERSION'] = '4.2'
+          end
+      end
+  end
+
+  # This removes the warning about swift conversion
+   installer.pods_project.root_object.attributes['LastSwiftMigration'] = 9999
+   installer.pods_project.root_object.attributes['LastSwiftUpdateCheck'] = 9999
+   installer.pods_project.root_object.attributes['LastUpgradeCheck'] = 9999
 end

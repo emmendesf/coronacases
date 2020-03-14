@@ -18,7 +18,7 @@ protocol NetworkRequest {
     var path: String { get }
     var method: HTTPMethod { get }
     var encoding: ParameterEncoding { get }
-    var parameters: Parameters? { get }
+    var parameters: [String: Any]? { get }
     var headers: HTTPHeaders? { get }
     
     func parseJSON<T: Decodable>(from data: Data) throws -> T

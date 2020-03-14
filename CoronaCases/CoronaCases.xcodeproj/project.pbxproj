@@ -10,6 +10,7 @@
 		53D77C111C83A4478C50FB14 /* Pods_CoronaCasesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5F8C5B2E86657DD251BAC67 /* Pods_CoronaCasesTests.framework */; };
 		6332113E241D7D7F00DE444F /* LocationPermissionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332113D241D7D7F00DE444F /* LocationPermissionCoordinator.swift */; };
 		63321141241D7E4800DE444F /* LocationPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63321140241D7E4800DE444F /* LocationPermissionViewController.swift */; };
+		63321146241D845800DE444F /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63321145241D845800DE444F /* NetworkDispatcher.swift */; };
 		638A15B7241D5A9400896601 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A15B6241D5A9400896601 /* AppDelegate.swift */; };
 		638A15B9241D5A9400896601 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A15B8241D5A9400896601 /* SceneDelegate.swift */; };
 		638A15C0241D5A9600896601 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638A15BF241D5A9600896601 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		2F9558C39D5CC73B74C8C565 /* Pods-CoronaCases.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaCases.release.xcconfig"; path = "Target Support Files/Pods-CoronaCases/Pods-CoronaCases.release.xcconfig"; sourceTree = "<group>"; };
 		6332113D241D7D7F00DE444F /* LocationPermissionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionCoordinator.swift; sourceTree = "<group>"; };
 		63321140241D7E4800DE444F /* LocationPermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionViewController.swift; sourceTree = "<group>"; };
+		63321145241D845800DE444F /* NetworkDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
 		638A15B3241D5A9400896601 /* CoronaCases.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoronaCases.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		638A15B6241D5A9400896601 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		638A15B8241D5A9400896601 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,8 +99,33 @@
 		63321143241D801A00DE444F /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				63321147241D863E00DE444F /* Source */,
+				63321148241D864500DE444F /* Model */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		63321144241D840500DE444F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				63321145241D845800DE444F /* NetworkDispatcher.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		63321147241D863E00DE444F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				63321144241D840500DE444F /* Network */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		63321148241D864500DE444F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		638A15AA241D5A9400896601 = {
@@ -372,6 +399,7 @@
 				638A15DE241D6A0700896601 /* AppCoordinator.swift in Sources */,
 				6332113E241D7D7F00DE444F /* LocationPermissionCoordinator.swift in Sources */,
 				638A15B7241D5A9400896601 /* AppDelegate.swift in Sources */,
+				63321146241D845800DE444F /* NetworkDispatcher.swift in Sources */,
 				638A15B9241D5A9400896601 /* SceneDelegate.swift in Sources */,
 				638A15E6241D750900896601 /* ShowedCoordinator.swift in Sources */,
 			);

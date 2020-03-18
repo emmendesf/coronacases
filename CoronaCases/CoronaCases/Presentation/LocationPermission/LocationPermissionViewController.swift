@@ -9,8 +9,11 @@
 import UIKit
 
 class LocationPermissionViewController: UIViewController {
+    
+    private let contentView: LocationPermissionView
 
     init() {
+        self.contentView = LocationPermissionView()
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -18,15 +21,17 @@ class LocationPermissionViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func loadView() {
-        let view = UIView()
-        view.backgroundColor = .red
-        self.view = view
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    }
+    
+    override func loadView() {
+        view = contentView
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
     }
 }
 

@@ -21,7 +21,7 @@ final class LocationPermissionView: UIView {
     
     private lazy var headerLabel: UILabel = {
         let headerLabel = UILabel()
-        headerLabel.text = "Localização"
+        headerLabel.text = R.string.localizable.locationPermissionTitle()
         headerLabel.font = UIFont.boldSystemFont(ofSize: 20)
         headerLabel.textColor = CustomColors.shared.coronaDarkGray
         return headerLabel
@@ -34,7 +34,7 @@ final class LocationPermissionView: UIView {
         
     private lazy var askPermissionTitle: UILabel = {
         let askPermissionTitle = UILabel()
-        askPermissionTitle.text = "Permitir Localização"
+        askPermissionTitle.text = R.string.localizable.locationPermissionSubtitle()
         askPermissionTitle.textColor = CustomColors.shared.coronaDarkGray
         askPermissionTitle.font = UIFont.boldSystemFont(ofSize: 18)
         return askPermissionTitle
@@ -42,7 +42,7 @@ final class LocationPermissionView: UIView {
     
     private lazy var askPermissionLabel: UILabel = {
         let askPermissionLabel = UILabel()
-        askPermissionLabel.text = "Saiba os casos mais próximos a você, permita a localização do seu celular"
+        askPermissionLabel.text = R.string.localizable.locationPermissionText()
         askPermissionLabel.textColor = CustomColors.shared.coronaDarkGray
         askPermissionLabel.numberOfLines = 0
         askPermissionLabel.textAlignment = .center
@@ -51,8 +51,8 @@ final class LocationPermissionView: UIView {
     }()
     
     private lazy var leftButton: UIButton = {
-        let button = makeButton()
-        button.setTitle("Pular", for: .normal)
+        let title = R.string.localizable.locationPermissionSkipButtonTitle()
+        let button = makeButton(buttonTitle: title)
         return button
     }()
     
@@ -63,16 +63,17 @@ final class LocationPermissionView: UIView {
     }()
     
     private lazy var rightButton: UIButton = {
-        let button = makeButton()
-        button.setTitle("Permitir", for: .normal)
+        let title = R.string.localizable.locationPermissionAllowButtonTitle()
+        let button = makeButton(buttonTitle: title)
         return button
     }()
     
-    private func makeButton() -> UIButton {
+    private func makeButton(buttonTitle: String) -> UIButton {
         let button = UIButton()
         button.layer.borderWidth = 0
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
         button.setTitleColor(CustomColors.shared.coronaDarkGray, for: .normal)
+        button.setTitle(buttonTitle, for: .normal)
         return button
     }
 }

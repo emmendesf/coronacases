@@ -27,9 +27,10 @@ final class LocationPermissionView: UIView {
         return headerLabel
     }()
     
-    private lazy var locationIcon: UILabel = {
-        let iconLabel = UILabel()
-        return iconLabel
+    private lazy var locationIcon: UIImageView = {
+        let image = R.image.locationArrowImage()
+        let label = UILabel()
+        return UIImageView(image: image)
     }()
         
     private lazy var askPermissionTitle: UILabel = {
@@ -92,18 +93,20 @@ extension LocationPermissionView: ViewCodeProtocol {
     func setupConstraints() {
 
         headerLabel.constraint { view in
-            [view.topAnchor.constraint(equalTo: topAnchor, constant: 42),
-             view.centerXAnchor.constraint(equalTo: centerXAnchor)]
-        }
-        
-        locationIcon.constraint { view in
-            [view.topAnchor.constraint(equalTo: headerLabel.bottomAnchor, constant: 200),
+            [view.topAnchor.constraint(equalTo: topAnchor, constant: 50),
              view.centerXAnchor.constraint(equalTo: centerXAnchor)]
         }
         
         askPermissionTitle.constraint { view in
-            [view.topAnchor.constraint(equalTo: locationIcon.bottomAnchor, constant: 15),
+            [view.centerYAnchor.constraint(equalTo: centerYAnchor),
              view.centerXAnchor.constraint(equalTo: centerXAnchor)]
+        }
+        
+        locationIcon.constraint { view in
+            [view.bottomAnchor.constraint(equalTo: askPermissionTitle.topAnchor, constant: -10),
+             view.centerXAnchor.constraint(equalTo: centerXAnchor),
+             view.widthAnchor.constraint(equalToConstant: 132),
+             view.heightAnchor.constraint(equalToConstant: 109)]
         }
         
         askPermissionLabel.constraint { view in

@@ -8,6 +8,7 @@ target 'CoronaCases' do
 
   # Pods for CoronaCases
   pod 'Alamofire', '~> 4.7.2'
+  pod 'R.swift', '~> 5.1.0'
 
   target 'CoronaCasesTests' do
     inherit! :search_paths

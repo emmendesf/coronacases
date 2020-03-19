@@ -26,12 +26,12 @@ final class LocationPermissionView: UIView {
         let headerLabel = UILabel()
         headerLabel.text = R.string.localizable.locationPermissionTitle()
         headerLabel.font = UIFont.boldSystemFont(ofSize: 20)
-        headerLabel.textColor = CustomColors.shared.coronaDarkGray
+        headerLabel.textColor = .white
         return headerLabel
     }()
     
     private lazy var locationIcon: UIImageView = {
-        let image = R.image.locationArrowImage()
+        let image = R.image.whiteLocationArrowImage()
         let label = UILabel()
         return UIImageView(image: image)
     }()
@@ -39,7 +39,7 @@ final class LocationPermissionView: UIView {
     private lazy var askPermissionTitle: UILabel = {
         let askPermissionTitle = UILabel()
         askPermissionTitle.text = R.string.localizable.locationPermissionSubtitle()
-        askPermissionTitle.textColor = CustomColors.shared.coronaDarkGray
+        askPermissionTitle.textColor = .white
         askPermissionTitle.font = UIFont.boldSystemFont(ofSize: 18)
         return askPermissionTitle
     }()
@@ -47,7 +47,7 @@ final class LocationPermissionView: UIView {
     private lazy var askPermissionLabel: UILabel = {
         let askPermissionLabel = UILabel()
         askPermissionLabel.text = R.string.localizable.locationPermissionText()
-        askPermissionLabel.textColor = CustomColors.shared.coronaDarkGray
+        askPermissionLabel.textColor = .white
         askPermissionLabel.numberOfLines = 0
         askPermissionLabel.textAlignment = .center
         askPermissionLabel.font = UIFont.systemFont(ofSize: 16)
@@ -57,12 +57,13 @@ final class LocationPermissionView: UIView {
     private lazy var leftButton: UIButton = {
         let title = R.string.localizable.locationPermissionSkipButtonTitle()
         let button = makeButton(buttonTitle: title)
+        button.setTitleColor(.white, for: .normal)
         return button
     }()
     
     private lazy var separatorView: UIView = {
         let view = UIView()
-        view.backgroundColor = CustomColors.shared.coronaDarkGray
+        view.backgroundColor = .white
         return view
     }()
     
@@ -70,6 +71,7 @@ final class LocationPermissionView: UIView {
         let title = R.string.localizable.locationPermissionAllowButtonTitle()
         let button = makeButton(buttonTitle: title)
         button.addTarget(self, action: #selector(askForLocationPermission), for: .touchUpInside)
+        button.setTitleColor(CustomColors.shared.salmon, for: .normal)
         return button
     }()
     
@@ -77,7 +79,6 @@ final class LocationPermissionView: UIView {
         let button = UIButton()
         button.layer.borderWidth = 0
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
-        button.setTitleColor(CustomColors.shared.coronaDarkGray, for: .normal)
         button.setTitle(buttonTitle, for: .normal)
         return button
     }
@@ -113,8 +114,8 @@ extension LocationPermissionView: ViewCodeProtocol {
         locationIcon.constraint { view in
             [view.bottomAnchor.constraint(equalTo: askPermissionTitle.topAnchor, constant: -10),
              view.centerXAnchor.constraint(equalTo: centerXAnchor),
-             view.widthAnchor.constraint(equalToConstant: 132),
-             view.heightAnchor.constraint(equalToConstant: 109)]
+             view.widthAnchor.constraint(equalToConstant: 107.2),
+             view.heightAnchor.constraint(equalToConstant: 107.2)]
         }
         
         askPermissionLabel.constraint { view in
@@ -145,6 +146,6 @@ extension LocationPermissionView: ViewCodeProtocol {
     }
     
     func additionalSetup() {
-        backgroundColor = .white
+        backgroundColor = CustomColors.shared.coronaDarkGray
     }
 }

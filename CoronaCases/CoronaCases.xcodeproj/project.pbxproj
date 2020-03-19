@@ -22,7 +22,7 @@
 		258064592423EB1900D90E23 /* CLLocationManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258064582423EB1900D90E23 /* CLLocationManagerProtocol.swift */; };
 		2580645B2423EBD700D90E23 /* ReverseGeocodeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2580645A2423EBD700D90E23 /* ReverseGeocodeResult.swift */; };
 		2580645D2423EC1300D90E23 /* CLGeocoderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2580645C2423EC1300D90E23 /* CLGeocoderProtocol.swift */; };
-		2580645F2423F7A300D90E23 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2580645E2423F7A300D90E23 /* InfoPlist.strings */; };
+		258064622423FE4800D90E23 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 258064642423FE4800D90E23 /* InfoPlist.strings */; };
 		53D77C111C83A4478C50FB14 /* Pods_CoronaCasesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5F8C5B2E86657DD251BAC67 /* Pods_CoronaCasesTests.framework */; };
 		6332113E241D7D7F00DE444F /* LocationPermissionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332113D241D7D7F00DE444F /* LocationPermissionCoordinator.swift */; };
 		63321141241D7E4800DE444F /* LocationPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63321140241D7E4800DE444F /* LocationPermissionViewController.swift */; };
@@ -72,7 +72,8 @@
 		258064582423EB1900D90E23 /* CLLocationManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationManagerProtocol.swift; sourceTree = "<group>"; };
 		2580645A2423EBD700D90E23 /* ReverseGeocodeResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseGeocodeResult.swift; sourceTree = "<group>"; };
 		2580645C2423EC1300D90E23 /* CLGeocoderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLGeocoderProtocol.swift; sourceTree = "<group>"; };
-		2580645E2423F7A300D90E23 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		258064632423FE4800D90E23 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		258064652424044700D90E23 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2F9558C39D5CC73B74C8C565 /* Pods-CoronaCases.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaCases.release.xcconfig"; path = "Target Support Files/Pods-CoronaCases/Pods-CoronaCases.release.xcconfig"; sourceTree = "<group>"; };
 		6332113D241D7D7F00DE444F /* LocationPermissionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionCoordinator.swift; sourceTree = "<group>"; };
 		63321140241D7E4800DE444F /* LocationPermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionViewController.swift; sourceTree = "<group>"; };
@@ -200,7 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				258064472422B2D700D90E23 /* Localizable.strings */,
-				2580645E2423F7A300D90E23 /* InfoPlist.strings */,
+				258064642423FE4800D90E23 /* InfoPlist.strings */,
 			);
 			path = Strings;
 			sourceTree = "<group>";
@@ -444,7 +445,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				638A15C3241D5A9600896601 /* LaunchScreen.storyboard in Resources */,
-				2580645F2423F7A300D90E23 /* InfoPlist.strings in Resources */,
+				258064622423FE4800D90E23 /* InfoPlist.strings in Resources */,
 				258064452422B2D700D90E23 /* Localizable.strings in Resources */,
 				638A15C0241D5A9600896601 /* Assets.xcassets in Resources */,
 			);
@@ -603,6 +604,15 @@
 				258064482422B2DF00D90E23 /* pt-BR */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		258064642423FE4800D90E23 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				258064632423FE4800D90E23 /* pt-BR */,
+				258064652424044700D90E23 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		638A15C1241D5A9600896601 /* LaunchScreen.storyboard */ = {

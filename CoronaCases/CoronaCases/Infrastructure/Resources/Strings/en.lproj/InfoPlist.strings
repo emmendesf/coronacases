@@ -6,4 +6,4 @@
   Copyright © 2020 Emerson Mendes Filho. All rights reserved.
 */
 
-NSLocationWhenInUsageDescription = "";
+NSLocationWhenInUsageDescription = "Authorize access to your location so you can get relevant information about where you are";

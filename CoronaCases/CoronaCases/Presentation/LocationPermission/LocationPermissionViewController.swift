@@ -9,8 +9,13 @@
 import UIKit
 
 class LocationPermissionViewController: UIViewController {
+    
+    private let contentView: LocationPermissionView
+    private let viewModel: LocationPermissionViewModel
 
-    init() {
+    init(viewModel: LocationPermissionViewModel) {
+        self.viewModel = viewModel
+        self.contentView = LocationPermissionView(viewModel: viewModel)
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -18,19 +23,19 @@ class LocationPermissionViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
     override func loadView() {
-        let view = UIView()
-        view.backgroundColor = .red
-        self.view = view
+        view = contentView
     }
 
     let service = CoronaCasesService()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        service.getWorldCases { (result) in
-            print(result)
-        }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
     }
 }
 

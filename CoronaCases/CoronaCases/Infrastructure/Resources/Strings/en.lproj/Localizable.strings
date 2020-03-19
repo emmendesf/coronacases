@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  CoronaCases
+
+  Created by Caio Roberto on 18/03/20.
+  Copyright © 2020 Emerson Mendes Filho. All rights reserved.
+*/
+
+"LocationPermission.title" = "Location";
+"LocationPermission.subtitle" = "Allow Location";
+"LocationPermission.text" = "Know about COVID-19 cases near you, allow access to your phone location";
+"LocationPermission.skipButton.title" = "Skip";
+"LocationPermission.allowButton.title" = "Allow";

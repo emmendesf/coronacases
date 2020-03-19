@@ -30,6 +30,18 @@
 		6332114F241D91BA00DE444F /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332114B241D91BA00DE444F /* States.swift */; };
 		63321150241D91BA00DE444F /* Total.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332114C241D91BA00DE444F /* Total.swift */; };
 		63321151241D91BA00DE444F /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332114D241D91BA00DE444F /* Update.swift */; };
+		63321155241D953300DE444F /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63321154241D953300DE444F /* NetworkDispatcher.swift */; };
+		63321157241D955600DE444F /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63321156241D955600DE444F /* Response.swift */; };
+		63321159241D956500DE444F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63321158241D956500DE444F /* Result.swift */; };
+		6332115B241D956D00DE444F /* ResponseStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332115A241D956D00DE444F /* ResponseStatus.swift */; };
+		6332115D241D957B00DE444F /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332115C241D957B00DE444F /* NetworkRequest.swift */; };
+		6332115F241D958600DE444F /* NetworkCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332115E241D958600DE444F /* NetworkCore.swift */; };
+		63321162241D95C400DE444F /* NetworkErrorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63321161241D95C400DE444F /* NetworkErrorContract.swift */; };
+		63321164241D960A00DE444F /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63321163241D960A00DE444F /* NetworkError.swift */; };
+		63321166241D961500DE444F /* NetworkErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63321165241D961500DE444F /* NetworkErrorType.swift */; };
+		6332116A241D9B7C00DE444F /* CoronaNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63321169241D9B7C00DE444F /* CoronaNetworkRequest.swift */; };
+		6332116C241D9CBB00DE444F /* CoronaCasesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332116B241D9CBB00DE444F /* CoronaCasesService.swift */; };
+		6332116F241D9CFB00DE444F /* ServiceContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332116E241D9CFB00DE444F /* ServiceContract.swift */; };
 		638A15B7241D5A9400896601 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A15B6241D5A9400896601 /* AppDelegate.swift */; };
 		638A15B9241D5A9400896601 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A15B8241D5A9400896601 /* SceneDelegate.swift */; };
 		638A15C0241D5A9600896601 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638A15BF241D5A9600896601 /* Assets.xcassets */; };
@@ -81,6 +93,18 @@
 		6332114B241D91BA00DE444F /* States.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
 		6332114C241D91BA00DE444F /* Total.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Total.swift; sourceTree = "<group>"; };
 		6332114D241D91BA00DE444F /* Update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
+		63321154241D953300DE444F /* NetworkDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
+		63321156241D955600DE444F /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		63321158241D956500DE444F /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		6332115A241D956D00DE444F /* ResponseStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseStatus.swift; sourceTree = "<group>"; };
+		6332115C241D957B00DE444F /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		6332115E241D958600DE444F /* NetworkCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCore.swift; sourceTree = "<group>"; };
+		63321161241D95C400DE444F /* NetworkErrorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorContract.swift; sourceTree = "<group>"; };
+		63321163241D960A00DE444F /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		63321165241D961500DE444F /* NetworkErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorType.swift; sourceTree = "<group>"; };
+		63321169241D9B7C00DE444F /* CoronaNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaNetworkRequest.swift; sourceTree = "<group>"; };
+		6332116B241D9CBB00DE444F /* CoronaCasesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaCasesService.swift; sourceTree = "<group>"; };
+		6332116E241D9CFB00DE444F /* ServiceContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceContract.swift; sourceTree = "<group>"; };
 		638A15B3241D5A9400896601 /* CoronaCases.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoronaCases.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		638A15B6241D5A9400896601 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		638A15B8241D5A9400896601 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -241,6 +265,7 @@
 		63321143241D801A00DE444F /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				63321152241D947500DE444F /* Source */,
 				63321149241D919000DE444F /* Model */,
 			);
 			path = Data;
@@ -255,6 +280,64 @@
 				6332114D241D91BA00DE444F /* Update.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		63321152241D947500DE444F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				63321153241D950E00DE444F /* Network */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		63321153241D950E00DE444F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6332116D241D9CEE00DE444F /* Service */,
+				63321168241D9B0500DE444F /* Requests */,
+				63321167241D9AA900DE444F /* Main */,
+				63321160241D95A800DE444F /* Error */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		63321160241D95A800DE444F /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				63321163241D960A00DE444F /* NetworkError.swift */,
+				63321161241D95C400DE444F /* NetworkErrorContract.swift */,
+				63321165241D961500DE444F /* NetworkErrorType.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		63321167241D9AA900DE444F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6332115E241D958600DE444F /* NetworkCore.swift */,
+				63321154241D953300DE444F /* NetworkDispatcher.swift */,
+				6332115C241D957B00DE444F /* NetworkRequest.swift */,
+				63321156241D955600DE444F /* Response.swift */,
+				6332115A241D956D00DE444F /* ResponseStatus.swift */,
+				63321158241D956500DE444F /* Result.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		63321168241D9B0500DE444F /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				63321169241D9B7C00DE444F /* CoronaNetworkRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		6332116D241D9CEE00DE444F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6332116E241D9CFB00DE444F /* ServiceContract.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		638A15AA241D5A9400896601 = {
@@ -314,6 +397,7 @@
 			isa = PBXGroup;
 			children = (
 				6332113F241D7DB600DE444F /* LocationPermission */,
+				6332116B241D9CBB00DE444F /* CoronaCasesService.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -552,12 +636,18 @@
 				257DF580241D83DD00B5EB06 /* LocationPermissionView.swift in Sources */,
 				638A15DC241D69FA00896601 /* Coordinator.swift in Sources */,
 				638A15E4241D74F300896601 /* PushedCoordinator.swift in Sources */,
+				6332115B241D956D00DE444F /* ResponseStatus.swift in Sources */,
 				63321151241D91BA00DE444F /* Update.swift in Sources */,
 				258064502423E9FB00D90E23 /* AuthorizationResult.swift in Sources */,
 				63321141241D7E4800DE444F /* LocationPermissionViewController.swift in Sources */,
 				6332114F241D91BA00DE444F /* States.swift in Sources */,
 				258064562423EA9D00D90E23 /* LocationManager.swift in Sources */,
 				63321150241D91BA00DE444F /* Total.swift in Sources */,
+				6332116F241D9CFB00DE444F /* ServiceContract.swift in Sources */,
+				6332115F241D958600DE444F /* NetworkCore.swift in Sources */,
+				63321159241D956500DE444F /* Result.swift in Sources */,
+				63321164241D960A00DE444F /* NetworkError.swift in Sources */,
+				63321157241D955600DE444F /* Response.swift in Sources */,
 				638A15DE241D6A0700896601 /* AppCoordinator.swift in Sources */,
 				2580644B2423C1F400D90E23 /* LocationPermissionViewModel.swift in Sources */,
 				6332113E241D7D7F00DE444F /* LocationPermissionCoordinator.swift in Sources */,
@@ -571,10 +661,16 @@
 				2580644D2423E9BF00D90E23 /* LocationManagerProtocol.swift in Sources */,
 				638A15B7241D5A9400896601 /* AppDelegate.swift in Sources */,
 				6332114E241D91BA00DE444F /* Country.swift in Sources */,
+				63321162241D95C400DE444F /* NetworkErrorContract.swift in Sources */,
 				638A15B9241D5A9400896601 /* SceneDelegate.swift in Sources */,
 				258064522423EA2E00D90E23 /* LocationResult.swift in Sources */,
 				25806439242141E700D90E23 /* UIColor+Extensions.swift in Sources */,
 				638A15E6241D750900896601 /* ShowedCoordinator.swift in Sources */,
+				6332116A241D9B7C00DE444F /* CoronaNetworkRequest.swift in Sources */,
+				63321166241D961500DE444F /* NetworkErrorType.swift in Sources */,
+				63321155241D953300DE444F /* NetworkDispatcher.swift in Sources */,
+				6332115D241D957B00DE444F /* NetworkRequest.swift in Sources */,
+				6332116C241D9CBB00DE444F /* CoronaCasesService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

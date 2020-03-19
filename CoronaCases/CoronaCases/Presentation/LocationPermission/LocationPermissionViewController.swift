@@ -23,10 +23,14 @@ class LocationPermissionViewController: UIViewController {
         view.backgroundColor = .red
         self.view = view
     }
+
+    let service = CoronaCasesService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        service.getWorldCases { (result) in
+            print(result)
+        }
     }
 }
 

@@ -18,6 +18,7 @@ class LocationPermissionCoordinator: PushedCoordinator {
     }
     
     func loadViewController() -> UIViewController {
-        return LocationPermissionViewController()
+        let viewModel = LocationPermissionViewModel()
+        return LocationPermissionViewController(viewModel: viewModel)
     }
 }

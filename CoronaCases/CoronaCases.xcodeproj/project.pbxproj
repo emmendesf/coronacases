@@ -14,6 +14,14 @@
 		25806439242141E700D90E23 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25806438242141E700D90E23 /* UIColor+Extensions.swift */; };
 		2580643E24226B2E00D90E23 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2580643D24226B2E00D90E23 /* R.generated.swift */; };
 		258064452422B2D700D90E23 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 258064472422B2D700D90E23 /* Localizable.strings */; };
+		2580644B2423C1F400D90E23 /* LocationPermissionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2580644A2423C1F400D90E23 /* LocationPermissionViewModel.swift */; };
+		2580644D2423E9BF00D90E23 /* LocationManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2580644C2423E9BF00D90E23 /* LocationManagerProtocol.swift */; };
+		258064502423E9FB00D90E23 /* AuthorizationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2580644F2423E9FB00D90E23 /* AuthorizationResult.swift */; };
+		258064522423EA2E00D90E23 /* LocationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258064512423EA2E00D90E23 /* LocationResult.swift */; };
+		258064562423EA9D00D90E23 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258064552423EA9D00D90E23 /* LocationManager.swift */; };
+		258064592423EB1900D90E23 /* CLLocationManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258064582423EB1900D90E23 /* CLLocationManagerProtocol.swift */; };
+		2580645B2423EBD700D90E23 /* ReverseGeocodeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2580645A2423EBD700D90E23 /* ReverseGeocodeResult.swift */; };
+		2580645D2423EC1300D90E23 /* CLGeocoderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2580645C2423EC1300D90E23 /* CLGeocoderProtocol.swift */; };
 		53D77C111C83A4478C50FB14 /* Pods_CoronaCasesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5F8C5B2E86657DD251BAC67 /* Pods_CoronaCasesTests.framework */; };
 		6332113E241D7D7F00DE444F /* LocationPermissionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332113D241D7D7F00DE444F /* LocationPermissionCoordinator.swift */; };
 		63321141241D7E4800DE444F /* LocationPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63321140241D7E4800DE444F /* LocationPermissionViewController.swift */; };
@@ -55,6 +63,14 @@
 		258064442422B25100D90E23 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		258064462422B2D700D90E23 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		258064482422B2DF00D90E23 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		2580644A2423C1F400D90E23 /* LocationPermissionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionViewModel.swift; sourceTree = "<group>"; };
+		2580644C2423E9BF00D90E23 /* LocationManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerProtocol.swift; sourceTree = "<group>"; };
+		2580644F2423E9FB00D90E23 /* AuthorizationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationResult.swift; sourceTree = "<group>"; };
+		258064512423EA2E00D90E23 /* LocationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationResult.swift; sourceTree = "<group>"; };
+		258064552423EA9D00D90E23 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		258064582423EB1900D90E23 /* CLLocationManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationManagerProtocol.swift; sourceTree = "<group>"; };
+		2580645A2423EBD700D90E23 /* ReverseGeocodeResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseGeocodeResult.swift; sourceTree = "<group>"; };
+		2580645C2423EC1300D90E23 /* CLGeocoderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLGeocoderProtocol.swift; sourceTree = "<group>"; };
 		2F9558C39D5CC73B74C8C565 /* Pods-CoronaCases.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaCases.release.xcconfig"; path = "Target Support Files/Pods-CoronaCases/Pods-CoronaCases.release.xcconfig"; sourceTree = "<group>"; };
 		6332113D241D7D7F00DE444F /* LocationPermissionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionCoordinator.swift; sourceTree = "<group>"; };
 		63321140241D7E4800DE444F /* LocationPermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionViewController.swift; sourceTree = "<group>"; };
@@ -132,9 +148,56 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		258064492423C1DA00D90E23 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2580644A2423C1F400D90E23 /* LocationPermissionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2580644E2423E9E500D90E23 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				258064542423EA8D00D90E23 /* Location */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		258064532423EA5600D90E23 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				2580644F2423E9FB00D90E23 /* AuthorizationResult.swift */,
+				258064512423EA2E00D90E23 /* LocationResult.swift */,
+				2580645A2423EBD700D90E23 /* ReverseGeocodeResult.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		258064542423EA8D00D90E23 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				258064572423EAFE00D90E23 /* Protocols */,
+				258064532423EA5600D90E23 /* Enum */,
+				258064552423EA9D00D90E23 /* LocationManager.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		258064572423EAFE00D90E23 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2580644C2423E9BF00D90E23 /* LocationManagerProtocol.swift */,
+				258064582423EB1900D90E23 /* CLLocationManagerProtocol.swift */,
+				2580645C2423EC1300D90E23 /* CLGeocoderProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		6332113F241D7DB600DE444F /* LocationPermission */ = {
 			isa = PBXGroup;
 			children = (
+				258064492423C1DA00D90E23 /* ViewModel */,
 				257DF581241D8A2A00B5EB06 /* View */,
 				63321140241D7E4800DE444F /* LocationPermissionViewController.swift */,
 			);
@@ -218,8 +281,9 @@
 		638A15D8241D688200896601 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
-				257DF585241D8BE600B5EB06 /* Extensions */,
 				257DF582241D8AAD00B5EB06 /* Protocols */,
+				2580644E2423E9E500D90E23 /* Managers */,
+				257DF585241D8BE600B5EB06 /* Extensions */,
 				638A15DA241D68E500896601 /* Coordinator */,
 				63321142241D7FCF00DE444F /* Resources */,
 			);
@@ -468,18 +532,26 @@
 				638A15DC241D69FA00896601 /* Coordinator.swift in Sources */,
 				638A15E4241D74F300896601 /* PushedCoordinator.swift in Sources */,
 				63321151241D91BA00DE444F /* Update.swift in Sources */,
+				258064502423E9FB00D90E23 /* AuthorizationResult.swift in Sources */,
 				63321141241D7E4800DE444F /* LocationPermissionViewController.swift in Sources */,
 				6332114F241D91BA00DE444F /* States.swift in Sources */,
+				258064562423EA9D00D90E23 /* LocationManager.swift in Sources */,
 				63321150241D91BA00DE444F /* Total.swift in Sources */,
 				638A15DE241D6A0700896601 /* AppCoordinator.swift in Sources */,
+				2580644B2423C1F400D90E23 /* LocationPermissionViewModel.swift in Sources */,
 				6332113E241D7D7F00DE444F /* LocationPermissionCoordinator.swift in Sources */,
 				257DF587241D8C0100B5EB06 /* UIView+Extensions.swift in Sources */,
 				2580643724213DCE00D90E23 /* CustomColors.swift in Sources */,
+				2580645B2423EBD700D90E23 /* ReverseGeocodeResult.swift in Sources */,
 				2580643E24226B2E00D90E23 /* R.generated.swift in Sources */,
+				2580645D2423EC1300D90E23 /* CLGeocoderProtocol.swift in Sources */,
+				258064592423EB1900D90E23 /* CLLocationManagerProtocol.swift in Sources */,
 				257DF584241D8AC000B5EB06 /* ViewCodeProtocol.swift in Sources */,
+				2580644D2423E9BF00D90E23 /* LocationManagerProtocol.swift in Sources */,
 				638A15B7241D5A9400896601 /* AppDelegate.swift in Sources */,
 				6332114E241D91BA00DE444F /* Country.swift in Sources */,
 				638A15B9241D5A9400896601 /* SceneDelegate.swift in Sources */,
+				258064522423EA2E00D90E23 /* LocationResult.swift in Sources */,
 				25806439242141E700D90E23 /* UIColor+Extensions.swift in Sources */,
 				638A15E6241D750900896601 /* ShowedCoordinator.swift in Sources */,
 			);

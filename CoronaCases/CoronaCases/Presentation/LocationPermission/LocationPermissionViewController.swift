@@ -11,9 +11,11 @@ import UIKit
 class LocationPermissionViewController: UIViewController {
     
     private let contentView: LocationPermissionView
+    private let viewModel: LocationPermissionViewModel
 
-    init() {
-        self.contentView = LocationPermissionView()
+    init(viewModel: LocationPermissionViewModel) {
+        self.viewModel = viewModel
+        self.contentView = LocationPermissionView(viewModel: viewModel)
         super.init(nibName: nil, bundle: nil)
     }
 

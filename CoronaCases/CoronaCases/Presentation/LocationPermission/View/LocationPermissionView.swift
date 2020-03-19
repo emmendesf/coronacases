@@ -10,7 +10,10 @@ import UIKit
 
 final class LocationPermissionView: UIView {
     
-    init() {
+    private let viewModel: LocationPermissionViewModel
+    
+    init(viewModel: LocationPermissionViewModel) {
+        self.viewModel = viewModel
         super.init(frame: .zero)
         buildView()
     }

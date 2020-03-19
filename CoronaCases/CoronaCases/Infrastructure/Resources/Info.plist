@@ -49,7 +49,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Authorize access to your location so you can get relevant information about where you are</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

@@ -69,6 +69,7 @@ final class LocationPermissionView: UIView {
     private lazy var rightButton: UIButton = {
         let title = R.string.localizable.locationPermissionAllowButtonTitle()
         let button = makeButton(buttonTitle: title)
+        button.addTarget(self, action: #selector(askForLocationPermission), for: .touchUpInside)
         return button
     }()
     
@@ -79,6 +80,10 @@ final class LocationPermissionView: UIView {
         button.setTitleColor(CustomColors.shared.coronaDarkGray, for: .normal)
         button.setTitle(buttonTitle, for: .normal)
         return button
+    }
+    
+    @objc private func askForLocationPermission() {
+        viewModel.askForLocationAccessPermission()
     }
 }
 

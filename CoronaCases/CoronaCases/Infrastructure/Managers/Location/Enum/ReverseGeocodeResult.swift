@@ -17,10 +17,14 @@ protocol Placemark {
     var latitude: String? { get }
     var longitude: String? { get }
     var street: String? { get }
+    var state: String? { get }
+    var country: String? { get }
 }
 
 extension CLPlacemark: Placemark {
     var latitude: String? { return String(location?.coordinate.latitude ?? CLLocationDegrees()) }
     var longitude: String? { return String(location?.coordinate.longitude ?? CLLocationDegrees()) }
     var street: String? { return thoroughfare }
+    var state: String? { return administrativeArea }
+    var country: String? { return country }
 }

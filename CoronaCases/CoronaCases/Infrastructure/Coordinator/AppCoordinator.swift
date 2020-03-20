@@ -19,7 +19,6 @@ class AppCoordinator: Coordinator {
     }
 
     func start(animated: Bool) {
-//        let coordinator = LocationPermissionCoordinator(presentingViewController: presentingViewController)
         let coordinator = OnboardCoordinator(presentingViewController: presentingViewController)
         coordinator.start()
         nextCoordinator = coordinator

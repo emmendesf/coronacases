@@ -32,14 +32,15 @@ final class LocationPermissionView: UIView {
     
     private lazy var locationIcon: UIImageView = {
         let image = R.image.whiteLocationArrowImage()
-        let label = UILabel()
-        return UIImageView(image: image)
+        let imageView = UIImageView(image: image)
+        imageView.setImageColor(color: CustomColors.shared.coronaLightGray)
+        return imageView
     }()
         
     private lazy var askPermissionTitle: UILabel = {
         let askPermissionTitle = UILabel()
         askPermissionTitle.text = R.string.localizable.locationPermissionSubtitle()
-        askPermissionTitle.textColor = .white
+        askPermissionTitle.textColor = CustomColors.shared.salmon
         askPermissionTitle.font = UIFont.boldSystemFont(ofSize: 18)
         return askPermissionTitle
     }()
@@ -54,35 +55,24 @@ final class LocationPermissionView: UIView {
         return askPermissionLabel
     }()
     
-    private lazy var leftButton: UIButton = {
+    private lazy var leftButton: CoronaButton = {
         let title = R.string.localizable.locationPermissionSkipButtonTitle()
-        let button = makeButton(buttonTitle: title)
-        button.setTitleColor(.white, for: .normal)
+        let button = CoronaButton(componentState: .clear,
+                                  title: title,
+                                  color: CustomColors.shared.salmon)
+        button.setupButton()
         return button
     }()
     
-    private lazy var separatorView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .white
-        return view
-    }()
-    
-    private lazy var rightButton: UIButton = {
+    private lazy var rightButton: CoronaButton = {
         let title = R.string.localizable.locationPermissionAllowButtonTitle()
-        let button = makeButton(buttonTitle: title)
-        button.addTarget(self, action: #selector(askForLocationPermission), for: .touchUpInside)
-        button.setTitleColor(CustomColors.shared.salmon, for: .normal)
+        let button = CoronaButton(componentState: .filled,
+                                  title: title,
+                                  color: CustomColors.shared.salmon)
+        button.setupButton()
         return button
     }()
-    
-    private func makeButton(buttonTitle: String) -> UIButton {
-        let button = UIButton()
-        button.layer.borderWidth = 0
-        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
-        button.setTitle(buttonTitle, for: .normal)
-        return button
-    }
-    
+
     @objc private func askForLocationPermission() {
         viewModel.askForLocationAccessPermission()
     }
@@ -94,7 +84,6 @@ extension LocationPermissionView: ViewCodeProtocol {
         addSubview(locationIcon)
         addSubview(askPermissionTitle)
         addSubview(askPermissionLabel)
-        addSubview(separatorView)
         addSubview(leftButton)
         addSubview(rightButton)
     }
@@ -124,24 +113,18 @@ extension LocationPermissionView: ViewCodeProtocol {
              view.topAnchor.constraint(equalTo: askPermissionTitle.bottomAnchor, constant: 15)]
         }
 
-        separatorView.constraint { view in
-            [view.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -50),
-             view.widthAnchor.constraint(equalToConstant: 1.35),
-             view.heightAnchor.constraint(equalToConstant: 35),
-             view.centerXAnchor.constraint(equalTo: centerXAnchor)]
-        }
-
         leftButton.constraint { view in
-            [view.centerYAnchor.constraint(equalTo: separatorView.centerYAnchor),
-             view.trailingAnchor.constraint(equalTo: separatorView.trailingAnchor, constant: -40),
-             view.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 40),
-             view.heightAnchor.constraint(equalToConstant: 35)]
+            [view.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -42),
+             view.trailingAnchor.constraint(equalTo: centerXAnchor, constant: -15),
+             view.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 30),
+             view.heightAnchor.constraint(equalToConstant: 45)]
         }
 
         rightButton.constraint { view in
-             [view.centerYAnchor.constraint(equalTo: separatorView.centerYAnchor),
-              view.leadingAnchor.constraint(equalTo: separatorView.trailingAnchor, constant: 40),
-              view.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -40)]
+             [view.centerYAnchor.constraint(equalTo: leftButton.centerYAnchor),
+              view.leadingAnchor.constraint(equalTo: centerXAnchor, constant: 15),
+              view.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -30),
+              view.heightAnchor.constraint(equalToConstant: 45)]
         }
     }
     

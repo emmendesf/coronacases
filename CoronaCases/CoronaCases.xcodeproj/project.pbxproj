@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		254B577C242520270063488C /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254B577B242520270063488C /* UIImageView+Extensions.swift */; };
+		254B577F242520F20063488C /* CoronaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254B577E242520F20063488C /* CoronaButton.swift */; };
+		254B5782242526B60063488C /* ButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254B5781242526B60063488C /* ButtonState.swift */; };
 		257DF580241D83DD00B5EB06 /* LocationPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DF57F241D83DD00B5EB06 /* LocationPermissionView.swift */; };
 		257DF584241D8AC000B5EB06 /* ViewCodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DF583241D8AC000B5EB06 /* ViewCodeProtocol.swift */; };
 		257DF587241D8C0100B5EB06 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DF586241D8C0100B5EB06 /* UIView+Extensions.swift */; };
@@ -67,6 +70,9 @@
 /* Begin PBXFileReference section */
 		1A97A49AD08FE1E74CF2930B /* Pods-CoronaCasesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaCasesTests.release.xcconfig"; path = "Target Support Files/Pods-CoronaCasesTests/Pods-CoronaCasesTests.release.xcconfig"; sourceTree = "<group>"; };
 		24CF4106346E6FCC6FCC429C /* Pods-CoronaCasesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaCasesTests.debug.xcconfig"; path = "Target Support Files/Pods-CoronaCasesTests/Pods-CoronaCasesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		254B577B242520270063488C /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		254B577E242520F20063488C /* CoronaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaButton.swift; sourceTree = "<group>"; };
+		254B5781242526B60063488C /* ButtonState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonState.swift; sourceTree = "<group>"; };
 		257DF57F241D83DD00B5EB06 /* LocationPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionView.swift; sourceTree = "<group>"; };
 		257DF583241D8AC000B5EB06 /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeProtocol.swift; sourceTree = "<group>"; };
 		257DF586241D8C0100B5EB06 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -143,6 +149,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		254B577D242520CC0063488C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				254B5780242526A30063488C /* CoronaButton */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		254B5780242526A30063488C /* CoronaButton */ = {
+			isa = PBXGroup;
+			children = (
+				254B577E242520F20063488C /* CoronaButton.swift */,
+				254B5781242526B60063488C /* ButtonState.swift */,
+			);
+			path = CoronaButton;
+			sourceTree = "<group>";
+		};
 		257DF581241D8A2A00B5EB06 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +187,7 @@
 			children = (
 				257DF586241D8C0100B5EB06 /* UIView+Extensions.swift */,
 				25806438242141E700D90E23 /* UIColor+Extensions.swift */,
+				254B577B242520270063488C /* UIImageView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -384,6 +408,7 @@
 		638A15D8241D688200896601 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				254B577D242520CC0063488C /* Components */,
 				257DF582241D8AAD00B5EB06 /* Protocols */,
 				2580644E2423E9E500D90E23 /* Managers */,
 				257DF585241D8BE600B5EB06 /* Extensions */,
@@ -633,10 +658,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				254B577C242520270063488C /* UIImageView+Extensions.swift in Sources */,
 				257DF580241D83DD00B5EB06 /* LocationPermissionView.swift in Sources */,
 				638A15DC241D69FA00896601 /* Coordinator.swift in Sources */,
 				638A15E4241D74F300896601 /* PushedCoordinator.swift in Sources */,
 				6332115B241D956D00DE444F /* ResponseStatus.swift in Sources */,
+				254B5782242526B60063488C /* ButtonState.swift in Sources */,
 				63321151241D91BA00DE444F /* Update.swift in Sources */,
 				258064502423E9FB00D90E23 /* AuthorizationResult.swift in Sources */,
 				63321141241D7E4800DE444F /* LocationPermissionViewController.swift in Sources */,
@@ -651,6 +678,7 @@
 				638A15DE241D6A0700896601 /* AppCoordinator.swift in Sources */,
 				2580644B2423C1F400D90E23 /* LocationPermissionViewModel.swift in Sources */,
 				6332113E241D7D7F00DE444F /* LocationPermissionCoordinator.swift in Sources */,
+				254B577F242520F20063488C /* CoronaButton.swift in Sources */,
 				257DF587241D8C0100B5EB06 /* UIView+Extensions.swift in Sources */,
 				2580643724213DCE00D90E23 /* CustomColors.swift in Sources */,
 				2580645B2423EBD700D90E23 /* ReverseGeocodeResult.swift in Sources */,

@@ -7,7 +7,7 @@
 import UIKit
 
 protocol OnboardViewModelCoordinatorDelegate: class {
-
+    func showLocationPermission()
 }
 
 protocol OnboardViewModelViewDelegate: class {

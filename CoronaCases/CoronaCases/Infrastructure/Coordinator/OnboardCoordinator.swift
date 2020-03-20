@@ -21,12 +21,12 @@ class OnboardCoordinator: PushedCoordinator {
         let viewController = OnboardViewController(viewModel: viewModel)
         return viewController
     }
-
-    func toUpdateIsBottomBarHidden() -> Bool? {
-        return true
-    }
 }
 
 extension OnboardCoordinator: OnboardViewModelCoordinatorDelegate {
-
+    func showLocationPermission() {
+        let coordinator = LocationPermissionCoordinator(presentingViewController: presentingViewController)
+        coordinator.start()
+        nextCoordinator = coordinator
+    }
 }

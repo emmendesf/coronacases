@@ -8,9 +8,12 @@ import UIKit
 
 class OnboardViewModel {
     weak var coordinatorDelegate: OnboardViewModelCoordinatorDelegate?
-    weak var viewDelegate: OnboardViewModelViewDelegate?
 
     init(coordinatorDelegate: OnboardViewModelCoordinatorDelegate) {
         self.coordinatorDelegate = coordinatorDelegate
+    }
+    
+    func showLocationPermissionScreen() {
+        coordinatorDelegate?.showLocationPermission()
     }
 }

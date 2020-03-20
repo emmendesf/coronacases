@@ -70,6 +70,7 @@ final class LocationPermissionView: UIView {
                                   title: title,
                                   color: CustomColors.shared.salmon)
         button.setupButton()
+        button.addTarget(self, action: #selector(askForLocationPermission), for: .touchUpInside)
         return button
     }()
 

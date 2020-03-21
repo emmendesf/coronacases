@@ -6,8 +6,17 @@
   Copyright © 2020 Emerson Mendes Filho. All rights reserved.
 */
 
+// MARK: LocationPermission:
+
 "LocationPermission.title" = "Location";
 "LocationPermission.subtitle" = "Allow Location";
 "LocationPermission.text" = "Know about COVID-19 cases near you, allow access to your phone location";
 "LocationPermission.skipButton.title" = "Skip";
 "LocationPermission.allowButton.title" = "Allow";
+
+// MARK: Onboard:
+
+"Onboard.title" = "Corona Cases";
+"Onboard.subtitle" = "Welcome";
+"Onboard.text" = "This app is meant to help to keep a track in COVID-19 cases around the world";
+"Onboard.getStartedButton.title" = "Get Started";

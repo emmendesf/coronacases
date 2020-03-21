@@ -10,6 +10,11 @@
 		254B577C242520270063488C /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254B577B242520270063488C /* UIImageView+Extensions.swift */; };
 		254B577F242520F20063488C /* CoronaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254B577E242520F20063488C /* CoronaButton.swift */; };
 		254B5782242526B60063488C /* ButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254B5781242526B60063488C /* ButtonState.swift */; };
+		254B578A242537E30063488C /* OnboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254B5785242537E30063488C /* OnboardCoordinator.swift */; };
+		254B578B242537E30063488C /* OnboardViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254B5786242537E30063488C /* OnboardViewModelDelegate.swift */; };
+		254B578C242537E30063488C /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254B5787242537E30063488C /* OnboardViewController.swift */; };
+		254B578D242537E30063488C /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254B5788242537E30063488C /* OnboardView.swift */; };
+		254B578E242537E30063488C /* OnboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254B5789242537E30063488C /* OnboardViewModel.swift */; };
 		257DF580241D83DD00B5EB06 /* LocationPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DF57F241D83DD00B5EB06 /* LocationPermissionView.swift */; };
 		257DF584241D8AC000B5EB06 /* ViewCodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DF583241D8AC000B5EB06 /* ViewCodeProtocol.swift */; };
 		257DF587241D8C0100B5EB06 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DF586241D8C0100B5EB06 /* UIView+Extensions.swift */; };
@@ -73,6 +78,11 @@
 		254B577B242520270063488C /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		254B577E242520F20063488C /* CoronaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaButton.swift; sourceTree = "<group>"; };
 		254B5781242526B60063488C /* ButtonState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonState.swift; sourceTree = "<group>"; };
+		254B5785242537E30063488C /* OnboardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardCoordinator.swift; sourceTree = "<group>"; };
+		254B5786242537E30063488C /* OnboardViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewModelDelegate.swift; sourceTree = "<group>"; };
+		254B5787242537E30063488C /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
+		254B5788242537E30063488C /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
+		254B5789242537E30063488C /* OnboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewModel.swift; sourceTree = "<group>"; };
 		257DF57F241D83DD00B5EB06 /* LocationPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionView.swift; sourceTree = "<group>"; };
 		257DF583241D8AC000B5EB06 /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeProtocol.swift; sourceTree = "<group>"; };
 		257DF586241D8C0100B5EB06 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -164,6 +174,33 @@
 				254B5781242526B60063488C /* ButtonState.swift */,
 			);
 			path = CoronaButton;
+			sourceTree = "<group>";
+		};
+		254B5784242537A90063488C /* Onboard */ = {
+			isa = PBXGroup;
+			children = (
+				254B579024253A4A0063488C /* ViewModel */,
+				254B578F24253A3C0063488C /* View */,
+				254B5787242537E30063488C /* OnboardViewController.swift */,
+			);
+			path = Onboard;
+			sourceTree = "<group>";
+		};
+		254B578F24253A3C0063488C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				254B5788242537E30063488C /* OnboardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		254B579024253A4A0063488C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				254B5786242537E30063488C /* OnboardViewModelDelegate.swift */,
+				254B5789242537E30063488C /* OnboardViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		257DF581241D8A2A00B5EB06 /* View */ = {
@@ -421,6 +458,7 @@
 		638A15D9241D688C00896601 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				254B5784242537A90063488C /* Onboard */,
 				6332113F241D7DB600DE444F /* LocationPermission */,
 				6332116B241D9CBB00DE444F /* CoronaCasesService.swift */,
 			);
@@ -431,6 +469,7 @@
 			isa = PBXGroup;
 			children = (
 				638A15E7241D75B800896601 /* Protocol */,
+				254B5785242537E30063488C /* OnboardCoordinator.swift */,
 				638A15DD241D6A0700896601 /* AppCoordinator.swift */,
 				6332113D241D7D7F00DE444F /* LocationPermissionCoordinator.swift */,
 			);
@@ -659,6 +698,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				254B577C242520270063488C /* UIImageView+Extensions.swift in Sources */,
+				254B578D242537E30063488C /* OnboardView.swift in Sources */,
 				257DF580241D83DD00B5EB06 /* LocationPermissionView.swift in Sources */,
 				638A15DC241D69FA00896601 /* Coordinator.swift in Sources */,
 				638A15E4241D74F300896601 /* PushedCoordinator.swift in Sources */,
@@ -670,10 +710,12 @@
 				6332114F241D91BA00DE444F /* States.swift in Sources */,
 				258064562423EA9D00D90E23 /* LocationManager.swift in Sources */,
 				63321150241D91BA00DE444F /* Total.swift in Sources */,
+				254B578A242537E30063488C /* OnboardCoordinator.swift in Sources */,
 				6332116F241D9CFB00DE444F /* ServiceContract.swift in Sources */,
 				6332115F241D958600DE444F /* NetworkCore.swift in Sources */,
 				63321159241D956500DE444F /* Result.swift in Sources */,
 				63321164241D960A00DE444F /* NetworkError.swift in Sources */,
+				254B578E242537E30063488C /* OnboardViewModel.swift in Sources */,
 				63321157241D955600DE444F /* Response.swift in Sources */,
 				638A15DE241D6A0700896601 /* AppCoordinator.swift in Sources */,
 				2580644B2423C1F400D90E23 /* LocationPermissionViewModel.swift in Sources */,
@@ -683,8 +725,10 @@
 				2580643724213DCE00D90E23 /* CustomColors.swift in Sources */,
 				2580645B2423EBD700D90E23 /* ReverseGeocodeResult.swift in Sources */,
 				2580643E24226B2E00D90E23 /* R.generated.swift in Sources */,
+				254B578C242537E30063488C /* OnboardViewController.swift in Sources */,
 				2580645D2423EC1300D90E23 /* CLGeocoderProtocol.swift in Sources */,
 				258064592423EB1900D90E23 /* CLLocationManagerProtocol.swift in Sources */,
+				254B578B242537E30063488C /* OnboardViewModelDelegate.swift in Sources */,
 				257DF584241D8AC000B5EB06 /* ViewCodeProtocol.swift in Sources */,
 				2580644D2423E9BF00D90E23 /* LocationManagerProtocol.swift in Sources */,
 				638A15B7241D5A9400896601 /* AppDelegate.swift in Sources */,

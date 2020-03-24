@@ -54,7 +54,7 @@
 		638A15B9241D5A9400896601 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A15B8241D5A9400896601 /* SceneDelegate.swift */; };
 		638A15C0241D5A9600896601 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638A15BF241D5A9600896601 /* Assets.xcassets */; };
 		638A15C3241D5A9600896601 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 638A15C1241D5A9600896601 /* LaunchScreen.storyboard */; };
-		638A15CE241D5A9700896601 /* CoronaCasesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A15CD241D5A9700896601 /* CoronaCasesTests.swift */; };
+		638A15CE241D5A9700896601 /* CovidCasesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A15CD241D5A9700896601 /* CovidCasesTests.swift */; };
 		638A15DC241D69FA00896601 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A15DB241D69FA00896601 /* Coordinator.swift */; };
 		638A15DE241D6A0700896601 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A15DD241D6A0700896601 /* AppCoordinator.swift */; };
 		638A15E4241D74F300896601 /* PushedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A15E3241D74F300896601 /* PushedCoordinator.swift */; };
@@ -129,7 +129,7 @@
 		638A15C2241D5A9600896601 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		638A15C4241D5A9600896601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		638A15C9241D5A9700896601 /* CovidCasesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CovidCasesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		638A15CD241D5A9700896601 /* CoronaCasesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaCasesTests.swift; sourceTree = "<group>"; };
+		638A15CD241D5A9700896601 /* CovidCasesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidCasesTests.swift; sourceTree = "<group>"; };
 		638A15CF241D5A9700896601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		638A15DB241D69FA00896601 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		638A15DD241D6A0700896601 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -440,7 +440,7 @@
 		638A15CC241D5A9700896601 /* CoronaCasesTests */ = {
 			isa = PBXGroup;
 			children = (
-				638A15CD241D5A9700896601 /* CoronaCasesTests.swift */,
+				638A15CD241D5A9700896601 /* CovidCasesTests.swift */,
 				638A15CF241D5A9700896601 /* Info.plist */,
 			);
 			path = CoronaCasesTests;
@@ -653,7 +653,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$SRCROOT/R.generated.swift",
+				$SRCROOT/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -758,7 +758,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				638A15CE241D5A9700896601 /* CoronaCasesTests.swift in Sources */,
+				638A15CE241D5A9700896601 /* CovidCasesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

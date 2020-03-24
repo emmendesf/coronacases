@@ -6,7 +6,7 @@ target 'CovidCases' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for CoronaCases
+  # Pods for CovidCases
   pod 'Alamofire', '~> 4.7.2'
   pod 'R.swift', '~> 5.1.0'
 

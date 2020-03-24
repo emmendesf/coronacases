@@ -31,7 +31,7 @@ class LocationPermissionViewController: UIViewController {
         view = contentView
     }
 
-    let service = CoronaCasesService()
+    let service = CovidCasesService()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

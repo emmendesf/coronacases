@@ -1,16 +1,16 @@
 //
-//  CoronaCasesService.swift
-//  CoronaCases
+//  CovidCasesService.swift
+//  CovidCases
 //
 //  Created by Emerson Mendes Filho on 14/03/20.
-//  Copyright © 2020 Emerson Mendes Filho. All rights reserved.
+//  Copyright © 2020 A7&M. All rights reserved.
 //
 
-protocol CoronaCasesServiceContract: ServiceContract {
+protocol CovidCasesServiceContract: ServiceContract {
     func getWorldCases(completion: @escaping (Result<[Update], NetworkError>) -> Void)
 }
 
-class CoronaCasesService: CoronaCasesServiceContract {
+class CovidCasesService: CovidCasesServiceContract {
     var network: NetworkCore
 
     init(core: NetworkCore = NetworkCore()) {

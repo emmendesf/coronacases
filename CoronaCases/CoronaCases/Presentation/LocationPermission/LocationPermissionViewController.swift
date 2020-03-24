@@ -1,9 +1,9 @@
 //
 //  LocationPermissionViewController.swift
-//  CoronaCases
+//  CovidCases
 //
 //  Created by Emerson Mendes Filho on 14/03/20.
-//  Copyright © 2020 Emerson Mendes Filho. All rights reserved.
+//  Copyright © 2020 A7&M. All rights reserved.
 //
 
 import UIKit
@@ -31,7 +31,7 @@ class LocationPermissionViewController: UIViewController {
         view = contentView
     }
 
-    let service = CoronaCasesService()
+    let service = CovidCasesService()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

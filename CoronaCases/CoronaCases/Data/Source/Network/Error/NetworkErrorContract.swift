@@ -1,9 +1,9 @@
 //
 //  NetworkErrorContract.swift
-//  CoronaCases
+//  CovidCases
 //
 //  Created by Emerson Mendes Filho on 14/03/20.
-//  Copyright © 2020 Emerson Mendes Filho. All rights reserved.
+//  Copyright © 2020 A7&M. All rights reserved.
 //
 
 import Foundation

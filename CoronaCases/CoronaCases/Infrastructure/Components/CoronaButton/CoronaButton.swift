@@ -1,9 +1,9 @@
 //
 //  CoronaButton.swift
-//  CoronaCases
+//  CovidCases
 //
 //  Created by Caio Roberto on 20/03/20.
-//  Copyright © 2020 Emerson Mendes Filho. All rights reserved.
+//  Copyright © 2020 A7&M. All rights reserved.
 //
 
 import UIKit

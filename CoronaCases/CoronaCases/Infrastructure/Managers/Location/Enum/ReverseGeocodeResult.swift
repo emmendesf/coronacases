@@ -1,9 +1,9 @@
 //
 //  ReverseGeocodeResult.swift
-//  CoronaCases
+//  CovidCases
 //
 //  Created by Caio Roberto on 19/03/20.
-//  Copyright © 2020 Emerson Mendes Filho. All rights reserved.
+//  Copyright © 2020 A7&M. All rights reserved.
 //
 
 import CoreLocation
@@ -18,7 +18,7 @@ protocol Placemark {
     var longitude: String? { get }
     var street: String? { get }
     var state: String? { get }
-    var country: String? { get }
+    var countryName: String? { get }
 }
 
 extension CLPlacemark: Placemark {
@@ -26,5 +26,5 @@ extension CLPlacemark: Placemark {
     var longitude: String? { return String(location?.coordinate.longitude ?? CLLocationDegrees()) }
     var street: String? { return thoroughfare }
     var state: String? { return administrativeArea }
-    var country: String? { return country }
+    var countryName: String? { return country }
 }

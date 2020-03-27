@@ -7,7 +7,7 @@
 //
 
 protocol CovidCasesServiceContract: ServiceContract {
-    func getWorldCases(completion: @escaping (Result<[Update], NetworkError>) -> Void)
+    func getWorldCases(completion: @escaping (Result<[Country], NetworkError>) -> Void)
 }
 
 class CovidCasesService: CovidCasesServiceContract {
@@ -17,7 +17,7 @@ class CovidCasesService: CovidCasesServiceContract {
         self.network = core
     }
 
-    func getWorldCases(completion: @escaping (Result<[Update], NetworkError>) -> Void) {
+    func getWorldCases(completion: @escaping (Result<[Country], NetworkError>) -> Void) {
         let request = CoronaNetworkRequest.world
         network.request(request, completion: completion)
     }

@@ -51,7 +51,9 @@ extension NetworkRequest {
     }
     
     func parseJSON<T: Decodable>(from data: Data) throws -> T {
-        let value = try JSONDecoder().decode(T.self, from: data)
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
+        let value = try decoder.decode(T.self, from: data)
         return value
     }
     

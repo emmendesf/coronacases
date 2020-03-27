@@ -27,7 +27,7 @@ protocol NetworkRequest {
 
 extension NetworkRequest {
     var baseURL: URL? {
-        return URL(string: "https://api-coronavirus.herokuapp.com/")
+        return URL(string: "https://covid-193.p.rapidapi.com/")
     }
     
     var encoding: ParameterEncoding {
@@ -35,7 +35,8 @@ extension NetworkRequest {
     }
     
     var headers: HTTPHeaders? {
-        return nil
+        return ["x-rapidapi-host": "covid-193.p.rapidapi.com",
+                "x-rapidapi-key": "0dcba3befbmsh13fc5c5fc77c722p157d8fjsn2a6847a6699b"]
     }
     
     func toRequest() throws -> URLRequestConvertible {

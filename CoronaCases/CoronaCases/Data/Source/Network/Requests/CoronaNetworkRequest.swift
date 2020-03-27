@@ -17,7 +17,7 @@ enum CoronaNetworkRequest: NetworkRequest {
 
         switch self {
         case .world:
-            path = "world"
+            path = "statistics"
         }
 
         return path

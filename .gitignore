@@ -37,11 +37,3 @@ Pods/
 *.ipa
 
 ## Fastlane
-fastlane_build_path/
-fastlane/MeuAlelo
-fastlane/test_output/
-fastlane/report.xml
-fastlane/slack_message.txt
-
-#slather
-slather_xml_report/

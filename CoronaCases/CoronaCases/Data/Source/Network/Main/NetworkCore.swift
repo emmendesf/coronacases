@@ -20,8 +20,8 @@ class NetworkCore {
                 switch response {
                 case let .success(data):
                     do {
-                        let value: T = try request.parseJSON(from: data)
-                        completion(.success(value))
+                        let baseResponse: BaseResponse<T> = try request.parseJSON(from: data)
+                        completion(.success(baseResponse.response))
                     } catch {
                         let parseError = U(responseStatus: .parseError, error: nil, data: nil)
                         completion(.failure(parseError))

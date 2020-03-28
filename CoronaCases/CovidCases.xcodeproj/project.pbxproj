@@ -35,9 +35,6 @@
 		6332113E241D7D7F00DE444F /* LocationPermissionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332113D241D7D7F00DE444F /* LocationPermissionCoordinator.swift */; };
 		63321141241D7E4800DE444F /* LocationPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63321140241D7E4800DE444F /* LocationPermissionViewController.swift */; };
 		6332114E241D91BA00DE444F /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332114A241D91BA00DE444F /* Country.swift */; };
-		6332114F241D91BA00DE444F /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332114B241D91BA00DE444F /* States.swift */; };
-		63321150241D91BA00DE444F /* Total.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332114C241D91BA00DE444F /* Total.swift */; };
-		63321151241D91BA00DE444F /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332114D241D91BA00DE444F /* Update.swift */; };
 		63321155241D953300DE444F /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63321154241D953300DE444F /* NetworkDispatcher.swift */; };
 		63321157241D955600DE444F /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63321156241D955600DE444F /* Response.swift */; };
 		63321159241D956500DE444F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63321158241D956500DE444F /* Result.swift */; };
@@ -59,6 +56,9 @@
 		638A15DE241D6A0700896601 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A15DD241D6A0700896601 /* AppCoordinator.swift */; };
 		638A15E4241D74F300896601 /* PushedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A15E3241D74F300896601 /* PushedCoordinator.swift */; };
 		638A15E6241D750900896601 /* ShowedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A15E5241D750900896601 /* ShowedCoordinator.swift */; };
+		63E7AEC3242E8E56006F3A93 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E7AEC2242E8E56006F3A93 /* BaseResponse.swift */; };
+		63E7AEC5242E9097006F3A93 /* Cases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E7AEC4242E9097006F3A93 /* Cases.swift */; };
+		63E7AEC7242E90A1006F3A93 /* Deaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E7AEC6242E90A1006F3A93 /* Deaths.swift */; };
 		9AA491B156A71B01FE1B6241 /* Pods_CovidCases.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EA87C1876CEA29F52D6828 /* Pods_CovidCases.framework */; };
 /* End PBXBuildFile section */
 
@@ -107,9 +107,6 @@
 		6332113D241D7D7F00DE444F /* LocationPermissionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionCoordinator.swift; sourceTree = "<group>"; };
 		63321140241D7E4800DE444F /* LocationPermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionViewController.swift; sourceTree = "<group>"; };
 		6332114A241D91BA00DE444F /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
-		6332114B241D91BA00DE444F /* States.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
-		6332114C241D91BA00DE444F /* Total.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Total.swift; sourceTree = "<group>"; };
-		6332114D241D91BA00DE444F /* Update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
 		63321154241D953300DE444F /* NetworkDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
 		63321156241D955600DE444F /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		63321158241D956500DE444F /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
@@ -135,6 +132,9 @@
 		638A15DD241D6A0700896601 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		638A15E3241D74F300896601 /* PushedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushedCoordinator.swift; sourceTree = "<group>"; };
 		638A15E5241D750900896601 /* ShowedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowedCoordinator.swift; sourceTree = "<group>"; };
+		63E7AEC2242E8E56006F3A93 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		63E7AEC4242E9097006F3A93 /* Cases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cases.swift; sourceTree = "<group>"; };
+		63E7AEC6242E90A1006F3A93 /* Deaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deaths.swift; sourceTree = "<group>"; };
 		A7D09BBDEA05939DEAF4BE2E /* Pods-CoronaCases.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaCases.debug.xcconfig"; path = "Target Support Files/Pods-CoronaCases/Pods-CoronaCases.debug.xcconfig"; sourceTree = "<group>"; };
 		B1FFC35417004F922FF1E329 /* Pods-CovidCases.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidCases.release.xcconfig"; path = "Target Support Files/Pods-CovidCases/Pods-CovidCases.release.xcconfig"; sourceTree = "<group>"; };
 		B6EA87C1876CEA29F52D6828 /* Pods_CovidCases.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CovidCases.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -339,10 +339,10 @@
 		63321149241D919000DE444F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				63E7AEC2242E8E56006F3A93 /* BaseResponse.swift */,
 				6332114A241D91BA00DE444F /* Country.swift */,
-				6332114B241D91BA00DE444F /* States.swift */,
-				6332114C241D91BA00DE444F /* Total.swift */,
-				6332114D241D91BA00DE444F /* Update.swift */,
+				63E7AEC4242E9097006F3A93 /* Cases.swift */,
+				63E7AEC6242E90A1006F3A93 /* Deaths.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -712,19 +712,18 @@
 				638A15E4241D74F300896601 /* PushedCoordinator.swift in Sources */,
 				6332115B241D956D00DE444F /* ResponseStatus.swift in Sources */,
 				254B5782242526B60063488C /* ButtonState.swift in Sources */,
-				63321151241D91BA00DE444F /* Update.swift in Sources */,
 				258064502423E9FB00D90E23 /* AuthorizationResult.swift in Sources */,
 				63321141241D7E4800DE444F /* LocationPermissionViewController.swift in Sources */,
-				6332114F241D91BA00DE444F /* States.swift in Sources */,
 				258064562423EA9D00D90E23 /* LocationManager.swift in Sources */,
-				63321150241D91BA00DE444F /* Total.swift in Sources */,
 				254B578A242537E30063488C /* OnboardCoordinator.swift in Sources */,
+				63E7AEC3242E8E56006F3A93 /* BaseResponse.swift in Sources */,
 				6332116F241D9CFB00DE444F /* ServiceContract.swift in Sources */,
 				6332115F241D958600DE444F /* NetworkCore.swift in Sources */,
 				63321159241D956500DE444F /* Result.swift in Sources */,
 				63321164241D960A00DE444F /* NetworkError.swift in Sources */,
 				254B578E242537E30063488C /* OnboardViewModel.swift in Sources */,
 				63321157241D955600DE444F /* Response.swift in Sources */,
+				63E7AEC5242E9097006F3A93 /* Cases.swift in Sources */,
 				638A15DE241D6A0700896601 /* AppCoordinator.swift in Sources */,
 				2580644B2423C1F400D90E23 /* LocationPermissionViewModel.swift in Sources */,
 				6332113E241D7D7F00DE444F /* LocationPermissionCoordinator.swift in Sources */,
@@ -733,6 +732,7 @@
 				2580643724213DCE00D90E23 /* CustomColors.swift in Sources */,
 				2580645B2423EBD700D90E23 /* ReverseGeocodeResult.swift in Sources */,
 				2580643E24226B2E00D90E23 /* R.generated.swift in Sources */,
+				63E7AEC7242E90A1006F3A93 /* Deaths.swift in Sources */,
 				254B578C242537E30063488C /* OnboardViewController.swift in Sources */,
 				2580645D2423EC1300D90E23 /* CLGeocoderProtocol.swift in Sources */,
 				258064592423EB1900D90E23 /* CLLocationManagerProtocol.swift in Sources */,

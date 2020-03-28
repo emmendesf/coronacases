@@ -8,13 +8,16 @@
 
 import Foundation
 
-class Country: Codable {
+struct Country: Decodable {
+    let country: String
+    let cases: Cases?
+    let deaths: Deaths?
+    let date: Date
     
-    let uid: String?
-    let cases: Int?
-    let casesNew: Int?
-    let deaths: Int?
-    let deathNew: Int?
-    let comments: String?
-    let breadcast: Bool?
+    enum CodingKeys: String, CodingKey {
+        case country
+        case cases
+        case deaths
+        case date = "time"
+    }
 }

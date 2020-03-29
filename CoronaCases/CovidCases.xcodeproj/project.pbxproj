@@ -195,6 +195,7 @@
 		254B5784242537A90063488C /* Onboard */ = {
 			isa = PBXGroup;
 			children = (
+				635D35BC243131F400A98FD4 /* Coordinator */,
 				254B579024253A4A0063488C /* ViewModel */,
 				254B578F24253A3C0063488C /* View */,
 				254B5787242537E30063488C /* OnboardViewController.swift */,
@@ -222,6 +223,7 @@
 		254CC657242FB7F700EB9D81 /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
+				635D35BE2431320F00A98FD4 /* Coordinator */,
 				254CC66524312AA500EB9D81 /* ViewModel */,
 				254CC66424312A9F00EB9D81 /* View */,
 				254CC65A242FB81200EB9D81 /* MainScreenViewController.swift */,
@@ -346,6 +348,7 @@
 		6332113F241D7DB600DE444F /* LocationPermission */ = {
 			isa = PBXGroup;
 			children = (
+				635D35BD2431320200A98FD4 /* Coordinator */,
 				258064492423C1DA00D90E23 /* ViewModel */,
 				257DF581241D8A2A00B5EB06 /* View */,
 				63321140241D7E4800DE444F /* LocationPermissionViewController.swift */,
@@ -445,6 +448,30 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		635D35BC243131F400A98FD4 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				254B5785242537E30063488C /* OnboardCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		635D35BD2431320200A98FD4 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				6332113D241D7D7F00DE444F /* LocationPermissionCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		635D35BE2431320F00A98FD4 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				254CC655242FB7A000EB9D81 /* MainScreenCoordinator .swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		638A15AA241D5A9400896601 = {
 			isa = PBXGroup;
 			children = (
@@ -514,10 +541,7 @@
 			isa = PBXGroup;
 			children = (
 				638A15E7241D75B800896601 /* Protocol */,
-				254B5785242537E30063488C /* OnboardCoordinator.swift */,
 				638A15DD241D6A0700896601 /* AppCoordinator.swift */,
-				6332113D241D7D7F00DE444F /* LocationPermissionCoordinator.swift */,
-				254CC655242FB7A000EB9D81 /* MainScreenCoordinator .swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";

@@ -18,7 +18,16 @@ class LocationPermissionCoordinator: PushedCoordinator {
     }
     
     func loadViewController() -> UIViewController {
-        let viewModel = LocationPermissionViewModel()
+        let viewModel = LocationPermissionViewModel(coordinatorDelegate: self)
         return LocationPermissionViewController(viewModel: viewModel)
+    }
+}
+
+extension LocationPermissionCoordinator: LocationPermissionViewModelCoordinatorDelegate {
+    func showMainScreen(location: Placemark?) {
+        let coordinator = MainScreenCoordinator(presentingViewController: presentingViewController,
+                                                location: location)
+        coordinator.start()
+        nextCoordinator = coordinator
     }
 }

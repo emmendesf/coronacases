@@ -12,13 +12,19 @@ class MainScreenCoordinator: PushedCoordinator {
     var presentingViewController: UINavigationController
     var currentViewController: UIViewController?
     var nextCoordinator: Coordinator?
+    var location: Placemark?
     
-    init(presentingViewController: UINavigationController) {
+    init(presentingViewController: UINavigationController, location: Placemark?) {
         self.presentingViewController = presentingViewController
+        self.location = location
     }
     
     func loadViewController() -> UIViewController {
-        let viewModel = MainScreenViewModel()
+        let viewModel = MainScreenViewModel(coordinatorDelegate: self)
         return MainScreenViewController(viewModel: viewModel)
     }
+}
+
+extension MainScreenCoordinator: MainScreenViewModelCoordinatorDelegate {
+    
 }

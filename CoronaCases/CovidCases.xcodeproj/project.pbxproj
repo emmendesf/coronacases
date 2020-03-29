@@ -21,6 +21,7 @@
 		254CC65F242FB81200EB9D81 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254CC65A242FB81200EB9D81 /* MainScreenViewController.swift */; };
 		254CC660242FB81200EB9D81 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254CC65B242FB81200EB9D81 /* MainScreenView.swift */; };
 		254CC661242FB81200EB9D81 /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254CC65C242FB81200EB9D81 /* MainScreenViewModel.swift */; };
+		254CC663242FBD9500EB9D81 /* LocationPermissionViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254CC662242FBD9500EB9D81 /* LocationPermissionViewModelDelegate.swift */; };
 		257DF580241D83DD00B5EB06 /* LocationPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DF57F241D83DD00B5EB06 /* LocationPermissionView.swift */; };
 		257DF584241D8AC000B5EB06 /* ViewCodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DF583241D8AC000B5EB06 /* ViewCodeProtocol.swift */; };
 		257DF587241D8C0100B5EB06 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DF586241D8C0100B5EB06 /* UIView+Extensions.swift */; };
@@ -93,6 +94,7 @@
 		254CC65A242FB81200EB9D81 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		254CC65B242FB81200EB9D81 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
 		254CC65C242FB81200EB9D81 /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
+		254CC662242FBD9500EB9D81 /* LocationPermissionViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionViewModelDelegate.swift; sourceTree = "<group>"; };
 		257DF57F241D83DD00B5EB06 /* LocationPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionView.swift; sourceTree = "<group>"; };
 		257DF583241D8AC000B5EB06 /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeProtocol.swift; sourceTree = "<group>"; };
 		257DF586241D8C0100B5EB06 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -220,12 +222,28 @@
 		254CC657242FB7F700EB9D81 /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
-				254CC659242FB81200EB9D81 /* MainScreenViewModelDelegate.swift */,
+				254CC66524312AA500EB9D81 /* ViewModel */,
+				254CC66424312A9F00EB9D81 /* View */,
 				254CC65A242FB81200EB9D81 /* MainScreenViewController.swift */,
-				254CC65B242FB81200EB9D81 /* MainScreenView.swift */,
-				254CC65C242FB81200EB9D81 /* MainScreenViewModel.swift */,
 			);
 			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		254CC66424312A9F00EB9D81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				254CC65B242FB81200EB9D81 /* MainScreenView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		254CC66524312AA500EB9D81 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				254CC659242FB81200EB9D81 /* MainScreenViewModelDelegate.swift */,
+				254CC65C242FB81200EB9D81 /* MainScreenViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		257DF581241D8A2A00B5EB06 /* View */ = {
@@ -265,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				2580644A2423C1F400D90E23 /* LocationPermissionViewModel.swift */,
+				254CC662242FBD9500EB9D81 /* LocationPermissionViewModelDelegate.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -749,6 +768,7 @@
 				254B578E242537E30063488C /* OnboardViewModel.swift in Sources */,
 				63321157241D955600DE444F /* Response.swift in Sources */,
 				63E7AEC5242E9097006F3A93 /* Cases.swift in Sources */,
+				254CC663242FBD9500EB9D81 /* LocationPermissionViewModelDelegate.swift in Sources */,
 				254CC660242FB81200EB9D81 /* MainScreenView.swift in Sources */,
 				638A15DE241D6A0700896601 /* AppCoordinator.swift in Sources */,
 				2580644B2423C1F400D90E23 /* LocationPermissionViewModel.swift in Sources */,

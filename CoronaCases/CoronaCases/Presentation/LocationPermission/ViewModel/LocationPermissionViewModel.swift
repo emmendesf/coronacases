@@ -8,6 +8,11 @@
 
 class LocationPermissionViewModel {
     let locationManager: LocationManagerProtocol = LocationManager()
+    weak var coordinatorDelegate: LocationPermissionViewModelCoordinatorDelegate?
+    
+    init(coordinatorDelegate: LocationPermissionViewModelCoordinatorDelegate) {
+        self.coordinatorDelegate = coordinatorDelegate
+    }
     
     func askForLocationAccessPermission() {
         locationManager.requestAuthorization { [weak self] status in
@@ -15,7 +20,7 @@ class LocationPermissionViewModel {
             case .success:
                 self?.handleLocationPermissionSuccess()
             case .failure:
-                self?.openNextScreenWithouLocation()
+                self?.openNextScreenWithoutLocation()
             }
         }
     }
@@ -32,16 +37,18 @@ class LocationPermissionViewModel {
         }
     }
     
-    private func openNextScreenWithouLocation() {
+    func openNextScreenWithoutLocation() {
         // TODO: Should open next screen
+        coordinatorDelegate?.showMainScreen(location: nil)
     }
     
     private func handleReverseGeocodeLocationError() {
-        // TODO: Should show an alert and then also open next screen withou a location
-        openNextScreenWithouLocation()
+        // TODO: Should show an alert and then also open next screen without a location
+        openNextScreenWithoutLocation()
     }
     
     private func handleReverseGeocodeLocationSuccess(location: Placemark) {
         // TODO: Should open next screen using user location as a parameter
+        coordinatorDelegate?.showMainScreen(location: location)
     }
 }

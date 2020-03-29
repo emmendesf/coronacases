@@ -1,5 +1,5 @@
 //
-//  MainScreenViewController.swift
+//  CovidCasesViewController.swift
 //  CovidCases
 //
 //  Created by Caio Roberto on 20/03/20.
@@ -8,14 +8,14 @@
 
 import UIKit
 
-class MainScreenViewController: UIViewController {
+class CovidCasesViewController: UIViewController {
 
-    private let contentView: MainScreenView
-    private let viewModel: MainScreenViewModel
+    private let contentView: CovidCasesView
+    private let presenter: CovidCasesPresenterContract
 
-    init(viewModel: MainScreenViewModel) {
-        self.viewModel = viewModel
-        self.contentView = MainScreenView(viewModel: viewModel)
+    init(presenter: CovidCasesPresenterContract) {
+        self.presenter = presenter
+        self.contentView = CovidCasesView(presenter: presenter)
         super.init(nibName: nil, bundle: nil)
     }
 

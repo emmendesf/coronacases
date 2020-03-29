@@ -1,5 +1,5 @@
 //
-//  MainScreenCoordinator .swift
+//  CovidCasesCoordinator.swift
 //  CovidCases
 //
 //  Created by Caio Roberto on 28/03/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainScreenCoordinator: PushedCoordinator {
+class CovidCasesCoordinator: PushedCoordinator {
     var presentingViewController: UINavigationController
     var currentViewController: UIViewController?
     var nextCoordinator: Coordinator?
@@ -20,11 +20,11 @@ class MainScreenCoordinator: PushedCoordinator {
     }
     
     func loadViewController() -> UIViewController {
-        let viewModel = MainScreenViewModel(coordinatorDelegate: self)
-        return MainScreenViewController(viewModel: viewModel)
+        let presenter = CovidCasesPresenter(coordinatorDelegate: self)
+        return CovidCasesViewController(presenter: presenter)
     }
 }
 
-extension MainScreenCoordinator: MainScreenViewModelCoordinatorDelegate {
+extension CovidCasesCoordinator: CovidCasesCoordinatorContract {
     
 }

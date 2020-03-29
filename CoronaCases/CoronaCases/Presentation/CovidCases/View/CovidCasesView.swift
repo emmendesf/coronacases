@@ -1,5 +1,5 @@
 //
-//  MainScreenView.swift
+//  CovidCasesView.swift
 //  CovidCases
 //
 //  Created by Caio Roberto on 20/03/20.
@@ -8,14 +8,14 @@
 
 import UIKit
 
-class MainScreenView: UIView {
+class CovidCasesView: UIView {
 
-    private let viewModel: MainScreenViewModel
+    private var presenter: CovidCasesPresenterContract
 
-    init(viewModel: MainScreenViewModel) {
-        self.viewModel = viewModel
+    init(presenter: CovidCasesPresenterContract) {
+        self.presenter = presenter
         super.init(frame: .zero)
-        self.viewModel.viewDelegate = self
+        self.presenter.viewDelegate = self
         buildView()
     }
 
@@ -24,11 +24,11 @@ class MainScreenView: UIView {
     }
 }
 
-extension MainScreenView: MainScreenViewModelViewDelegate {
+extension CovidCasesView: CovidCasesViewContract {
 
 }
 
-extension MainScreenView: ViewCodeProtocol {
+extension CovidCasesView: ViewCodeProtocol {
 
     func setupHierarchy() {
 

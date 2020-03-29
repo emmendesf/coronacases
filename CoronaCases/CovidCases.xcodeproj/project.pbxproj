@@ -223,6 +223,7 @@
 		254CC657242FB7F700EB9D81 /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
+				635D35BF2431326700A98FD4 /* Service */,
 				635D35BE2431320F00A98FD4 /* Coordinator */,
 				254CC66524312AA500EB9D81 /* ViewModel */,
 				254CC66424312A9F00EB9D81 /* View */,
@@ -472,6 +473,14 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		635D35BF2431326700A98FD4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6332116B241D9CBB00DE444F /* CoronaCasesService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		638A15AA241D5A9400896601 = {
 			isa = PBXGroup;
 			children = (
@@ -532,7 +541,6 @@
 				254CC657242FB7F700EB9D81 /* MainScreen */,
 				254B5784242537A90063488C /* Onboard */,
 				6332113F241D7DB600DE444F /* LocationPermission */,
-				6332116B241D9CBB00DE444F /* CoronaCasesService.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";

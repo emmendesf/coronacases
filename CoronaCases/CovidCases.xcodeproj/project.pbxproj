@@ -16,6 +16,11 @@
 		254B578C242537E30063488C /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254B5787242537E30063488C /* OnboardViewController.swift */; };
 		254B578D242537E30063488C /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254B5788242537E30063488C /* OnboardView.swift */; };
 		254B578E242537E30063488C /* OnboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254B5789242537E30063488C /* OnboardViewModel.swift */; };
+		254CC656242FB7A000EB9D81 /* CovidCasesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254CC655242FB7A000EB9D81 /* CovidCasesCoordinator.swift */; };
+		254CC65F242FB81200EB9D81 /* CovidCasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254CC65A242FB81200EB9D81 /* CovidCasesViewController.swift */; };
+		254CC660242FB81200EB9D81 /* CovidCasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254CC65B242FB81200EB9D81 /* CovidCasesView.swift */; };
+		254CC661242FB81200EB9D81 /* CovidCasesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254CC65C242FB81200EB9D81 /* CovidCasesPresenter.swift */; };
+		254CC663242FBD9500EB9D81 /* LocationPermissionViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254CC662242FBD9500EB9D81 /* LocationPermissionViewModelDelegate.swift */; };
 		257DF580241D83DD00B5EB06 /* LocationPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DF57F241D83DD00B5EB06 /* LocationPermissionView.swift */; };
 		257DF584241D8AC000B5EB06 /* ViewCodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DF583241D8AC000B5EB06 /* ViewCodeProtocol.swift */; };
 		257DF587241D8C0100B5EB06 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DF586241D8C0100B5EB06 /* UIView+Extensions.swift */; };
@@ -45,8 +50,12 @@
 		63321164241D960A00DE444F /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63321163241D960A00DE444F /* NetworkError.swift */; };
 		63321166241D961500DE444F /* NetworkErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63321165241D961500DE444F /* NetworkErrorType.swift */; };
 		6332116A241D9B7C00DE444F /* CoronaNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63321169241D9B7C00DE444F /* CoronaNetworkRequest.swift */; };
-		6332116C241D9CBB00DE444F /* CoronaCasesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332116B241D9CBB00DE444F /* CoronaCasesService.swift */; };
+		6332116C241D9CBB00DE444F /* CovidCasesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332116B241D9CBB00DE444F /* CovidCasesService.swift */; };
 		6332116F241D9CFB00DE444F /* ServiceContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332116E241D9CFB00DE444F /* ServiceContract.swift */; };
+		635D35C12431349300A98FD4 /* CovidCasesPresenterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D35C02431349300A98FD4 /* CovidCasesPresenterContract.swift */; };
+		635D35C3243134B700A98FD4 /* CovidCasesCoordinatorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D35C2243134B700A98FD4 /* CovidCasesCoordinatorContract.swift */; };
+		635D35C52431354800A98FD4 /* CovidCasesViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D35C42431354800A98FD4 /* CovidCasesViewContract.swift */; };
+		635D35C72431371300A98FD4 /* CovidCasesServiceContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D35C62431371300A98FD4 /* CovidCasesServiceContract.swift */; };
 		638A15B7241D5A9400896601 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A15B6241D5A9400896601 /* AppDelegate.swift */; };
 		638A15B9241D5A9400896601 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A15B8241D5A9400896601 /* SceneDelegate.swift */; };
 		638A15C0241D5A9600896601 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638A15BF241D5A9600896601 /* Assets.xcassets */; };
@@ -83,6 +92,11 @@
 		254B5787242537E30063488C /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
 		254B5788242537E30063488C /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
 		254B5789242537E30063488C /* OnboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewModel.swift; sourceTree = "<group>"; };
+		254CC655242FB7A000EB9D81 /* CovidCasesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidCasesCoordinator.swift; sourceTree = "<group>"; };
+		254CC65A242FB81200EB9D81 /* CovidCasesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidCasesViewController.swift; sourceTree = "<group>"; };
+		254CC65B242FB81200EB9D81 /* CovidCasesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidCasesView.swift; sourceTree = "<group>"; };
+		254CC65C242FB81200EB9D81 /* CovidCasesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidCasesPresenter.swift; sourceTree = "<group>"; };
+		254CC662242FBD9500EB9D81 /* LocationPermissionViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionViewModelDelegate.swift; sourceTree = "<group>"; };
 		257DF57F241D83DD00B5EB06 /* LocationPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionView.swift; sourceTree = "<group>"; };
 		257DF583241D8AC000B5EB06 /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeProtocol.swift; sourceTree = "<group>"; };
 		257DF586241D8C0100B5EB06 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -117,8 +131,12 @@
 		63321163241D960A00DE444F /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		63321165241D961500DE444F /* NetworkErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorType.swift; sourceTree = "<group>"; };
 		63321169241D9B7C00DE444F /* CoronaNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaNetworkRequest.swift; sourceTree = "<group>"; };
-		6332116B241D9CBB00DE444F /* CoronaCasesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaCasesService.swift; sourceTree = "<group>"; };
+		6332116B241D9CBB00DE444F /* CovidCasesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidCasesService.swift; sourceTree = "<group>"; };
 		6332116E241D9CFB00DE444F /* ServiceContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceContract.swift; sourceTree = "<group>"; };
+		635D35C02431349300A98FD4 /* CovidCasesPresenterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidCasesPresenterContract.swift; sourceTree = "<group>"; };
+		635D35C2243134B700A98FD4 /* CovidCasesCoordinatorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidCasesCoordinatorContract.swift; sourceTree = "<group>"; };
+		635D35C42431354800A98FD4 /* CovidCasesViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidCasesViewContract.swift; sourceTree = "<group>"; };
+		635D35C62431371300A98FD4 /* CovidCasesServiceContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidCasesServiceContract.swift; sourceTree = "<group>"; };
 		638A15B3241D5A9400896601 /* CovidCases.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidCases.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		638A15B6241D5A9400896601 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		638A15B8241D5A9400896601 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -183,6 +201,7 @@
 		254B5784242537A90063488C /* Onboard */ = {
 			isa = PBXGroup;
 			children = (
+				635D35BC243131F400A98FD4 /* Coordinator */,
 				254B579024253A4A0063488C /* ViewModel */,
 				254B578F24253A3C0063488C /* View */,
 				254B5787242537E30063488C /* OnboardViewController.swift */,
@@ -205,6 +224,36 @@
 				254B5789242537E30063488C /* OnboardViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		254CC657242FB7F700EB9D81 /* CovidCases */ = {
+			isa = PBXGroup;
+			children = (
+				635D35BE2431320F00A98FD4 /* Coordinator */,
+				254CC66524312AA500EB9D81 /* Presenter */,
+				635D35BF2431326700A98FD4 /* Service */,
+				254CC66424312A9F00EB9D81 /* View */,
+			);
+			path = CovidCases;
+			sourceTree = "<group>";
+		};
+		254CC66424312A9F00EB9D81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				254CC65B242FB81200EB9D81 /* CovidCasesView.swift */,
+				635D35C42431354800A98FD4 /* CovidCasesViewContract.swift */,
+				254CC65A242FB81200EB9D81 /* CovidCasesViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		254CC66524312AA500EB9D81 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				254CC65C242FB81200EB9D81 /* CovidCasesPresenter.swift */,
+				635D35C02431349300A98FD4 /* CovidCasesPresenterContract.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		257DF581241D8A2A00B5EB06 /* View */ = {
@@ -244,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				2580644A2423C1F400D90E23 /* LocationPermissionViewModel.swift */,
+				254CC662242FBD9500EB9D81 /* LocationPermissionViewModelDelegate.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -306,6 +356,7 @@
 		6332113F241D7DB600DE444F /* LocationPermission */ = {
 			isa = PBXGroup;
 			children = (
+				635D35BD2431320200A98FD4 /* Coordinator */,
 				258064492423C1DA00D90E23 /* ViewModel */,
 				257DF581241D8A2A00B5EB06 /* View */,
 				63321140241D7E4800DE444F /* LocationPermissionViewController.swift */,
@@ -405,6 +456,40 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		635D35BC243131F400A98FD4 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				254B5785242537E30063488C /* OnboardCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		635D35BD2431320200A98FD4 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				6332113D241D7D7F00DE444F /* LocationPermissionCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		635D35BE2431320F00A98FD4 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				254CC655242FB7A000EB9D81 /* CovidCasesCoordinator.swift */,
+				635D35C2243134B700A98FD4 /* CovidCasesCoordinatorContract.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		635D35BF2431326700A98FD4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6332116B241D9CBB00DE444F /* CovidCasesService.swift */,
+				635D35C62431371300A98FD4 /* CovidCasesServiceContract.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		638A15AA241D5A9400896601 = {
 			isa = PBXGroup;
 			children = (
@@ -462,9 +547,9 @@
 		638A15D9241D688C00896601 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				254CC657242FB7F700EB9D81 /* CovidCases */,
 				254B5784242537A90063488C /* Onboard */,
 				6332113F241D7DB600DE444F /* LocationPermission */,
-				6332116B241D9CBB00DE444F /* CoronaCasesService.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -473,9 +558,7 @@
 			isa = PBXGroup;
 			children = (
 				638A15E7241D75B800896601 /* Protocol */,
-				254B5785242537E30063488C /* OnboardCoordinator.swift */,
 				638A15DD241D6A0700896601 /* AppCoordinator.swift */,
-				6332113D241D7D7F00DE444F /* LocationPermissionCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -709,7 +792,9 @@
 				254B578D242537E30063488C /* OnboardView.swift in Sources */,
 				257DF580241D83DD00B5EB06 /* LocationPermissionView.swift in Sources */,
 				638A15DC241D69FA00896601 /* Coordinator.swift in Sources */,
+				635D35C12431349300A98FD4 /* CovidCasesPresenterContract.swift in Sources */,
 				638A15E4241D74F300896601 /* PushedCoordinator.swift in Sources */,
+				254CC65F242FB81200EB9D81 /* CovidCasesViewController.swift in Sources */,
 				6332115B241D956D00DE444F /* ResponseStatus.swift in Sources */,
 				254B5782242526B60063488C /* ButtonState.swift in Sources */,
 				258064502423E9FB00D90E23 /* AuthorizationResult.swift in Sources */,
@@ -717,13 +802,17 @@
 				258064562423EA9D00D90E23 /* LocationManager.swift in Sources */,
 				254B578A242537E30063488C /* OnboardCoordinator.swift in Sources */,
 				63E7AEC3242E8E56006F3A93 /* BaseResponse.swift in Sources */,
+				635D35C52431354800A98FD4 /* CovidCasesViewContract.swift in Sources */,
 				6332116F241D9CFB00DE444F /* ServiceContract.swift in Sources */,
 				6332115F241D958600DE444F /* NetworkCore.swift in Sources */,
 				63321159241D956500DE444F /* Result.swift in Sources */,
 				63321164241D960A00DE444F /* NetworkError.swift in Sources */,
+				254CC656242FB7A000EB9D81 /* CovidCasesCoordinator.swift in Sources */,
 				254B578E242537E30063488C /* OnboardViewModel.swift in Sources */,
 				63321157241D955600DE444F /* Response.swift in Sources */,
 				63E7AEC5242E9097006F3A93 /* Cases.swift in Sources */,
+				254CC663242FBD9500EB9D81 /* LocationPermissionViewModelDelegate.swift in Sources */,
+				254CC660242FB81200EB9D81 /* CovidCasesView.swift in Sources */,
 				638A15DE241D6A0700896601 /* AppCoordinator.swift in Sources */,
 				2580644B2423C1F400D90E23 /* LocationPermissionViewModel.swift in Sources */,
 				6332113E241D7D7F00DE444F /* LocationPermissionCoordinator.swift in Sources */,
@@ -733,6 +822,7 @@
 				2580645B2423EBD700D90E23 /* ReverseGeocodeResult.swift in Sources */,
 				2580643E24226B2E00D90E23 /* R.generated.swift in Sources */,
 				63E7AEC7242E90A1006F3A93 /* Deaths.swift in Sources */,
+				254CC661242FB81200EB9D81 /* CovidCasesPresenter.swift in Sources */,
 				254B578C242537E30063488C /* OnboardViewController.swift in Sources */,
 				2580645D2423EC1300D90E23 /* CLGeocoderProtocol.swift in Sources */,
 				258064592423EB1900D90E23 /* CLLocationManagerProtocol.swift in Sources */,
@@ -742,15 +832,17 @@
 				638A15B7241D5A9400896601 /* AppDelegate.swift in Sources */,
 				6332114E241D91BA00DE444F /* Country.swift in Sources */,
 				63321162241D95C400DE444F /* NetworkErrorContract.swift in Sources */,
+				635D35C72431371300A98FD4 /* CovidCasesServiceContract.swift in Sources */,
 				638A15B9241D5A9400896601 /* SceneDelegate.swift in Sources */,
 				258064522423EA2E00D90E23 /* LocationResult.swift in Sources */,
 				25806439242141E700D90E23 /* UIColor+Extensions.swift in Sources */,
 				638A15E6241D750900896601 /* ShowedCoordinator.swift in Sources */,
 				6332116A241D9B7C00DE444F /* CoronaNetworkRequest.swift in Sources */,
 				63321166241D961500DE444F /* NetworkErrorType.swift in Sources */,
+				635D35C3243134B700A98FD4 /* CovidCasesCoordinatorContract.swift in Sources */,
 				63321155241D953300DE444F /* NetworkDispatcher.swift in Sources */,
 				6332115D241D957B00DE444F /* NetworkRequest.swift in Sources */,
-				6332116C241D9CBB00DE444F /* CoronaCasesService.swift in Sources */,
+				6332116C241D9CBB00DE444F /* CovidCasesService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

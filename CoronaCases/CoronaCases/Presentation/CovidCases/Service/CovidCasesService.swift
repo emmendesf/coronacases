@@ -6,10 +6,6 @@
 //  Copyright © 2020 A7&M. All rights reserved.
 //
 
-protocol CovidCasesServiceContract: ServiceContract {
-    func getWorldCases(completion: @escaping (Result<[Country], NetworkError>) -> Void)
-}
-
 class CovidCasesService: CovidCasesServiceContract {
     var network: NetworkCore
 

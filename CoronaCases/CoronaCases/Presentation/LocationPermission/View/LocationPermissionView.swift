@@ -61,6 +61,7 @@ final class LocationPermissionView: UIView {
                                   title: title,
                                   color: CustomColors.shared.salmon)
         button.setupButton()
+        button.addTarget(self, action: #selector(openNextScreen), for: .touchUpInside)
         return button
     }()
     
@@ -76,6 +77,10 @@ final class LocationPermissionView: UIView {
 
     @objc private func askForLocationPermission() {
         viewModel.askForLocationAccessPermission()
+    }
+    
+    @objc private func openNextScreen() {
+        viewModel.openNextScreenWithoutLocation()
     }
 }
 

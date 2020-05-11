@@ -33,7 +33,7 @@ class PreventionTipsViewController: UIViewController {
         self.pageViewController?.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
         self.addChild(self.pageViewController!)
         self.view.addSubview(self.pageViewController!.view)
-        self.pageViewController?.setViewControllers([contentView.pages[0]], direction: .forward, animated: false)
+        self.pageViewController?.setViewControllers([viewModel.pages[0]], direction: .forward, animated: false)
     }
     
     override func viewWillAppear(_ animated: Bool) {

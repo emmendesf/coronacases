@@ -9,8 +9,9 @@
 import UIKit
 
 class PreventionTipsViewModel {
+    let pages: [UIViewController] = allPreventionScreens()
     
-    func allPreventionScreens() -> [StaticSlidableScreen] {
+    static func allPreventionScreens() -> [StaticSlidableScreen] {
         return [slidableScreen(from: .avoidCloseContact),
                 slidableScreen(from: .avoidTouchingFace),
                 slidableScreen(from: .coverNoseAndMouth),
@@ -18,7 +19,7 @@ class PreventionTipsViewModel {
                 slidableScreen(from: .washHands)]
     }
     
-    private func slidableScreen(from tip: PreventionTips) -> StaticSlidableScreen {
+    private static func slidableScreen(from tip: PreventionTips) -> StaticSlidableScreen {
         return StaticSlidableScreen(contentView: tip.view)
     }
 }

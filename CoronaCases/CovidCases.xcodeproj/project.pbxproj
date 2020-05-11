@@ -17,7 +17,6 @@
 		254B578D242537E30063488C /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254B5788242537E30063488C /* OnboardView.swift */; };
 		254B578E242537E30063488C /* OnboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254B5789242537E30063488C /* OnboardViewModel.swift */; };
 		254CC6722432A9DF00EB9D81 /* PreventionTipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254CC6712432A9DF00EB9D81 /* PreventionTipsView.swift */; };
-		256224292443A2C900DB19AD /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256224282443A2C900DB19AD /* CarouselView.swift */; };
 		257DF580241D83DD00B5EB06 /* LocationPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DF57F241D83DD00B5EB06 /* LocationPermissionView.swift */; };
 		257DF584241D8AC000B5EB06 /* ViewCodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DF583241D8AC000B5EB06 /* ViewCodeProtocol.swift */; };
 		257DF587241D8C0100B5EB06 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DF586241D8C0100B5EB06 /* UIView+Extensions.swift */; };
@@ -93,7 +92,6 @@
 		254B5788242537E30063488C /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
 		254B5789242537E30063488C /* OnboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewModel.swift; sourceTree = "<group>"; };
 		254CC6712432A9DF00EB9D81 /* PreventionTipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionTipsView.swift; sourceTree = "<group>"; };
-		256224282443A2C900DB19AD /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		257DF57F241D83DD00B5EB06 /* LocationPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionView.swift; sourceTree = "<group>"; };
 		257DF583241D8AC000B5EB06 /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeProtocol.swift; sourceTree = "<group>"; };
 		257DF586241D8C0100B5EB06 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -186,7 +184,6 @@
 			isa = PBXGroup;
 			children = (
 				25FAF443245641E70075300B /* StaticSlidableScreen */,
-				256224272443A22700DB19AD /* CarouselView */,
 				25E2B98C243D47E20061EF96 /* TipView */,
 				254B5780242526A30063488C /* CoronaButton */,
 			);
@@ -237,14 +234,6 @@
 				25FAF44624564B580075300B /* PreventionTipsViewController.swift */,
 			);
 			path = PreventionTips;
-			sourceTree = "<group>";
-		};
-		256224272443A22700DB19AD /* CarouselView */ = {
-			isa = PBXGroup;
-			children = (
-				256224282443A2C900DB19AD /* CarouselView.swift */,
-			);
-			path = CarouselView;
 			sourceTree = "<group>";
 		};
 		257DF581241D8A2A00B5EB06 /* View */ = {
@@ -821,7 +810,6 @@
 				254B577F242520F20063488C /* CoronaButton.swift in Sources */,
 				257DF587241D8C0100B5EB06 /* UIView+Extensions.swift in Sources */,
 				2580643724213DCE00D90E23 /* CustomColors.swift in Sources */,
-				256224292443A2C900DB19AD /* CarouselView.swift in Sources */,
 				2580645B2423EBD700D90E23 /* ReverseGeocodeResult.swift in Sources */,
 				2580643E24226B2E00D90E23 /* R.generated.swift in Sources */,
 				63E7AEC7242E90A1006F3A93 /* Deaths.swift in Sources */,

@@ -8,8 +8,6 @@
 
 import UIKit
 
-import UIKit
-
 protocol Coordinator: class {
     var nextCoordinator: Coordinator? { get set}
     var currentViewController: UIViewController? { get }

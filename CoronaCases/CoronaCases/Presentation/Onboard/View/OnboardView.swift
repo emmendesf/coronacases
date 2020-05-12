@@ -23,7 +23,7 @@ class OnboardView: UIView {
     private lazy var headerLabel: UILabel = {
         let headerLabel = UILabel()
         headerLabel.text = R.string.localizable.onboardTitle()
-        headerLabel.font = UIFont.boldSystemFont(ofSize: 20)
+        headerLabel.font = CovidCasesFonts.primaryTextFont
         headerLabel.textColor = .white
         return headerLabel
     }()
@@ -39,7 +39,7 @@ class OnboardView: UIView {
         let onboardTitle = UILabel()
         onboardTitle.text = R.string.localizable.onboardSubtitle()
         onboardTitle.textColor = CustomColors.shared.salmon
-        onboardTitle.font = UIFont.boldSystemFont(ofSize: 18)
+        onboardTitle.font = CovidCasesFonts.secondaryTextFont
         return onboardTitle
     }()
     
@@ -49,7 +49,7 @@ class OnboardView: UIView {
         onboardLabel.textColor = .white
         onboardLabel.numberOfLines = 0
         onboardLabel.textAlignment = .center
-        onboardLabel.font = UIFont.systemFont(ofSize: 16)
+        onboardLabel.font = CovidCasesFonts.complementTextFont
         return onboardLabel
     }()
     
@@ -63,7 +63,6 @@ class OnboardView: UIView {
          return button
      }()
 
-    
     @objc func tapGetStarted() {
         viewModel.showLocationPermissionScreen()
     }

@@ -17,7 +17,6 @@ class DescriptiveLabel: UILabel {
         self.numberOfLines = 0
         self.textAlignment = .center
         self.font = CovidCasesFonts.complementTextFont
-        
     }
     
     required init?(coder: NSCoder) {

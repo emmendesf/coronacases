@@ -20,12 +20,10 @@ class OnboardView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private lazy var headerLabel: UILabel = {
-        let headerLabel = UILabel()
-        headerLabel.text = R.string.localizable.onboardTitle()
-        headerLabel.font = CovidCasesFonts.primaryTextFont
-        headerLabel.textColor = .white
-        return headerLabel
+    private lazy var headerLabel: HeaderLabel = {
+        let text = R.string.localizable.onboardTitle()
+        
+        return HeaderLabel(text: text)
     }()
     
     private lazy var virusIcon: UIImageView = {
@@ -35,22 +33,16 @@ class OnboardView: UIView {
         return imageView
     }()
         
-    private lazy var onboardTitle: UILabel = {
-        let onboardTitle = UILabel()
-        onboardTitle.text = R.string.localizable.onboardSubtitle()
-        onboardTitle.textColor = CustomColors.shared.salmon
-        onboardTitle.font = CovidCasesFonts.secondaryTextFont
-        return onboardTitle
+    private lazy var onboardTitle: TitleLabel = {
+        let text = R.string.localizable.onboardSubtitle()
+        
+        return TitleLabel(text: text)
     }()
     
-    private lazy var onboardText: UILabel = {
-        let onboardLabel = UILabel()
-        onboardLabel.text = R.string.localizable.onboardText()
-        onboardLabel.textColor = .white
-        onboardLabel.numberOfLines = 0
-        onboardLabel.textAlignment = .center
-        onboardLabel.font = CovidCasesFonts.complementTextFont
-        return onboardLabel
+    private lazy var onboardText: DescriptiveLabel = {
+        let text = R.string.localizable.onboardText()
+        
+        return DescriptiveLabel(text: text)
     }()
     
     private lazy var getStartedButton: CoronaButton = {
@@ -97,8 +89,8 @@ extension OnboardView: ViewCodeProtocol {
         }
         
         onboardText.constraint { view in
-            [view.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 62),
-             view.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -62),
+            [view.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 50),
+             view.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -50),
              view.topAnchor.constraint(equalTo: onboardTitle.bottomAnchor, constant: 15)]
         }
         

@@ -29,3 +29,12 @@
 "PreventionTips.coverNoseAndMouth" = "Cobrir o nariz e a boca com um lenço ou o cotovelo ao tossir e espirrar";
 "PreventionTips.stayHome" = "Ficar em casa e se isolar das outras pessoas que moram com você caso apresente os sintomas da doença";
 "PreventionTips.washHands" = "Lavar as mãos frequentemente por 20 segundos com água e sabão ou higienizá-las com álcool em gel";
+
+// MARK: About
+
+"About.title" = "Sobre";
+"About.firstSubtitle" = "Desenvolvedores";
+"About.firstText" = "Esse aplicativo foi desenvolvido por Caio Aceti e Emerson Mendes para ser mais uma ferramenta no combate a epidemia do novo coronavirus, ajudando a monitorar a quantidade de casos e fatalidades";
+"About.secondSubtitle" = "Agradecimentos";
+"About.secondText" = "Muito obrigado a Davi Callegari, Mateus de Campos e Carlos Cayres pela ajuda para viabilizar isso";
+"About.footerText" = "Versão %@";

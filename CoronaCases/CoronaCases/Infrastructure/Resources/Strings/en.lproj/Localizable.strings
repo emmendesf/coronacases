@@ -29,3 +29,12 @@
 "PreventionTips.coverNoseAndMouth" = "Cover your nose and mouth with a tissue or your elbow when you cough or sneeze";
 "PreventionTips.stayHome" = "Stay home and self-isolate from others in the household if you feel unwell";
 "PreventionTips.washHands" = "Wash your hands regularly for 20 seconds, with soap and water or alcohol-based hand rub";
+
+// MARK: About
+
+"About.title" = "About";
+"About.firstSubtitle" = "Developers";
+"About.firstText" = "This app was developed by Caio Aceti and Emerson Mendes in order to be another tool to help during the corona virus epidemic, monitoring the cases and death statistics";
+"About.secondSubtitle" = "Thanks";
+"About.secondText" = "Special thanks to Davi Callegari, Mateus de Campos and Carlos Cayres for their help to make this possible";
+"About.footerText" = "Version %@";

@@ -7,5 +7,5 @@
 //
 
 protocol CovidCasesViewContract: class {
-    
+    func updateView(state: CovidCasesViewState)
 }

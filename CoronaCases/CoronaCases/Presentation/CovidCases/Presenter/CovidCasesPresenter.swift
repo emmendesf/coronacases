@@ -8,12 +8,35 @@
 
 import UIKit
 
-class CovidCasesPresenter {
+final class CovidCasesPresenter {
     weak var coordinatorDelegate: CovidCasesCoordinatorContract?
     weak var viewDelegate: CovidCasesViewContract?
 
-    init(coordinatorDelegate: CovidCasesCoordinatorContract) {
+    private let service: CovidCasesServiceContract
+    
+    init(coordinatorDelegate: CovidCasesCoordinatorContract,
+         service: CovidCasesServiceContract = CovidCasesService()) {
         self.coordinatorDelegate = coordinatorDelegate
+        self.service = service
+    }
+    
+    func requestStatistics() {
+        service.getStatistics { [weak self] (result) in
+            switch result {
+            case let .success(countries):
+                self?.handleGetStatisticsSuccess(with: countries)
+            case .failure:
+                self?.handleGetStatisticsFailure()
+            }
+        }
+    }
+    
+    private func handleGetStatisticsSuccess(with countries: [Country]) {
+        
+    }
+    
+    private func handleGetStatisticsFailure() {
+        
     }
 }
 

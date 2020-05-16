@@ -13,7 +13,7 @@ class CovidCasesService: CovidCasesServiceContract {
         self.network = core
     }
 
-    func getWorldCases(completion: @escaping (Result<[Country], NetworkError>) -> Void) {
+    func getStatistics(completion: @escaping (Result<[Country], NetworkError>) -> Void) {
         let request = CoronaNetworkRequest.world
         network.request(request, completion: completion)
     }

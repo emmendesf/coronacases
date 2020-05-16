@@ -7,5 +7,5 @@
 //
 
 protocol CovidCasesServiceContract: ServiceContract {
-    func getWorldCases(completion: @escaping (Result<[Country], NetworkError>) -> Void)
+    func getStatistics(completion: @escaping (Result<[Country], NetworkError>) -> Void)
 }

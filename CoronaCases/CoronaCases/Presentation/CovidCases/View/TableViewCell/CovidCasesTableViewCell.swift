@@ -8,10 +8,11 @@
 
 import UIKit
 
-final class CovidCasesTableViewCell: UITableViewCell, Reusable {
+final class CovidCasesTableViewCell: UITableViewCell, CellReusable {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        buildView()
     }
     
     required init?(coder: NSCoder) {
@@ -43,7 +44,6 @@ final class CovidCasesTableViewCell: UITableViewCell, Reusable {
     
     private lazy var casesStackView: UIStackView = {
         let stackView = UIStackView()
-        stackView.axis = .vertical
         stackView.spacing = 16
         
         return stackView
@@ -51,7 +51,6 @@ final class CovidCasesTableViewCell: UITableViewCell, Reusable {
     
     private lazy var deathsStackView: UIStackView = {
         let stackView = UIStackView()
-        stackView.axis = .vertical
         stackView.spacing = 16
         
         return stackView
@@ -69,6 +68,8 @@ final class CovidCasesTableViewCell: UITableViewCell, Reusable {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 14)
         label.textColor = .white
+        label.lineBreakMode = .byTruncatingTail
+        label.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
         
         return label
     }()
@@ -77,6 +78,7 @@ final class CovidCasesTableViewCell: UITableViewCell, Reusable {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 20)
         label.textColor = .white
+        label.text = R.string.localizable.covidCasesCellCasesTitle()
         
         return label
     }()
@@ -85,6 +87,7 @@ final class CovidCasesTableViewCell: UITableViewCell, Reusable {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 20)
         label.textColor = .white
+        label.text = R.string.localizable.covidCasesCellDeathsTitle()
         
         return label
     }()
@@ -105,15 +108,20 @@ final class CovidCasesTableViewCell: UITableViewCell, Reusable {
         return label
     }()
     
-    func configure(countryInitials: String,
-                   countryName: String,
-                   numberOfCases: String,
-                   numberOfDeaths: String) {
-        countryInitialsLabel.text = countryInitials
-        countryNameLabel.text = countryName
-        casesLabel.text = numberOfCases
-        deathsLabel.text = numberOfDeaths
+    private lazy var separatorView: UIView = {
+        let view = UIView()
+        view.backgroundColor = CustomColors.shared.separatorGray
         
+        return view
+    }()
+}
+
+extension CovidCasesTableViewCell: CellConfigurable {
+    func configure(with model: CountryFormatter) {
+        countryInitialsLabel.text = model.countryInitials
+        countryNameLabel.text = model.countryName
+        casesLabel.text = model.casesFormatted
+        deathsLabel.text = model.deathsFormatted
     }
 }
 
@@ -130,14 +138,26 @@ extension CovidCasesTableViewCell: ViewCodeProtocol {
         casesStackView.addArrangedSubview(casesLabel)
         deathsStackView.addArrangedSubview(deathsTitleLabel)
         deathsStackView.addArrangedSubview(deathsLabel)
+        
+        contentView.addSubview(separatorView)
     }
     
     func setupConstraints() {
         contentStackView.constraint { view in
+            [view.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 24),
+             view.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -24),
+             view.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -24),
+             view.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 24)]
+        }
+        
+        separatorView.constraint { view in
             [view.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
              view.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
              view.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-             view.topAnchor.constraint(equalTo: contentView.topAnchor)]
+             view.heightAnchor.constraint(equalToConstant: 1)]
         }
+    }
+    func additionalSetup() {
+        contentView.backgroundColor = CustomColors.shared.coronaDarkGray
     }
 }

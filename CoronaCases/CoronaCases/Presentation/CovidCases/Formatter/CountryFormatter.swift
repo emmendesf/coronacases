@@ -10,6 +10,11 @@ import Foundation
 
 struct CountryFormatter {
     private let country: Country
+    
+    init(country: Country) {
+        self.country = country
+    }
+    
     private var numberFormatter: NumberFormatter {
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .decimal
@@ -18,6 +23,10 @@ struct CountryFormatter {
     }
     
     var isFeatured: Bool = false
+    
+    var sortValue: Int {
+        return country.cases?.total ?? 0
+    }
     
     var casesFormatted: String {
         let numberOfCases = (country.cases?.total ?? 0)
@@ -30,10 +39,10 @@ struct CountryFormatter {
     }
     
     var countryInitials: String {
-        return String(country.country.prefix(2))
+        return String(country.name.prefix(2)).uppercased()
     }
     
     var countryName: String {
-        return country.country
+        return country.name
     }
 }

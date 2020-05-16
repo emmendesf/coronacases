@@ -1,5 +1,5 @@
 //
-//  Listable.swift
+//  TableViewListable.swift
 //  CovidCases
 //
 //  Created by Emerson Mendes Filho on 16/05/20.
@@ -8,9 +8,10 @@
 
 import UIKit
 
-protocol Listable {
+protocol TableViewListable {
     var numberOfSections: Int { get }
-    var header: UIView { get }
+    
+    func header(for section: Int) -> UIView?
     func numberOfRows(section: Int) -> Int
     func cell(for indexPath: IndexPath, in tableView: UITableView) -> UITableViewCell
 }

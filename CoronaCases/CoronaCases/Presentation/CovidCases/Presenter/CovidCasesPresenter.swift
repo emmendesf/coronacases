@@ -9,18 +9,19 @@
 import UIKit
 
 final class CovidCasesPresenter {
-    weak var coordinatorDelegate: CovidCasesCoordinatorContract?
-    weak var viewDelegate: CovidCasesViewContract?
+    weak var coordinator: CovidCasesCoordinatorContract?
+    weak var view: CovidCasesViewContract?
 
     private let service: CovidCasesServiceContract
     
     init(coordinatorDelegate: CovidCasesCoordinatorContract,
          service: CovidCasesServiceContract = CovidCasesService()) {
-        self.coordinatorDelegate = coordinatorDelegate
+        self.coordinator = coordinatorDelegate
         self.service = service
     }
     
     func requestStatistics() {
+        view?.updateView(state: .loading)
         service.getStatistics { [weak self] (result) in
             switch result {
             case let .success(countries):
@@ -32,11 +33,13 @@ final class CovidCasesPresenter {
     }
     
     private func handleGetStatisticsSuccess(with countries: [Country]) {
-        
+        let countriesFormatted = countries.map { CountryFormatter(country: $0) }
+        let countryListFormatter = CountryListFormatter(countries: countriesFormatted)
+        view?.updateView(state: .loaded(with: countryListFormatter))
     }
     
     private func handleGetStatisticsFailure() {
-        
+        view?.updateView(state: .error)
     }
 }
 

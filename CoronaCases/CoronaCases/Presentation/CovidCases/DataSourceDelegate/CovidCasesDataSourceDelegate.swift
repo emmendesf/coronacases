@@ -9,10 +9,10 @@
 import UIKit
 
 final class CovidCasesDataSourceDelegate: NSObject {
-    private var listable: Listable
+    private var listable: TableViewListable
     private let tableView: UITableView
     
-    init(listable: Listable,
+    init(listable: TableViewListable,
          tableView: UITableView) {
         self.listable = listable
         self.tableView = tableView
@@ -40,5 +40,7 @@ extension CovidCasesDataSourceDelegate: UITableViewDataSource {
 }
 
 extension CovidCasesDataSourceDelegate: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return listable.header(for: section)
+    }
 }

@@ -29,3 +29,10 @@
 "PreventionTips.coverNoseAndMouth" = "Cover your nose and mouth with a tissue or your elbow when you cough or sneeze";
 "PreventionTips.stayHome" = "Stay home and self-isolate from others in the household if you feel unwell";
 "PreventionTips.washHands" = "Wash your hands regularly for 20 seconds, with soap and water or alcohol-based hand rub";
+
+// MARK: CovidCases
+
+"CovidCases.header.featured.title" = "You";
+"CovidCases.header.standard.title" = "World";
+"CovidCases.cell.cases.title" = "Cases";
+"CovidCases.cell.deaths.title" = "Deaths";

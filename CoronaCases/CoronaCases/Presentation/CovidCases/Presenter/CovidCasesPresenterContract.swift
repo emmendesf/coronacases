@@ -7,7 +7,7 @@
 //
 
 protocol CovidCasesPresenterContract {
-    var viewDelegate: CovidCasesViewContract? { get set }
+    var view: CovidCasesViewContract? { get set }
     
     func requestStatistics()
 }

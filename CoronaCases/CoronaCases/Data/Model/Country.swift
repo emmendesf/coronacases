@@ -9,13 +9,13 @@
 import Foundation
 
 struct Country: Decodable {
-    let country: String
+    let name: String
     let cases: Cases?
     let deaths: Deaths?
     let date: Date
     
     enum CodingKeys: String, CodingKey {
-        case country
+        case name = "country"
         case cases
         case deaths
         case date = "time"

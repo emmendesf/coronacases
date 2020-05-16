@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CovidCasesView: UIView {
+final class CovidCasesView: UIView {
     
     private var presenter: CovidCasesPresenterContract
     private var dataSourceDelegate: CovidCasesDataSourceDelegate?
@@ -16,7 +16,7 @@ class CovidCasesView: UIView {
     init(presenter: CovidCasesPresenterContract) {
         self.presenter = presenter
         super.init(frame: .zero)
-        self.presenter.viewDelegate = self
+        self.presenter.view = self
         buildView()
     }
     
@@ -61,10 +61,11 @@ class CovidCasesView: UIView {
         activityIndicator.startAnimating()
     }
     
-    private func handleLoadedState(with countryFormatter: CountryFormatter) {
+    private func handleLoadedState(with listable: TableViewListable) {
         tableView.isHidden = false
         errorLabel.isHidden = true
         activityIndicator.stopAnimating()
+        setupDataSource(with: listable)
     }
     
     private func hadleErrorState() {
@@ -73,8 +74,13 @@ class CovidCasesView: UIView {
         activityIndicator.stopAnimating()
     }
     
-    private func setupDataSource() {
+    private func setupDataSource(with listable: TableViewListable) {
+        dataSourceDelegate = CovidCasesDataSourceDelegate(
+            listable: listable,
+            tableView: tableView
+        )
         
+        tableView.reloadData()
     }
 }
 
@@ -83,16 +89,20 @@ extension CovidCasesView: CovidCasesViewContract {
         switch state {
         case .loading:
             handleLoadingState()
-        case let .loaded(countryFormatter):
-            handleLoadedState(with: countryFormatter)
+        case let .loaded(countryList):
+            let listable = CovidCasesListable(countryList: countryList)
+            handleLoadedState(with: listable)
+        case let .searched(countries):
+            let listable = CovidCasesSearchListable(countries: countries)
+            handleLoadedState(with: listable)
         case .error:
             hadleErrorState()
+        
         }
     }
 }
 
 extension CovidCasesView: ViewCodeProtocol {
-    
     func setupHierarchy() {
         addSubview(tableView)
         addSubview(activityIndicator)

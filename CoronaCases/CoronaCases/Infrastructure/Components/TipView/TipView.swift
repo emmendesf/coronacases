@@ -28,15 +28,8 @@ final class TipView: UIView {
         return UIImageView(image: image)
     }()
     
-    private lazy var tipLabel: UILabel = {
-        let label = UILabel()
-        label.text = tip
-        label.textColor = .white
-        label.numberOfLines = 0
-        label.textAlignment = .center
-        label.font = CovidCasesFonts.complementTextFont
-        
-        return label
+    private lazy var tipLabel: DescriptiveLabel = {
+        return DescriptiveLabel(text: tip)
     }()
 }
 

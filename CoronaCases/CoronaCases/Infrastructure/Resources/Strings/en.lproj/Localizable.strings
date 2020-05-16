@@ -20,3 +20,12 @@
 "Onboard.subtitle" = "Welcome";
 "Onboard.text" = "This app is meant to help to keep a track in COVID-19 cases around the world";
 "Onboard.getStartedButton.title" = "Get Started";
+
+// MARK: PreventionTips
+
+"PreventionTips.title" = "Prevention";
+"PreventionTips.avoidTouchingFace" = "Don't touch your eyes, nose, or mouth if your hands are not clean";
+"PreventionTips.avoidCloseContact" = "Avoid close contact (1 meter or 3 feet) with people who are unwell";
+"PreventionTips.coverNoseAndMouth" = "Cover your nose and mouth with a tissue or your elbow when you cough or sneeze";
+"PreventionTips.stayHome" = "Stay home and self-isolate from others in the household if you feel unwell";
+"PreventionTips.washHands" = "Wash your hands regularly for 20 seconds, with soap and water or alcohol-based hand rub";

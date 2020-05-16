@@ -20,3 +20,12 @@
 "Onboard.subtitle" = "Bem-vindo";
 "Onboard.text" = "Esse aplicativo tem o intuito de ajudar a monitorar a quantidade de casos de coronavírus ao redor do mundo";
 "Onboard.getStartedButton.title" = "Começar";
+
+// MARK: PreventionTips
+
+"PreventionTips.title" = "Prevenção";
+"PreventionTips.avoidTouchingFace" = "Evite tocar os olhos, nariz ou boca sem estar com as mãos limpas";
+"PreventionTips.avoidCloseContact" = "Evitar contato próximo (um metro de distância) com pessoas que não estejam bem";
+"PreventionTips.coverNoseAndMouth" = "Cobrir o nariz e a boca com um lenço ou o cotovelo ao tossir e espirrar";
+"PreventionTips.stayHome" = "Ficar em casa e se isolar das outras pessoas que moram com você caso apresente os sintomas da doença";
+"PreventionTips.washHands" = "Lavar as mãos frequentemente por 20 segundos com água e sabão ou higienizá-las com álcool em gel";

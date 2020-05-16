@@ -15,4 +15,12 @@ class AboutViewModel {
     init(coordinatorDelegate: AboutViewModelCoordinatorDelegate) {
         self.coordinatorDelegate = coordinatorDelegate
     }
+    
+    func versionNumber() -> String {
+        if let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
+            return appVersion
+        }
+        
+        return "1.0.0"
+    }
 }

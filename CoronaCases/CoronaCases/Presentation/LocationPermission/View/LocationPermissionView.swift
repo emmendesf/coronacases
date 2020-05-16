@@ -47,9 +47,9 @@ final class LocationPermissionView: UIView {
         return DescriptiveLabel(text: text)
     }()
     
-    private lazy var leftButton: CoronaButton = {
+    private lazy var leftButton: CovidButton = {
         let title = R.string.localizable.locationPermissionSkipButtonTitle()
-        let button = CoronaButton(componentState: .clear,
+        let button = CovidButton(componentState: .clear,
                                   title: title,
                                   color: CustomColors.shared.salmon)
         button.setupButton()
@@ -57,9 +57,9 @@ final class LocationPermissionView: UIView {
         return button
     }()
     
-    private lazy var rightButton: CoronaButton = {
+    private lazy var rightButton: CovidButton = {
         let title = R.string.localizable.locationPermissionAllowButtonTitle()
-        let button = CoronaButton(componentState: .filled,
+        let button = CovidButton(componentState: .filled,
                                   title: title,
                                   color: CustomColors.shared.salmon)
         button.setupButton()

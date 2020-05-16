@@ -45,9 +45,9 @@ class OnboardView: UIView {
         return DescriptiveLabel(text: text)
     }()
     
-    private lazy var getStartedButton: CoronaButton = {
+    private lazy var getStartedButton: CovidButton = {
          let title = R.string.localizable.onboardGetStartedButtonTitle()
-         let button = CoronaButton(componentState: .clear,
+         let button = CovidButton(componentState: .clear,
                                    title: title,
                                    color: CustomColors.shared.salmon)
          button.setupButton()

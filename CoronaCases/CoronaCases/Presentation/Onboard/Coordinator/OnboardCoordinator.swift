@@ -25,7 +25,9 @@ class OnboardCoordinator: PushedCoordinator {
 
 extension OnboardCoordinator: OnboardViewModelCoordinatorDelegate {
     func showLocationPermission() {
-        let coordinator = LocationPermissionCoordinator(presentingViewController: presentingViewController)
+//        let coordinator = LocationPermissionCoordinator(presentingViewController: presentingViewController)
+        let coordinator = AboutCoordinator(presentingViewController: presentingViewController)
+//        let coordinator = PreventionTipsCoordinator.init(presentingViewController: presentingViewController)
         coordinator.start()
         nextCoordinator = coordinator
     }

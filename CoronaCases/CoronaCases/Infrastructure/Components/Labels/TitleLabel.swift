@@ -13,6 +13,7 @@ class TitleLabel: UILabel {
         super.init(frame: .zero)
         self.text = text
         self.textColor = CustomColors.shared.salmon
+        self.textAlignment = .center
         self.font = CovidCasesFonts.secondaryTextFont
     }
 

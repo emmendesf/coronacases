@@ -33,6 +33,6 @@ class AboutViewController: UIViewController {
     }
 
     func setupNavigation() {
-        navigationController?.isNavigationBarHidden = false
+        navigationController?.isNavigationBarHidden = true
     }
 }

@@ -8,10 +8,10 @@
 
 import UIKit
 class CustomColors: UIColor {
-    static let shared = CoronaColors()
+    static let shared = CovidColors()
 }
 
-struct CoronaColors {
+struct CovidColors {
     let coronaDarkGray = UIColor(r: 45, g: 45, b: 45)
     let coronaLightGray = UIColor(r: 227, g: 228, b: 235)
     let darkRed = UIColor(r: 82, g: 14, b: 8)

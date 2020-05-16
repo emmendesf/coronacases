@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class CoronaButton: UIButton {
+final class CovidButton: UIButton {
     
     private let componentState: ButtonState
     private let title: String

@@ -12,7 +12,7 @@ class CovidCasesCoordinator: PushedCoordinator {
     var presentingViewController: UINavigationController
     var currentViewController: UIViewController?
     var nextCoordinator: Coordinator?
-    var location: Placemark?
+    private let location: Placemark?
     
     init(presentingViewController: UINavigationController, location: Placemark?) {
         self.presentingViewController = presentingViewController

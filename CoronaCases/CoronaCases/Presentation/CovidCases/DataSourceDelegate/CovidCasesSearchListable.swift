@@ -22,7 +22,7 @@ final class CovidCasesSearchListable: TableViewListable {
     }
     
     func numberOfRows(section: Int) -> Int {
-        return 1
+        return countries.count
     }
     
     func cell(for indexPath: IndexPath, in tableView: UITableView) -> UITableViewCell {

@@ -9,10 +9,12 @@
 import UIKit
 
 final class CovidCasesPresenter {
-    weak var coordinator: CovidCasesCoordinatorContract?
+    private weak var coordinator: CovidCasesCoordinatorContract?
     weak var view: CovidCasesViewContract?
 
     private let service: CovidCasesServiceContract
+    
+    private var countriesFormatted: [CountryFormatter] = []
     
     init(coordinatorDelegate: CovidCasesCoordinatorContract,
          service: CovidCasesServiceContract = CovidCasesService()) {
@@ -33,7 +35,7 @@ final class CovidCasesPresenter {
     }
     
     private func handleGetStatisticsSuccess(with countries: [Country]) {
-        let countriesFormatted = countries.map { CountryFormatter(country: $0) }
+        countriesFormatted = countries.map { CountryFormatter(country: $0) }
         let countryListFormatter = CountryListFormatter(countries: countriesFormatted)
         view?.updateView(state: .loaded(with: countryListFormatter))
     }
@@ -44,5 +46,14 @@ final class CovidCasesPresenter {
 }
 
 extension CovidCasesPresenter: CovidCasesPresenterContract {
-    
+    func search(text: String?) {
+        guard let text = text, !text.isEmpty else {
+            let countryListFormatter = CountryListFormatter(countries: countriesFormatted)
+            view?.updateView(state: .loaded(with: countryListFormatter))
+            return
+        }
+        
+        let filteredCountries = countriesFormatted.filter { $0.countryName.contains(text) }
+        view?.updateView(state: .searched(with: filteredCountries))
+    }
 }

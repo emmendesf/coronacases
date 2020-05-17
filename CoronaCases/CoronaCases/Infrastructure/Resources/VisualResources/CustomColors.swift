@@ -17,4 +17,5 @@ struct CoronaColors {
     let separatorGray = UIColor(r: 77, g: 75, b: 75)
     let darkRed = UIColor(r: 82, g: 14, b: 8)
     let salmon = UIColor(r: 252, g: 171, b: 111)
+    let lightRed = UIColor(red: 1, green: 0.796, blue: 0.796, alpha: 1)
 }

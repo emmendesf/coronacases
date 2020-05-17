@@ -127,4 +127,8 @@ extension CovidCasesView: ViewCodeProtocol {
              view.centerXAnchor.constraint(equalTo: centerXAnchor)]
         }
     }
+    
+    func additionalSetup() {
+        backgroundColor = CustomColors.shared.coronaDarkGray
+    }
 }

@@ -21,23 +21,8 @@ final class CovidCasesTableViewCell: UITableViewCell, CellReusable {
     
     private lazy var contentStackView: UIStackView = {
         let stackView = UIStackView()
-        stackView.spacing = 16
-        
-        return stackView
-    }()
-    
-    private lazy var leftContentStackView: UIStackView = {
-        let stackView = UIStackView()
         stackView.axis = .vertical
-        stackView.spacing = 4
-        
-        return stackView
-    }()
-    
-    private lazy var rightContentStackView: UIStackView = {
-        let stackView = UIStackView()
-        stackView.axis = .vertical
-        stackView.spacing = 16
+        stackView.spacing = 8
         
         return stackView
     }()
@@ -56,54 +41,48 @@ final class CovidCasesTableViewCell: UITableViewCell, CellReusable {
         return stackView
     }()
     
-    private lazy var countryInitialsLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 40)
-        label.textColor = .white
-        
-        return label
-    }()
-    
     private lazy var countryNameLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 14)
-        label.textColor = .white
-        label.lineBreakMode = .byTruncatingTail
-        label.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
+        label.font = UIFont.boldSystemFont(ofSize: 25)
+        label.textColor = CustomColors.shared.salmon
         
         return label
     }()
     
     private lazy var casesTitleLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.font = UIFont.systemFont(ofSize: 18)
         label.textColor = .white
         label.text = R.string.localizable.covidCasesCellCasesTitle()
+        label.setContentHuggingPriority(.required, for: .horizontal)
         
         return label
     }()
     
     private lazy var deathsTitleLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.font = UIFont.systemFont(ofSize: 18)
         label.textColor = .white
         label.text = R.string.localizable.covidCasesCellDeathsTitle()
+        label.setContentHuggingPriority(.required, for: .horizontal)
         
         return label
     }()
     
     private lazy var casesLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 20)
-        label.textColor = .white
+        label.font = UIFont.systemFont(ofSize: 18)
+        label.textColor = CustomColors.shared.lightRed
+        label.textAlignment = .left
         
         return label
     }()
     
     private lazy var deathsLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 20)
-        label.textColor = .white
+        label.font = UIFont.systemFont(ofSize: 18)
+        label.textColor = CustomColors.shared.lightRed
+        label.textAlignment = .left
         
         return label
     }()
@@ -130,12 +109,9 @@ extension CovidCasesTableViewCell: CellConfigurable {
 extension CovidCasesTableViewCell: ViewCodeProtocol {
     func setupHierarchy() {
         contentView.addSubview(contentStackView)
-        contentStackView.addArrangedSubview(rightContentStackView)
-        contentStackView.addArrangedSubview(leftContentStackView)
-        rightContentStackView.addArrangedSubview(countryInitialsLabel)
-        rightContentStackView.addArrangedSubview(countryNameLabel)
-        leftContentStackView.addArrangedSubview(casesStackView)
-        leftContentStackView.addArrangedSubview(deathsStackView)
+        contentStackView.addArrangedSubview(countryNameLabel)
+        contentStackView.addArrangedSubview(casesStackView)
+        contentStackView.addArrangedSubview(deathsStackView)
         casesStackView.addArrangedSubview(casesTitleLabel)
         casesStackView.addArrangedSubview(casesLabel)
         deathsStackView.addArrangedSubview(deathsTitleLabel)
@@ -146,10 +122,14 @@ extension CovidCasesTableViewCell: ViewCodeProtocol {
     
     func setupConstraints() {
         contentStackView.constraint { view in
-            [view.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 24),
-             view.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -24),
-             view.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -24),
-             view.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 24)]
+            [view.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
+             view.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16),
+             view.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
+             view.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16)]
+        }
+        
+        deathsTitleLabel.constraint { view in
+            [view.widthAnchor.constraint(equalTo: casesTitleLabel.widthAnchor)]
         }
         
         separatorView.constraint { view in

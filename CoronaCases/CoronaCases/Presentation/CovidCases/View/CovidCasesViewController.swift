@@ -38,6 +38,30 @@ class CovidCasesViewController: UIViewController {
     }
 
     func setupNavigation() {
+        title = R.string.localizable.covidCasesTitle()
+        navigationItem.searchController = buildSearchController()
+        navigationItem.hidesSearchBarWhenScrolling = false
         navigationController?.isNavigationBarHidden = false
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.barTintColor = CustomColors.shared.coronaDarkGray
+        navigationController?.navigationBar.tintColor = .white
+        let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
+        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white];
+    }
+    
+    private func buildSearchController() -> UISearchController {
+        let search = UISearchController(searchResultsController: nil)
+        search.searchResultsUpdater = self
+        search.obscuresBackgroundDuringPresentation = false
+        search.searchBar.placeholder = "Type something here to search"
+        
+        return search
+    }
+}
+
+extension CovidCasesViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        presenter.search(text: searchController.searchBar.text)
     }
 }

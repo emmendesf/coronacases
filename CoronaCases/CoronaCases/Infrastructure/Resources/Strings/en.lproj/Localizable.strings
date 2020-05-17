@@ -32,7 +32,8 @@
 
 // MARK: CovidCases
 
+"CovidCases.title" = "Covid Cases";
 "CovidCases.header.featured.title" = "You";
 "CovidCases.header.standard.title" = "World";
-"CovidCases.cell.cases.title" = "Cases";
-"CovidCases.cell.deaths.title" = "Deaths";
+"CovidCases.cell.cases.title" = "Number of Cases:";
+"CovidCases.cell.deaths.title" = "Number of Deaths:";

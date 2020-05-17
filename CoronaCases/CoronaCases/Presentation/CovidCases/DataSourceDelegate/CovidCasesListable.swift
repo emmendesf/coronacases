@@ -25,12 +25,7 @@ final class CovidCasesListable: TableViewListable {
     }
     
     func header(for section: Int) -> UIView? {
-        guard let section = Section(rawValue: section) else {
-            return nil
-        }
-        
-        let headerType = CovidCasesHeaderType(sectionType: section)
-        return CovidCasesHeaderView(type: headerType)
+        return nil
     }
     
     func numberOfRows(section: Int) -> Int {

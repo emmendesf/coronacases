@@ -10,4 +10,5 @@ protocol CovidCasesPresenterContract {
     var view: CovidCasesViewContract? { get set }
     
     func requestStatistics()
+    func search(text: String?)
 }

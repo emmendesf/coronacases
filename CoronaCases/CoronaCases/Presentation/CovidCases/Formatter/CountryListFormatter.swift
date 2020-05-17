@@ -8,20 +8,27 @@
 
 import Foundation
 
-struct CountryListFormatter {
+protocol CountryListFormatterProtocol {
+    var featuredCountries: [CountryFormatterProtocol] { get }
+    var standardCountries: [CountryFormatterProtocol] { get }
+    func numberOfRows(for section: CovidCasesListable.Section) -> Int
+    func country(for row: Int, in section: CovidCasesListable.Section) -> CountryFormatterProtocol
+}
+
+final class CountryListFormatter: CountryListFormatterProtocol {
     private let countries: [CountryFormatter]
     
     init(countries: [CountryFormatter]) {
         self.countries = countries
     }
     
-    var featuredCountries: [CountryFormatter] {
-        return countries.filter { $0.isFeatured }.sorted { $0.sortValue > $1.sortValue }
-    }
+    lazy var featuredCountries: [CountryFormatterProtocol] = {
+       countries.filter { $0.isFeatured }.sorted { $0.sortValue > $1.sortValue }
+    }()
     
-    var standardCountries: [CountryFormatter] {
-        return countries.filter { !$0.isFeatured }.sorted { $0.sortValue > $1.sortValue }
-    }
+    lazy var standardCountries: [CountryFormatterProtocol] = {
+        countries.filter { !$0.isFeatured }.sorted { $0.sortValue > $1.sortValue }
+    }()
     
     func numberOfRows(for section: CovidCasesListable.Section) -> Int {
         switch section {
@@ -32,7 +39,7 @@ struct CountryListFormatter {
         }
     }
     
-    func country(for row: Int, in section: CovidCasesListable.Section) -> CountryFormatter {
+    func country(for row: Int, in section: CovidCasesListable.Section) -> CountryFormatterProtocol {
         switch section {
         case .featured:
             return featuredCountries[row]
@@ -41,4 +48,3 @@ struct CountryListFormatter {
         }
     }
 }
-

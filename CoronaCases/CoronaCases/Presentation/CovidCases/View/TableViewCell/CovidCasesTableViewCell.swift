@@ -117,11 +117,13 @@ final class CovidCasesTableViewCell: UITableViewCell, CellReusable {
 }
 
 extension CovidCasesTableViewCell: CellConfigurable {
-    func configure(with model: CountryFormatter) {
-        countryInitialsLabel.text = model.countryInitials
+    func configure(with model: CountryFormatterProtocol) {
         countryNameLabel.text = model.countryName
         casesLabel.text = model.casesFormatted
         deathsLabel.text = model.deathsFormatted
+        contentView.backgroundColor = model.isFeatured ?
+            CustomColors.shared.darkRed :
+            CustomColors.shared.coronaDarkGray
     }
 }
 
@@ -156,8 +158,5 @@ extension CovidCasesTableViewCell: ViewCodeProtocol {
              view.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
              view.heightAnchor.constraint(equalToConstant: 1)]
         }
-    }
-    func additionalSetup() {
-        contentView.backgroundColor = CustomColors.shared.coronaDarkGray
     }
 }

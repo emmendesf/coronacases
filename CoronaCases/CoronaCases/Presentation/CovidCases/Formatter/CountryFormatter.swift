@@ -8,7 +8,15 @@
 
 import Foundation
 
-struct CountryFormatter {
+protocol CountryFormatterProtocol {
+    var isFeatured: Bool { get set }
+    var sortValue: Int { get }
+    var casesFormatted: String { get }
+    var deathsFormatted: String { get }
+    var countryName: String { get }
+}
+
+final class CountryFormatter: CountryFormatterProtocol {
     private let country: Country
     
     init(country: Country) {
@@ -22,27 +30,27 @@ struct CountryFormatter {
         return numberFormatter
     }
     
-    var isFeatured: Bool = false
+    lazy var isFeatured: Bool = {
+        let isWorldValue = country.name.lowercased() == "all"
+        
+        return isWorldValue
+    }()
     
-    var sortValue: Int {
-        return country.cases?.total ?? 0
-    }
+    lazy var sortValue: Int = {
+        country.cases?.total ?? 0
+    }()
     
-    var casesFormatted: String {
+    lazy var casesFormatted: String = {
         let numberOfCases = (country.cases?.total ?? 0)
         return numberFormatter.string(from: NSNumber(value: numberOfCases)) ?? ""
-    }
+    }()
     
-    var deathsFormatted: String {
+    lazy var deathsFormatted: String = {
         let numberOfDeaths = (country.deaths?.total ?? 0)
         return numberFormatter.string(from: NSNumber(value: numberOfDeaths)) ?? ""
-    }
+    }()
     
-    var countryInitials: String {
-        return String(country.name.prefix(2)).uppercased()
-    }
-    
-    var countryName: String {
+    lazy var countryName: String = {
         return country.name
-    }
+    }()
 }

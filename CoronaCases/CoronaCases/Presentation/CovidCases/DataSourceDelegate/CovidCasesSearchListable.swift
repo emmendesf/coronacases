@@ -9,9 +9,9 @@
 import UIKit
 
 final class CovidCasesSearchListable: TableViewListable {
-    private let countries: [CountryFormatter]
+    private let countries: [CountryFormatterProtocol]
 
-    init(countries: [CountryFormatter]) {
+    init(countries: [CountryFormatterProtocol]) {
         self.countries = countries
     }
 

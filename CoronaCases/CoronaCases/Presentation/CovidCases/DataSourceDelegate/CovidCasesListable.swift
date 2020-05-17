@@ -14,9 +14,9 @@ final class CovidCasesListable: TableViewListable {
         case standard
     }
     
-    private let countryList: CountryListFormatter
+    private let countryList: CountryListFormatterProtocol
     
-    init(countryList: CountryListFormatter) {
+    init(countryList: CountryListFormatterProtocol) {
         self.countryList = countryList
     }
     

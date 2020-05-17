@@ -8,7 +8,7 @@
 
 enum CovidCasesViewState {
     case loading
-    case loaded(with: CountryListFormatter)
-    case searched(with: [CountryFormatter])
+    case loaded(with: CountryListFormatterProtocol)
+    case searched(with: [CountryFormatterProtocol])
     case error
 }

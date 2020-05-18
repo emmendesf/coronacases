@@ -16,7 +16,7 @@
 
 // MARK: Onboard:
 
-"Onboard.title" = "Corona Cases";
+"Onboard.title" = "Covid Cases";
 "Onboard.subtitle" = "Bem-vindo";
 "Onboard.text" = "Esse aplicativo tem o intuito de ajudar a monitorar a quantidade de casos de coronavírus ao redor do mundo";
 "Onboard.getStartedButton.title" = "Começar";

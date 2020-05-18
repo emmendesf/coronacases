@@ -16,7 +16,7 @@
 
 // MARK: Onboard:
 
-"Onboard.title" = "Corona Cases";
+"Onboard.title" = "Covid Cases";
 "Onboard.subtitle" = "Welcome";
 "Onboard.text" = "This app is meant to help to keep a track in COVID-19 cases around the world";
 "Onboard.getStartedButton.title" = "Get Started";

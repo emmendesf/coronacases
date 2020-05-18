@@ -8,14 +8,18 @@
 
 import UIKit
 
-class AboutCoordinator: PushedCoordinator {
+class AboutCoordinator: InTabBarCoordinator {
+    var tabBarController: UITabBarController
+    var item: UITabBarItem
+    
 
-    var presentingViewController: UINavigationController
+    var presentingViewController: UINavigationController?
     var nextCoordinator: Coordinator?
     var currentViewController: UIViewController?
 
-    init(presentingViewController: UINavigationController) {
-        self.presentingViewController = presentingViewController
+    init(tabBarController: UITabBarController, item: UITabBarItem) {
+        self.tabBarController = tabBarController
+        self.item = item
     }
 
     func loadViewController() -> UIViewController {

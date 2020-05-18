@@ -8,10 +8,9 @@
 
 import UIKit
 
-class TabbarController: UITabBarController, UITabBarControllerDelegate {
+class TabbarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.delegate = self
         configureTabbar()
     }
     

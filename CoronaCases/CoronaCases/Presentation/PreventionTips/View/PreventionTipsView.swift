@@ -58,7 +58,7 @@ extension PreventionTipsView: ViewCodeProtocol {
         }
         
         pageControl.constraint { view in
-            [view.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -50),
+            [view.bottomAnchor.constraint(equalTo: safeArea().bottomAnchor, constant: -20),
              view.centerXAnchor.constraint(equalTo: centerXAnchor)]
         }
     }

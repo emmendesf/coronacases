@@ -25,9 +25,8 @@ class LocationPermissionCoordinator: PushedCoordinator {
 
 extension LocationPermissionCoordinator: LocationPermissionViewModelCoordinatorDelegate {
     func showMainScreen(location: Placemark?) {
-        let coordinator = CovidCasesCoordinator(presentingViewController: presentingViewController,
-                                                location: location)
+        let coordinator = TabbarCoordinator(presentingViewController: presentingViewController)
         coordinator.start()
-        nextCoordinator = coordinator
+        self.nextCoordinator = coordinator
     }
 }

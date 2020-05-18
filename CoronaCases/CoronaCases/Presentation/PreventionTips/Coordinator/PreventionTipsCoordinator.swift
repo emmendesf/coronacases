@@ -8,13 +8,17 @@
 
 import UIKit
 
-class PreventionTipsCoordinator: PushedCoordinator {
-    var presentingViewController: UINavigationController
+class PreventionTipsCoordinator: InTabBarCoordinator {
+    var tabBarController: UITabBarController
+    var item: UITabBarItem
+    
+    var presentingViewController: UINavigationController?
     var currentViewController: UIViewController?
     var nextCoordinator: Coordinator?
     
-    init(presentingViewController: UINavigationController) {
-        self.presentingViewController = presentingViewController
+    init(tabBarController: UITabBarController, item: UITabBarItem) {
+        self.tabBarController = tabBarController
+        self.item = item
     }
     
     func loadViewController() -> UIViewController {

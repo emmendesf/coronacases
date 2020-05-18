@@ -8,15 +8,17 @@
 
 import UIKit
 
-class CovidCasesCoordinator: PushedCoordinator {
-    var presentingViewController: UINavigationController
+class CovidCasesCoordinator: InTabBarCoordinator {
+    var tabBarController: UITabBarController
+    var item: UITabBarItem
+    
+    var presentingViewController: UINavigationController?
     var currentViewController: UIViewController?
     var nextCoordinator: Coordinator?
-    var location: Placemark?
     
-    init(presentingViewController: UINavigationController, location: Placemark?) {
-        self.presentingViewController = presentingViewController
-        self.location = location
+    init(tabBarController: UITabBarController, item: UITabBarItem) {
+        self.tabBarController = tabBarController
+        self.item = item
     }
     
     func loadViewController() -> UIViewController {

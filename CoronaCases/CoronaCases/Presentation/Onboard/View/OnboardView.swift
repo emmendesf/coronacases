@@ -89,8 +89,8 @@ extension OnboardView: ViewCodeProtocol {
         }
         
         onboardText.constraint { view in
-            [view.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 50),
-             view.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -50),
+            [view.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 30),
+             view.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -30),
              view.topAnchor.constraint(equalTo: onboardTitle.bottomAnchor, constant: 15)]
         }
         

@@ -29,3 +29,11 @@
 "PreventionTips.coverNoseAndMouth" = "Cobrir o nariz e a boca com um lenço ou o cotovelo ao tossir e espirrar";
 "PreventionTips.stayHome" = "Ficar em casa e se isolar das outras pessoas que moram com você caso apresente os sintomas da doença";
 "PreventionTips.washHands" = "Lavar as mãos frequentemente por 20 segundos com água e sabão ou higienizá-las com álcool em gel";
+
+// MARK: CovidCases
+
+"CovidCases.title" = "Covid Cases";
+"CovidCases.header.featured.title" = "Você";
+"CovidCases.header.standard.title" = "Mundo";
+"CovidCases.cell.cases.title" = "Número de casos:";
+"CovidCases.cell.deaths.title" = "Número de mortes:";

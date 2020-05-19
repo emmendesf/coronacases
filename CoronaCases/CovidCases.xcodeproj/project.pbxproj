@@ -83,8 +83,6 @@
 		63E7AEC5242E9097006F3A93 /* Cases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E7AEC4242E9097006F3A93 /* Cases.swift */; };
 		63E7AEC7242E90A1006F3A93 /* Deaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E7AEC6242E90A1006F3A93 /* Deaths.swift */; };
 		63F3010124706B5F003DA98F /* CellConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F3010024706B5F003DA98F /* CellConfigurable.swift */; };
-		63F3010424708377003DA98F /* CovidCasesHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F3010324708377003DA98F /* CovidCasesHeaderView.swift */; };
-		63F30107247083EC003DA98F /* CovidCasesHeaderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F30106247083EC003DA98F /* CovidCasesHeaderType.swift */; };
 		63F301092470845A003DA98F /* CovidCasesHeaderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F301082470845A003DA98F /* CovidCasesHeaderStyle.swift */; };
 		63F3010B247086F1003DA98F /* CountryListFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F3010A247086F1003DA98F /* CountryListFormatter.swift */; };
 		63FDD3A22431672A0038C02B /* CellReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FDD3A12431672A0038C02B /* CellReusable.swift */; };
@@ -143,7 +141,6 @@
 		258A8318246988D600F63F54 /* PreventionTipsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionTipsCoordinator.swift; sourceTree = "<group>"; };
 		259D9B7524674C1A0068B930 /* CovidCasesFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidCasesFonts.swift; sourceTree = "<group>"; };
 		259D9B7724689B120068B930 /* PreventionTipsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionTipsViewModel.swift; sourceTree = "<group>"; };
-		259D9B7D2468A1D20068B930 /* PreventionTipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PreventionTipsView.swift; path = CoronaCases/Presentation/PreventionTips/View/PreventionTipsView.swift; sourceTree = "<group>"; };
 		25E2B98D243D48050061EF96 /* TipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipView.swift; sourceTree = "<group>"; };
 		25FAF444245642000075300B /* StaticSlidableScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticSlidableScreen.swift; sourceTree = "<group>"; };
 		25FAF44624564B580075300B /* PreventionTipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionTipsViewController.swift; sourceTree = "<group>"; };
@@ -191,7 +188,6 @@
 		63E7AEC4242E9097006F3A93 /* Cases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cases.swift; sourceTree = "<group>"; };
 		63E7AEC6242E90A1006F3A93 /* Deaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deaths.swift; sourceTree = "<group>"; };
 		63F3010024706B5F003DA98F /* CellConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfigurable.swift; sourceTree = "<group>"; };
-		63F3010324708377003DA98F /* CovidCasesHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidCasesHeaderView.swift; sourceTree = "<group>"; };
 		63F30106247083EC003DA98F /* CovidCasesHeaderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CovidCasesHeaderType.swift; path = ../../../../../../../../../Desktop/CovidCasesHeaderType.swift; sourceTree = "<group>"; };
 		63F301082470845A003DA98F /* CovidCasesHeaderStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidCasesHeaderStyle.swift; sourceTree = "<group>"; };
 		63F3010A247086F1003DA98F /* CountryListFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListFormatter.swift; sourceTree = "<group>"; };
@@ -616,7 +612,6 @@
 		638A15AA241D5A9400896601 = {
 			isa = PBXGroup;
 			children = (
-				259D9B7D2468A1D20068B930 /* PreventionTipsView.swift */,
 				638A15B5241D5A9400896601 /* CoronaCases */,
 				638A15CC241D5A9700896601 /* CoronaCasesTests */,
 				638A15B4241D5A9400896601 /* Products */,
@@ -702,7 +697,6 @@
 		63F301022470832F003DA98F /* Header */ = {
 			isa = PBXGroup;
 			children = (
-				63F3010324708377003DA98F /* CovidCasesHeaderView.swift */,
 				63F301082470845A003DA98F /* CovidCasesHeaderStyle.swift */,
 			);
 			path = Header;
@@ -992,7 +986,6 @@
 				6332115B241D956D00DE444F /* ResponseStatus.swift in Sources */,
 				254B5782242526B60063488C /* ButtonState.swift in Sources */,
 				258064502423E9FB00D90E23 /* AuthorizationResult.swift in Sources */,
-				63F3010424708377003DA98F /* CovidCasesHeaderView.swift in Sources */,
 				63321141241D7E4800DE444F /* LocationPermissionViewController.swift in Sources */,
 				63FDD3A22431672A0038C02B /* CellReusable.swift in Sources */,
 				259D9B7624674C1A0068B930 /* CovidCasesFonts.swift in Sources */,
@@ -1022,7 +1015,6 @@
 				63867B7524705DBE00FA5A2E /* TableViewListable.swift in Sources */,
 				2580643724213DCE00D90E23 /* CustomColors.swift in Sources */,
 				63F3010B247086F1003DA98F /* CountryListFormatter.swift in Sources */,
-				63F30107247083EC003DA98F /* CovidCasesHeaderType.swift in Sources */,
 				2580645B2423EBD700D90E23 /* ReverseGeocodeResult.swift in Sources */,
 				2580643E24226B2E00D90E23 /* R.generated.swift in Sources */,
 				63E7AEC7242E90A1006F3A93 /* Deaths.swift in Sources */,

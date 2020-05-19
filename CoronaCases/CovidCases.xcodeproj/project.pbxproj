@@ -8,8 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0CB345988FD647736E518024 /* Pods_CovidCasesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8F5EDCBE986C3FD7C0480AC /* Pods_CovidCasesTests.framework */; };
+		2530E92D246E20C600A61ADD /* AboutCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2530E928246E20C600A61ADD /* AboutCoordinator.swift */; };
+		2530E92E246E20C600A61ADD /* AboutViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2530E929246E20C600A61ADD /* AboutViewModelDelegate.swift */; };
+		2530E92F246E20C600A61ADD /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2530E92A246E20C600A61ADD /* AboutViewController.swift */; };
+		2530E930246E20C600A61ADD /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2530E92B246E20C600A61ADD /* AboutView.swift */; };
+		2530E931246E20C600A61ADD /* AboutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2530E92C246E20C600A61ADD /* AboutViewModel.swift */; };
+		2530E937246F61EA00A61ADD /* CovidText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2530E936246F61EA00A61ADD /* CovidText.swift */; };
 		254B577C242520270063488C /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254B577B242520270063488C /* UIImageView+Extensions.swift */; };
-		254B577F242520F20063488C /* CoronaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254B577E242520F20063488C /* CoronaButton.swift */; };
+		254B577F242520F20063488C /* CovidButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254B577E242520F20063488C /* CovidButton.swift */; };
 		254B5782242526B60063488C /* ButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254B5781242526B60063488C /* ButtonState.swift */; };
 		254B578A242537E30063488C /* OnboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254B5785242537E30063488C /* OnboardCoordinator.swift */; };
 		254B578B242537E30063488C /* OnboardViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254B5786242537E30063488C /* OnboardViewModelDelegate.swift */; };
@@ -22,6 +28,10 @@
 		254CC661242FB81200EB9D81 /* CovidCasesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254CC65C242FB81200EB9D81 /* CovidCasesPresenter.swift */; };
 		254CC663242FBD9500EB9D81 /* LocationPermissionViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254CC662242FBD9500EB9D81 /* LocationPermissionViewModelDelegate.swift */; };
 		254CC6722432A9DF00EB9D81 /* PreventionTipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254CC6712432A9DF00EB9D81 /* PreventionTipsView.swift */; };
+		255A860F246B6846009B5C09 /* DescriptiveLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255A860E246B6846009B5C09 /* DescriptiveLabel.swift */; };
+		255A8612246B6B8B009B5C09 /* HeaderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255A8611246B6B8B009B5C09 /* HeaderLabel.swift */; };
+		255A8614246B6BEA009B5C09 /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255A8613246B6BEA009B5C09 /* TitleLabel.swift */; };
+		255A8616246B6C6A009B5C09 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255A8615246B6C6A009B5C09 /* UILabel+Extensions.swift */; };
 		257DF580241D83DD00B5EB06 /* LocationPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DF57F241D83DD00B5EB06 /* LocationPermissionView.swift */; };
 		257DF584241D8AC000B5EB06 /* ViewCodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DF583241D8AC000B5EB06 /* ViewCodeProtocol.swift */; };
 		257DF587241D8C0100B5EB06 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DF586241D8C0100B5EB06 /* UIView+Extensions.swift */; };
@@ -42,6 +52,11 @@
 		258A8319246988D600F63F54 /* PreventionTipsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258A8318246988D600F63F54 /* PreventionTipsCoordinator.swift */; };
 		259D9B7624674C1A0068B930 /* CovidCasesFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259D9B7524674C1A0068B930 /* CovidCasesFonts.swift */; };
 		259D9B7824689B120068B930 /* PreventionTipsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259D9B7724689B120068B930 /* PreventionTipsViewModel.swift */; };
+		25B7D9AC2471CB590022350E /* TabbarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B7D9AB2471CB590022350E /* TabbarCoordinator.swift */; };
+		25B7D9AE2471CB840022350E /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B7D9AD2471CB840022350E /* RootCoordinator.swift */; };
+		25B7D9B02471CC1E0022350E /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B7D9AF2471CC1E0022350E /* TabbarController.swift */; };
+		25B7D9B32471CC600022350E /* TabbarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B7D9B22471CC600022350E /* TabbarItems.swift */; };
+		25B7D9B52471CF900022350E /* InTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B7D9B42471CF900022350E /* InTabBarCoordinator.swift */; };
 		25E2B98E243D48050061EF96 /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E2B98D243D48050061EF96 /* TipView.swift */; };
 		25FAF445245642000075300B /* StaticSlidableScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FAF444245642000075300B /* StaticSlidableScreen.swift */; };
 		25FAF44724564B580075300B /* PreventionTipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FAF44624564B580075300B /* PreventionTipsViewController.swift */; };
@@ -104,8 +119,14 @@
 /* Begin PBXFileReference section */
 		1A97A49AD08FE1E74CF2930B /* Pods-CoronaCasesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaCasesTests.release.xcconfig"; path = "Target Support Files/Pods-CoronaCasesTests/Pods-CoronaCasesTests.release.xcconfig"; sourceTree = "<group>"; };
 		24CF4106346E6FCC6FCC429C /* Pods-CoronaCasesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaCasesTests.debug.xcconfig"; path = "Target Support Files/Pods-CoronaCasesTests/Pods-CoronaCasesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2530E928246E20C600A61ADD /* AboutCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCoordinator.swift; sourceTree = "<group>"; };
+		2530E929246E20C600A61ADD /* AboutViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewModelDelegate.swift; sourceTree = "<group>"; };
+		2530E92A246E20C600A61ADD /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		2530E92B246E20C600A61ADD /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		2530E92C246E20C600A61ADD /* AboutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewModel.swift; sourceTree = "<group>"; };
+		2530E936246F61EA00A61ADD /* CovidText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidText.swift; sourceTree = "<group>"; };
 		254B577B242520270063488C /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
-		254B577E242520F20063488C /* CoronaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaButton.swift; sourceTree = "<group>"; };
+		254B577E242520F20063488C /* CovidButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidButton.swift; sourceTree = "<group>"; };
 		254B5781242526B60063488C /* ButtonState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonState.swift; sourceTree = "<group>"; };
 		254B5785242537E30063488C /* OnboardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardCoordinator.swift; sourceTree = "<group>"; };
 		254B5786242537E30063488C /* OnboardViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewModelDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +139,10 @@
 		254CC65C242FB81200EB9D81 /* CovidCasesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidCasesPresenter.swift; sourceTree = "<group>"; };
 		254CC662242FBD9500EB9D81 /* LocationPermissionViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionViewModelDelegate.swift; sourceTree = "<group>"; };
 		254CC6712432A9DF00EB9D81 /* PreventionTipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionTipsView.swift; sourceTree = "<group>"; };
+		255A860E246B6846009B5C09 /* DescriptiveLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptiveLabel.swift; sourceTree = "<group>"; };
+		255A8611246B6B8B009B5C09 /* HeaderLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderLabel.swift; sourceTree = "<group>"; };
+		255A8613246B6BEA009B5C09 /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
+		255A8615246B6C6A009B5C09 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
 		257DF57F241D83DD00B5EB06 /* LocationPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionView.swift; sourceTree = "<group>"; };
 		257DF583241D8AC000B5EB06 /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeProtocol.swift; sourceTree = "<group>"; };
 		257DF586241D8C0100B5EB06 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -141,6 +166,11 @@
 		258A8318246988D600F63F54 /* PreventionTipsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionTipsCoordinator.swift; sourceTree = "<group>"; };
 		259D9B7524674C1A0068B930 /* CovidCasesFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidCasesFonts.swift; sourceTree = "<group>"; };
 		259D9B7724689B120068B930 /* PreventionTipsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionTipsViewModel.swift; sourceTree = "<group>"; };
+		25B7D9AB2471CB590022350E /* TabbarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarCoordinator.swift; sourceTree = "<group>"; };
+		25B7D9AD2471CB840022350E /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
+		25B7D9AF2471CC1E0022350E /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		25B7D9B22471CC600022350E /* TabbarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarItems.swift; sourceTree = "<group>"; };
+		25B7D9B42471CF900022350E /* InTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InTabBarCoordinator.swift; sourceTree = "<group>"; };
 		25E2B98D243D48050061EF96 /* TipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipView.swift; sourceTree = "<group>"; };
 		25FAF444245642000075300B /* StaticSlidableScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticSlidableScreen.swift; sourceTree = "<group>"; };
 		25FAF44624564B580075300B /* PreventionTipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionTipsViewController.swift; sourceTree = "<group>"; };
@@ -222,23 +252,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2530E926246E208D00A61ADD /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				258A8318246988D600F63F54 /* PreventionTipsCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		2530E927246E20A700A61ADD /* About */ = {
+			isa = PBXGroup;
+			children = (
+				2530E934246E217700A61ADD /* Coordinator */,
+				2530E933246E217000A61ADD /* View */,
+				2530E932246E215900A61ADD /* ViewModel */,
+				2530E92A246E20C600A61ADD /* AboutViewController.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		2530E932246E215900A61ADD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2530E929246E20C600A61ADD /* AboutViewModelDelegate.swift */,
+				2530E92C246E20C600A61ADD /* AboutViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2530E933246E217000A61ADD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2530E92B246E20C600A61ADD /* AboutView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2530E934246E217700A61ADD /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2530E928246E20C600A61ADD /* AboutCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		2530E935246F612200A61ADD /* CovidText */ = {
+			isa = PBXGroup;
+			children = (
+				2530E936246F61EA00A61ADD /* CovidText.swift */,
+			);
+			path = CovidText;
+			sourceTree = "<group>";
+		};
 		254B577D242520CC0063488C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				2530E935246F612200A61ADD /* CovidText */,
+				255A860C246B67FC009B5C09 /* Labels */,
 				25FAF443245641E70075300B /* StaticSlidableScreen */,
 				25E2B98C243D47E20061EF96 /* TipView */,
-				254B5780242526A30063488C /* CoronaButton */,
+				254B5780242526A30063488C /* CovidButton */,
 			);
 			path = Components;
 			sourceTree = "<group>";
 		};
-		254B5780242526A30063488C /* CoronaButton */ = {
+		254B5780242526A30063488C /* CovidButton */ = {
 			isa = PBXGroup;
 			children = (
-				254B577E242520F20063488C /* CoronaButton.swift */,
+				254B577E242520F20063488C /* CovidButton.swift */,
 				254B5781242526B60063488C /* ButtonState.swift */,
 			);
-			path = CoronaButton;
+			path = CovidButton;
 			sourceTree = "<group>";
 		};
 		254B5784242537A90063488C /* Onboard */ = {
@@ -307,11 +391,34 @@
 		254CC6732432A9E400EB9D81 /* PreventionTips */ = {
 			isa = PBXGroup;
 			children = (
+				2530E926246E208D00A61ADD /* Coordinator */,
 				259D9B7A24689B3B0068B930 /* ViewModel */,
 				259D9B7924689B2F0068B930 /* View */,
 				25FAF44624564B580075300B /* PreventionTipsViewController.swift */,
 			);
 			path = PreventionTips;
+			sourceTree = "<group>";
+		};
+		255A860C246B67FC009B5C09 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				255A860E246B6846009B5C09 /* DescriptiveLabel.swift */,
+				255A8611246B6B8B009B5C09 /* HeaderLabel.swift */,
+				255A8613246B6BEA009B5C09 /* TitleLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		255A8610246B6B5B009B5C09 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				63FDD3A42431676F0038C02B /* UITableView+Reusable.swift */,
+				257DF586241D8C0100B5EB06 /* UIView+Extensions.swift */,
+				25806438242141E700D90E23 /* UIColor+Extensions.swift */,
+				254B577B242520270063488C /* UIImageView+Extensions.swift */,
+				255A8615246B6C6A009B5C09 /* UILabel+Extensions.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		257DF581241D8A2A00B5EB06 /* View */ = {
@@ -333,9 +440,7 @@
 		257DF585241D8BE600B5EB06 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				63FDD3A3243167620038C02B /* TableView */,
-				63FDD3A0243166D30038C02B /* Style */,
-				63FDD39F243166CA0038C02B /* View */,
+				255A8610246B6B5B009B5C09 /* UIKit */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -435,6 +540,24 @@
 				259D9B7724689B120068B930 /* PreventionTipsViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		25B7D9AA2471CB2B0022350E /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				25B7D9B12471CC540022350E /* Items */,
+				25B7D9AB2471CB590022350E /* TabbarCoordinator.swift */,
+				25B7D9AF2471CC1E0022350E /* TabbarController.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		25B7D9B12471CC540022350E /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				25B7D9B22471CC600022350E /* TabbarItems.swift */,
+			);
+			path = Items;
 			sourceTree = "<group>";
 		};
 		25E2B98C243D47E20061EF96 /* TipView */ = {
@@ -653,6 +776,7 @@
 		638A15D8241D688200896601 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				25B7D9AA2471CB2B0022350E /* Tabbar */,
 				254B577D242520CC0063488C /* Components */,
 				257DF582241D8AAD00B5EB06 /* Protocols */,
 				2580644E2423E9E500D90E23 /* Managers */,
@@ -666,6 +790,7 @@
 		638A15D9241D688C00896601 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				2530E927246E20A700A61ADD /* About */,
 				254CC6732432A9E400EB9D81 /* PreventionTips */,
 				254CC657242FB7F700EB9D81 /* CovidCases */,
 				254B5784242537A90063488C /* Onboard */,
@@ -679,7 +804,6 @@
 			children = (
 				638A15E7241D75B800896601 /* Protocol */,
 				638A15DD241D6A0700896601 /* AppCoordinator.swift */,
-				258A8318246988D600F63F54 /* PreventionTipsCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -690,6 +814,8 @@
 				638A15DB241D69FA00896601 /* Coordinator.swift */,
 				638A15E5241D750900896601 /* ShowedCoordinator.swift */,
 				638A15E3241D74F300896601 /* PushedCoordinator.swift */,
+				25B7D9AD2471CB840022350E /* RootCoordinator.swift */,
+				25B7D9B42471CF900022350E /* InTabBarCoordinator.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -720,31 +846,6 @@
 				63F3010024706B5F003DA98F /* CellConfigurable.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		63FDD39F243166CA0038C02B /* View */ = {
-			isa = PBXGroup;
-			children = (
-				257DF586241D8C0100B5EB06 /* UIView+Extensions.swift */,
-				254B577B242520270063488C /* UIImageView+Extensions.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		63FDD3A0243166D30038C02B /* Style */ = {
-			isa = PBXGroup;
-			children = (
-				25806438242141E700D90E23 /* UIColor+Extensions.swift */,
-			);
-			path = Style;
-			sourceTree = "<group>";
-		};
-		63FDD3A3243167620038C02B /* TableView */ = {
-			isa = PBXGroup;
-			children = (
-				63FDD3A42431676F0038C02B /* UITableView+Reusable.swift */,
-			);
-			path = TableView;
 			sourceTree = "<group>";
 		};
 		63FDD3A6243168270038C02B /* TableViewCell */ = {
@@ -975,6 +1076,7 @@
 				63867B7324705D9000FA5A2E /* CountryFormatter.swift in Sources */,
 				254B578D242537E30063488C /* OnboardView.swift in Sources */,
 				259D9B7824689B120068B930 /* PreventionTipsViewModel.swift in Sources */,
+				2530E92E246E20C600A61ADD /* AboutViewModelDelegate.swift in Sources */,
 				257DF580241D83DD00B5EB06 /* LocationPermissionView.swift in Sources */,
 				638A15DC241D69FA00896601 /* Coordinator.swift in Sources */,
 				635D35C12431349300A98FD4 /* CovidCasesPresenterContract.swift in Sources */,
@@ -985,42 +1087,52 @@
 				63F301092470845A003DA98F /* CovidCasesHeaderStyle.swift in Sources */,
 				6332115B241D956D00DE444F /* ResponseStatus.swift in Sources */,
 				254B5782242526B60063488C /* ButtonState.swift in Sources */,
+				2530E92D246E20C600A61ADD /* AboutCoordinator.swift in Sources */,
 				258064502423E9FB00D90E23 /* AuthorizationResult.swift in Sources */,
 				63321141241D7E4800DE444F /* LocationPermissionViewController.swift in Sources */,
 				63FDD3A22431672A0038C02B /* CellReusable.swift in Sources */,
 				259D9B7624674C1A0068B930 /* CovidCasesFonts.swift in Sources */,
+				255A8614246B6BEA009B5C09 /* TitleLabel.swift in Sources */,
 				258064562423EA9D00D90E23 /* LocationManager.swift in Sources */,
 				254B578A242537E30063488C /* OnboardCoordinator.swift in Sources */,
 				63F3010124706B5F003DA98F /* CellConfigurable.swift in Sources */,
+				255A8616246B6C6A009B5C09 /* UILabel+Extensions.swift in Sources */,
 				63E7AEC3242E8E56006F3A93 /* BaseResponse.swift in Sources */,
 				635D35C52431354800A98FD4 /* CovidCasesViewContract.swift in Sources */,
+				255A860F246B6846009B5C09 /* DescriptiveLabel.swift in Sources */,
 				6332116F241D9CFB00DE444F /* ServiceContract.swift in Sources */,
 				6332115F241D958600DE444F /* NetworkCore.swift in Sources */,
 				63321159241D956500DE444F /* Result.swift in Sources */,
 				63321164241D960A00DE444F /* NetworkError.swift in Sources */,
+				25B7D9AC2471CB590022350E /* TabbarCoordinator.swift in Sources */,
 				254CC656242FB7A000EB9D81 /* CovidCasesCoordinator.swift in Sources */,
 				254B578E242537E30063488C /* OnboardViewModel.swift in Sources */,
 				63321157241D955600DE444F /* Response.swift in Sources */,
+				255A8612246B6B8B009B5C09 /* HeaderLabel.swift in Sources */,
+				25B7D9B02471CC1E0022350E /* TabbarController.swift in Sources */,
 				63E7AEC5242E9097006F3A93 /* Cases.swift in Sources */,
 				254CC663242FBD9500EB9D81 /* LocationPermissionViewModelDelegate.swift in Sources */,
 				254CC660242FB81200EB9D81 /* CovidCasesView.swift in Sources */,
 				638A15DE241D6A0700896601 /* AppCoordinator.swift in Sources */,
 				258A83152468A26200F63F54 /* PreventionTips.swift in Sources */,
 				2580644B2423C1F400D90E23 /* LocationPermissionViewModel.swift in Sources */,
+				2530E92F246E20C600A61ADD /* AboutViewController.swift in Sources */,
 				25FAF44724564B580075300B /* PreventionTipsViewController.swift in Sources */,
 				6332113E241D7D7F00DE444F /* LocationPermissionCoordinator.swift in Sources */,
-				254B577F242520F20063488C /* CoronaButton.swift in Sources */,
 				63FDD3A8243168640038C02B /* CovidCasesTableViewCell.swift in Sources */,
+				254B577F242520F20063488C /* CovidButton.swift in Sources */,
 				257DF587241D8C0100B5EB06 /* UIView+Extensions.swift in Sources */,
 				63867B7524705DBE00FA5A2E /* TableViewListable.swift in Sources */,
 				2580643724213DCE00D90E23 /* CustomColors.swift in Sources */,
 				63F3010B247086F1003DA98F /* CountryListFormatter.swift in Sources */,
+				2530E937246F61EA00A61ADD /* CovidText.swift in Sources */,
 				2580645B2423EBD700D90E23 /* ReverseGeocodeResult.swift in Sources */,
 				2580643E24226B2E00D90E23 /* R.generated.swift in Sources */,
 				63E7AEC7242E90A1006F3A93 /* Deaths.swift in Sources */,
 				254CC661242FB81200EB9D81 /* CovidCasesPresenter.swift in Sources */,
 				254B578C242537E30063488C /* OnboardViewController.swift in Sources */,
 				2580645D2423EC1300D90E23 /* CLGeocoderProtocol.swift in Sources */,
+				25B7D9AE2471CB840022350E /* RootCoordinator.swift in Sources */,
 				258064592423EB1900D90E23 /* CLLocationManagerProtocol.swift in Sources */,
 				63FDD3A52431676F0038C02B /* UITableView+Reusable.swift in Sources */,
 				254B578B242537E30063488C /* OnboardViewModelDelegate.swift in Sources */,
@@ -1035,16 +1147,20 @@
 				638A15B9241D5A9400896601 /* SceneDelegate.swift in Sources */,
 				636FDFCF2431649400144D1C /* CovidCasesDataSourceDelegate.swift in Sources */,
 				258064522423EA2E00D90E23 /* LocationResult.swift in Sources */,
+				2530E931246E20C600A61ADD /* AboutViewModel.swift in Sources */,
 				25806439242141E700D90E23 /* UIColor+Extensions.swift in Sources */,
 				638A15E6241D750900896601 /* ShowedCoordinator.swift in Sources */,
+				25B7D9B52471CF900022350E /* InTabBarCoordinator.swift in Sources */,
 				6332116A241D9B7C00DE444F /* CoronaNetworkRequest.swift in Sources */,
 				63321166241D961500DE444F /* NetworkErrorType.swift in Sources */,
+				2530E930246E20C600A61ADD /* AboutView.swift in Sources */,
 				635D35C3243134B700A98FD4 /* CovidCasesCoordinatorContract.swift in Sources */,
 				636FDFCB24315DD500144D1C /* CovidCasesViewState.swift in Sources */,
 				63321155241D953300DE444F /* NetworkDispatcher.swift in Sources */,
 				63867B7924705E0E00FA5A2E /* CovidCasesSearchListable.swift in Sources */,
 				6332115D241D957B00DE444F /* NetworkRequest.swift in Sources */,
 				6332116C241D9CBB00DE444F /* CovidCasesService.swift in Sources */,
+				25B7D9B32471CC600022350E /* TabbarItems.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1225,6 +1341,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.a7-m.CovidCases";
 				PRODUCT_NAME = CovidCases;
 				SWIFT_VERSION = 5.0;
@@ -1244,6 +1361,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.a7-m.CovidCases";
 				PRODUCT_NAME = CovidCases;
 				SWIFT_VERSION = 5.0;

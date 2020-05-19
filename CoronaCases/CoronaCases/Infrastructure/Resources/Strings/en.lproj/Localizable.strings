@@ -16,7 +16,7 @@
 
 // MARK: Onboard:
 
-"Onboard.title" = "Corona Cases";
+"Onboard.title" = "Covid Cases";
 "Onboard.subtitle" = "Welcome";
 "Onboard.text" = "This app is meant to help to keep a track in COVID-19 cases around the world";
 "Onboard.getStartedButton.title" = "Get Started";
@@ -37,3 +37,12 @@
 "CovidCases.header.standard.title" = "World";
 "CovidCases.cell.cases.title" = "Number of Cases:";
 "CovidCases.cell.deaths.title" = "Number of Deaths:";
+
+// MARK: About
+
+"About.title" = "About";
+"About.firstSubtitle" = "Developers";
+"About.firstText" = "This app was developed by Caio Aceti and Emerson Mendes in order to be another tool to help during the corona virus epidemic, monitoring the cases and death statistics";
+"About.secondSubtitle" = "Thanks";
+"About.secondText" = "Special thanks to Davi Callegari, Mateus de Campos and Carlos Cayres for their help to make this possible";
+"About.footerText" = "Version %@";

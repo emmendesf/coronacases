@@ -28,34 +28,43 @@ final class TipView: UIView {
         return UIImageView(image: image)
     }()
     
-    private lazy var tipLabel: UILabel = {
-        let label = UILabel()
-        label.text = tip
-        label.textColor = .white
-        label.numberOfLines = 0
-        label.textAlignment = .center
-        label.font = CovidCasesFonts.complementTextFont
+    private lazy var tipLabel: DescriptiveLabel = {
+        return DescriptiveLabel(text: tip)
+    }()
+    
+    private lazy var containerView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .clear
         
-        return label
+        return view
     }()
 }
 
 extension TipView: ViewCodeProtocol {
     func setupHierarchy() {
-        addSubview(tipRepresentationImageView)
-        addSubview(tipLabel)
+        addSubview(containerView)
+        containerView.addSubview(tipRepresentationImageView)
+        containerView.addSubview(tipLabel)
     }
     
     func setupConstraints() {
+        
+        containerView.constraint { view in
+            [view.topAnchor.constraint(equalTo: topAnchor),
+             view.bottomAnchor.constraint(equalTo: safeArea().bottomAnchor),
+             view.leadingAnchor.constraint(equalTo: safeArea().leadingAnchor),
+             view.trailingAnchor.constraint(equalTo: safeArea().trailingAnchor)]
+        }
+        
         tipRepresentationImageView.constraint { view in
-            [view.centerXAnchor.constraint(equalTo: centerXAnchor),
-             view.centerYAnchor.constraint(equalTo: centerYAnchor)]
+            [view.centerXAnchor.constraint(equalTo: containerView.centerXAnchor),
+             view.centerYAnchor.constraint(equalTo: containerView.centerYAnchor)]
         }
         
         tipLabel.constraint { view in
             [view.topAnchor.constraint(equalTo: tipRepresentationImageView.bottomAnchor, constant: 15),
-             view.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 62),
-             view.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -62)]
+             view.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 30),
+             view.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -30)]
         }
     }
 }

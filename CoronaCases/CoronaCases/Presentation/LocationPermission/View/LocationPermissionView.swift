@@ -22,12 +22,10 @@ final class LocationPermissionView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private lazy var headerLabel: UILabel = {
-        let headerLabel = UILabel()
-        headerLabel.text = R.string.localizable.locationPermissionTitle()
-        headerLabel.font = UIFont.boldSystemFont(ofSize: 20)
-        headerLabel.textColor = .white
-        return headerLabel
+    private lazy var headerLabel: HeaderLabel = {
+        let text = R.string.localizable.locationPermissionTitle()
+
+        return HeaderLabel(text: text)
     }()
     
     private lazy var locationIcon: UIImageView = {
@@ -37,27 +35,21 @@ final class LocationPermissionView: UIView {
         return imageView
     }()
         
-    private lazy var askPermissionTitle: UILabel = {
-        let askPermissionTitle = UILabel()
-        askPermissionTitle.text = R.string.localizable.locationPermissionSubtitle()
-        askPermissionTitle.textColor = CustomColors.shared.salmon
-        askPermissionTitle.font = UIFont.boldSystemFont(ofSize: 18)
-        return askPermissionTitle
+    private lazy var askPermissionTitle: TitleLabel = {
+        let text = R.string.localizable.locationPermissionSubtitle()
+
+        return TitleLabel(text: text)
     }()
     
-    private lazy var askPermissionLabel: UILabel = {
-        let askPermissionLabel = UILabel()
-        askPermissionLabel.text = R.string.localizable.locationPermissionText()
-        askPermissionLabel.textColor = .white
-        askPermissionLabel.numberOfLines = 0
-        askPermissionLabel.textAlignment = .center
-        askPermissionLabel.font = UIFont.systemFont(ofSize: 16)
-        return askPermissionLabel
+    private lazy var askPermissionLabel: DescriptiveLabel = {
+        let text = R.string.localizable.locationPermissionText()
+        
+        return DescriptiveLabel(text: text)
     }()
     
-    private lazy var leftButton: CoronaButton = {
+    private lazy var leftButton: CovidButton = {
         let title = R.string.localizable.locationPermissionSkipButtonTitle()
-        let button = CoronaButton(componentState: .clear,
+        let button = CovidButton(componentState: .clear,
                                   title: title,
                                   color: CustomColors.shared.salmon)
         button.setupButton()
@@ -65,9 +57,9 @@ final class LocationPermissionView: UIView {
         return button
     }()
     
-    private lazy var rightButton: CoronaButton = {
+    private lazy var rightButton: CovidButton = {
         let title = R.string.localizable.locationPermissionAllowButtonTitle()
-        let button = CoronaButton(componentState: .filled,
+        let button = CovidButton(componentState: .filled,
                                   title: title,
                                   color: CustomColors.shared.salmon)
         button.setupButton()
@@ -114,8 +106,8 @@ extension LocationPermissionView: ViewCodeProtocol {
         }
         
         askPermissionLabel.constraint { view in
-            [view.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 62),
-             view.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -62),
+            [view.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 30),
+             view.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -30),
              view.topAnchor.constraint(equalTo: askPermissionTitle.bottomAnchor, constant: 15)]
         }
 

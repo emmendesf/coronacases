@@ -21,7 +21,7 @@ class OnboardView: UIView {
     }
     
     private lazy var headerLabel: HeaderLabel = {
-        let text = R.string.localizable.onboardTitle()
+        let text = R.string.localizable.covidCasesTitle()
         
         return HeaderLabel(text: text)
     }()

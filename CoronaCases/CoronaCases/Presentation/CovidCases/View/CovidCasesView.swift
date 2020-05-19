@@ -48,7 +48,7 @@ final class CovidCasesView: UIView {
     
     private lazy var errorLabel: UILabel = {
         let label = UILabel()
-        label.text = R.string.localizable.onboardTitle()
+        label.text = R.string.localizable.covidCasesTitle()
         label.font = UIFont.boldSystemFont(ofSize: 20)
         label.textColor = .white
         

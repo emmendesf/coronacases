@@ -6,6 +6,12 @@
   Copyright © 2020 A7&M. All rights reserved.
 */
 
+// Mark: Common
+
+"CovidCases.title" = "Covid Cases";
+"PreventionTips.title" = "Prevention";
+"About.title" = "About";
+
 // MARK: LocationPermission:
 
 "LocationPermission.title" = "Location";
@@ -16,14 +22,12 @@
 
 // MARK: Onboard:
 
-"Onboard.title" = "Covid Cases";
 "Onboard.subtitle" = "Welcome";
 "Onboard.text" = "This app is meant to help to keep a track in COVID-19 cases around the world";
 "Onboard.getStartedButton.title" = "Get Started";
 
 // MARK: PreventionTips
 
-"PreventionTips.title" = "Prevention";
 "PreventionTips.avoidTouchingFace" = "Don't touch your eyes, nose, or mouth if your hands are not clean";
 "PreventionTips.avoidCloseContact" = "Avoid close contact (1 meter or 3 feet) with people who are unwell";
 "PreventionTips.coverNoseAndMouth" = "Cover your nose and mouth with a tissue or your elbow when you cough or sneeze";
@@ -32,7 +36,6 @@
 
 // MARK: CovidCases
 
-"CovidCases.title" = "Covid Cases";
 "CovidCases.header.featured.title" = "You";
 "CovidCases.header.standard.title" = "World";
 "CovidCases.cell.cases.title" = "Number of Cases:";
@@ -40,7 +43,6 @@
 
 // MARK: About
 
-"About.title" = "About";
 "About.firstSubtitle" = "Developers";
 "About.firstText" = "This app was developed by Caio Aceti and Emerson Mendes in order to be another tool to help during the corona virus epidemic, monitoring the cases and death statistics";
 "About.secondSubtitle" = "Thanks";

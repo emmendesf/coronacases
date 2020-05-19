@@ -6,6 +6,12 @@
   Copyright © 2020 A7&M. All rights reserved.
 */
 
+// MARK: Common
+
+"CovidCases.title" = "Covid Cases";
+"PreventionTips.title" = "Prevenção";
+"About.title" = "Sobre";
+
 // MARK: LocationPermission:
 
 "LocationPermission.title" = "Localização";
@@ -16,14 +22,12 @@
 
 // MARK: Onboard:
 
-"Onboard.title" = "Covid Cases";
 "Onboard.subtitle" = "Bem-vindo";
 "Onboard.text" = "Esse aplicativo tem o intuito de ajudar a monitorar a quantidade de casos de coronavírus ao redor do mundo";
 "Onboard.getStartedButton.title" = "Começar";
 
 // MARK: PreventionTips
 
-"PreventionTips.title" = "Prevenção";
 "PreventionTips.avoidTouchingFace" = "Evite tocar os olhos, nariz ou boca sem estar com as mãos limpas";
 "PreventionTips.avoidCloseContact" = "Evitar contato próximo (um metro de distância) com pessoas que não estejam bem";
 "PreventionTips.coverNoseAndMouth" = "Cobrir o nariz e a boca com um lenço ou o cotovelo ao tossir e espirrar";
@@ -32,7 +36,6 @@
 
 // MARK: CovidCases
 
-"CovidCases.title" = "Covid Cases";
 "CovidCases.header.featured.title" = "Você";
 "CovidCases.header.standard.title" = "Mundo";
 "CovidCases.cell.cases.title" = "Número de casos:";
@@ -40,7 +43,6 @@
 
 // MARK: About
 
-"About.title" = "Sobre";
 "About.firstSubtitle" = "Desenvolvedores";
 "About.firstText" = "Esse aplicativo foi desenvolvido por Caio Aceti e Emerson Mendes para ser mais uma ferramenta no combate a epidemia do novo coronavirus, ajudando a monitorar a quantidade de casos e fatalidades";
 "About.secondSubtitle" = "Agradecimentos";

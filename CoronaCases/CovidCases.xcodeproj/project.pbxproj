@@ -218,7 +218,6 @@
 		63E7AEC4242E9097006F3A93 /* Cases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cases.swift; sourceTree = "<group>"; };
 		63E7AEC6242E90A1006F3A93 /* Deaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deaths.swift; sourceTree = "<group>"; };
 		63F3010024706B5F003DA98F /* CellConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfigurable.swift; sourceTree = "<group>"; };
-		63F30106247083EC003DA98F /* CovidCasesHeaderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CovidCasesHeaderType.swift; path = ../../../../../../../../../Desktop/CovidCasesHeaderType.swift; sourceTree = "<group>"; };
 		63F301082470845A003DA98F /* CovidCasesHeaderStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidCasesHeaderStyle.swift; sourceTree = "<group>"; };
 		63F3010A247086F1003DA98F /* CountryListFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListFormatter.swift; sourceTree = "<group>"; };
 		63FDD3A12431672A0038C02B /* CellReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellReusable.swift; sourceTree = "<group>"; };
@@ -832,7 +831,6 @@
 			isa = PBXGroup;
 			children = (
 				636FDFCA24315DD500144D1C /* CovidCasesViewState.swift */,
-				63F30106247083EC003DA98F /* CovidCasesHeaderType.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";

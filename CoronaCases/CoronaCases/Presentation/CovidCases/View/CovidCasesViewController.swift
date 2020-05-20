@@ -38,16 +38,12 @@ class CovidCasesViewController: UIViewController {
     }
 
     func setupNavigation() {
-        title = R.string.localizable.covidCasesTitle()
         navigationItem.searchController = buildSearchController()
         navigationItem.hidesSearchBarWhenScrolling = false
+        navigationController?.navigationBar.isTranslucent = false
         navigationController?.isNavigationBarHidden = false
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.barTintColor = CustomColors.shared.coronaDarkGray
-        navigationController?.navigationBar.tintColor = .white
-        let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        navigationController?.navigationBar.titleTextAttributes = textAttributes
-        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white];
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.barTintColor = CustomColors.shared.darkRed
     }
     
     private func buildSearchController() -> UISearchController {
@@ -55,7 +51,7 @@ class CovidCasesViewController: UIViewController {
         search.searchResultsUpdater = self
         search.obscuresBackgroundDuringPresentation = false
         search.searchBar.placeholder = "Type something here to search"
-        
+
         return search
     }
 }

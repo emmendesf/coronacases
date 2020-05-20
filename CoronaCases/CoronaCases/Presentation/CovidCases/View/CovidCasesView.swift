@@ -25,14 +25,17 @@ final class CovidCasesView: UIView {
     }
     
     private lazy var tableView: UITableView = {
-        let tableView = UITableView(frame: .zero, style: .grouped)
+        let tableView = UITableView(frame: .zero, style: .plain)
+        
         tableView.sectionHeaderHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 44
-        tableView.estimatedSectionHeaderHeight = 44
+        tableView.estimatedSectionHeaderHeight = 0
         tableView.sectionFooterHeight = UITableView.automaticDimension
-        tableView.estimatedSectionFooterHeight = 44
+        tableView.estimatedSectionFooterHeight = 0
         tableView.backgroundColor = CustomColors.shared.coronaDarkGray
         tableView.separatorStyle = .none
+        tableView.separatorColor = .clear
+        
         tableView.register(CovidCasesTableViewCell.self)
         
         return tableView
@@ -97,7 +100,7 @@ extension CovidCasesView: CovidCasesViewContract {
             handleLoadedState(with: listable)
         case .error:
             hadleErrorState()
-        
+
         }
     }
 }

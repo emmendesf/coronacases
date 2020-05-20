@@ -31,7 +31,7 @@ final class CountryFormatter: CountryFormatterProtocol {
     }
     
     lazy var isFeatured: Bool = {
-        let isWorldValue = country.name.lowercased() == "all"
+        let isWorldValue = country.name.lowercased() == "brazil"
         
         return isWorldValue
     }()

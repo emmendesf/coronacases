@@ -29,12 +29,8 @@ class CovidCasesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter.requestStatistics()
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         setupNavigation()
+        presenter.requestStatistics()
     }
 
     func setupNavigation() {

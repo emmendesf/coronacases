@@ -49,8 +49,11 @@ class CovidCasesViewController: UIViewController {
     private func buildSearchController() -> UISearchController {
         let search = UISearchController(searchResultsController: nil)
         search.searchResultsUpdater = self
+        search.searchBar.tintColor = CustomColors.shared.coronaLightGray
         search.obscuresBackgroundDuringPresentation = false
-        search.searchBar.placeholder = "Type something here to search"
+        search.searchBar.placeholder = R.string.localizable.covidCasesSearchBarPlaceholder()
+        search.searchBar.barTintColor = CustomColors.shared.coronaLightGray
+        search.configureSearchBarForMainScreen()
 
         return search
     }

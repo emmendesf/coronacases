@@ -40,6 +40,7 @@
 "CovidCases.header.standard.title" = "World";
 "CovidCases.cell.cases.title" = "Number of Cases:";
 "CovidCases.cell.deaths.title" = "Number of Deaths:";
+"CovidCases.searchBar.placeholder" = "Type a country name here";
 
 // MARK: About
 

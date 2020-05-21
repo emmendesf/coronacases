@@ -32,6 +32,7 @@
 		255A8612246B6B8B009B5C09 /* HeaderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255A8611246B6B8B009B5C09 /* HeaderLabel.swift */; };
 		255A8614246B6BEA009B5C09 /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255A8613246B6BEA009B5C09 /* TitleLabel.swift */; };
 		255A8616246B6C6A009B5C09 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255A8615246B6C6A009B5C09 /* UILabel+Extensions.swift */; };
+		255BEAF62475CC2A005EFA59 /* UISearchController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255BEAF52475CC2A005EFA59 /* UISearchController+Extensions.swift */; };
 		257DF580241D83DD00B5EB06 /* LocationPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DF57F241D83DD00B5EB06 /* LocationPermissionView.swift */; };
 		257DF584241D8AC000B5EB06 /* ViewCodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DF583241D8AC000B5EB06 /* ViewCodeProtocol.swift */; };
 		257DF587241D8C0100B5EB06 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DF586241D8C0100B5EB06 /* UIView+Extensions.swift */; };
@@ -143,6 +144,7 @@
 		255A8611246B6B8B009B5C09 /* HeaderLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderLabel.swift; sourceTree = "<group>"; };
 		255A8613246B6BEA009B5C09 /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
 		255A8615246B6C6A009B5C09 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
+		255BEAF52475CC2A005EFA59 /* UISearchController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchController+Extensions.swift"; sourceTree = "<group>"; };
 		257DF57F241D83DD00B5EB06 /* LocationPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionView.swift; sourceTree = "<group>"; };
 		257DF583241D8AC000B5EB06 /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeProtocol.swift; sourceTree = "<group>"; };
 		257DF586241D8C0100B5EB06 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -416,6 +418,7 @@
 				25806438242141E700D90E23 /* UIColor+Extensions.swift */,
 				254B577B242520270063488C /* UIImageView+Extensions.swift */,
 				255A8615246B6C6A009B5C09 /* UILabel+Extensions.swift */,
+				255BEAF52475CC2A005EFA59 /* UISearchController+Extensions.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -1111,6 +1114,7 @@
 				63E7AEC5242E9097006F3A93 /* Cases.swift in Sources */,
 				254CC663242FBD9500EB9D81 /* LocationPermissionViewModelDelegate.swift in Sources */,
 				254CC660242FB81200EB9D81 /* CovidCasesView.swift in Sources */,
+				255BEAF62475CC2A005EFA59 /* UISearchController+Extensions.swift in Sources */,
 				638A15DE241D6A0700896601 /* AppCoordinator.swift in Sources */,
 				258A83152468A26200F63F54 /* PreventionTips.swift in Sources */,
 				2580644B2423C1F400D90E23 /* LocationPermissionViewModel.swift in Sources */,
